@@ -15,7 +15,8 @@ class LecturePage extends Page {
 		'Youtube' => 'Text',
 		'PictureAlignment' => 'Text',
 		'FeatureBackgroundColor' => 'Text',
-		"LectureTitle" => "Text"
+		"LectureTitle" => "Text",
+		"FeatureOnHomePage" => "Boolean"
 	);
 	
 	public static $has_one = array(
@@ -27,8 +28,11 @@ class LecturePage extends Page {
 	function getCMSFields() {
 		$alignments = Array('right' => 'right','left' => 'left');
 		$fields = parent::getCMSFields();
+		$fields->addFieldToTab("Root.Content.Main", new CheckboxField('FeatureOnHomePage','Can this lecture be featured on the homepage?'));
+
 		$fields->removeFieldFromTab("Root.Content.Main","Content");
 		$datefield = new DateField('EventDate','Date of the event.');
+		
 		$fields->addFieldToTab("Root.Content.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
 		$datefield->setConfig('showcalendar', true);
 		$fields->addFieldToTab("Root.Content.Main", $datefield);
