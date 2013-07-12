@@ -9,9 +9,10 @@ class CommitteeMember extends Page {
 	);
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->removeFieldFromTab("Root.Content.Main","Content");	
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Position'));
-		$fields->addFieldToTab("Root.Content.Image", new ImageField('LeaderImage'));
+		//removed Content
+		$fields->removeFieldFromTab("Root.Main","Content");	
+		$fields->addFieldToTab("Root.Main", new TextField('Position'));
+		$fields->addFieldToTab("Root.Image", new ImageField('LeaderImage'));
 		return $fields;
 	}
 }

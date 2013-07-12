@@ -1,5 +1,5 @@
 <% if NextLecture %>
-<% control NextLecture %>
+<% loop NextLecture %>
 <div id="main_feature" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>;">
 	<div id="main_feature_item" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>; background-image: url(<% control Picture.SetWidth(500) %> $URL <% end_control %>);">
 
@@ -32,7 +32,7 @@
 			<% end_if %>
 		</div>
 	</div>
-<% end_control %> <%-- end control NextLecture --%>
+<% end_loop %> <%-- end loop NextLecture --%>
 <% else %>
 <div id="main_content">
 	<div id="details">

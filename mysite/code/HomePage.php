@@ -22,7 +22,7 @@ class HomePage_Controller extends Page_Controller {
 	
 	public function NextLecture(){
 		$lecture = DataObject::get_one("LecturePage", "EventDate >= CURDATE() AND FeatureOnHomePage = 1", null, "EventDate ASC");
-		
+
 		if($lecture){
 			return $lecture;
 		}else{

@@ -15,15 +15,15 @@ class EventPage extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->removeFieldFromTab("Root.Content.Main","Content");
+		$fields->removeFieldFromTab("Root.Main","Content");
 		$datefield = new DateField('EventDate','Date of the event.');
 		$datefield->setConfig('showcalendar', true);
-		$fields->addFieldToTab("Root.Content.Main", $datefield);
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Time','Time of the lecture.'));
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Location','Location of the lecture.'));
-		$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('Content','Lecture description below.'));
+		$fields->addFieldToTab("Root.Main", $datefield);
+		$fields->addFieldToTab("Root.Main", new TextField('Time','Time of the lecture.'));
+		$fields->addFieldToTab("Root.Main", new TextField('Location','Location of the lecture.'));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('Content','Lecture description below.'));
 		//$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('Details','Summary of the event for the left sidebar below.'));
-		$fields->addFieldToTab("Root.Content.Image", new ImageField('Picture'));
+		$fields->addFieldToTab("Root.Image", new ImageField('Picture'));
 		return $fields;
 	}
 	

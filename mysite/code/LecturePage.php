@@ -28,29 +28,30 @@ class LecturePage extends Page {
 	function getCMSFields() {
 		$alignments = Array('right' => 'right','left' => 'left');
 		$fields = parent::getCMSFields();
-		$fields->addFieldToTab("Root.Content.Main", new CheckboxField('FeatureOnHomePage','Can this lecture be featured on the homepage?'));
+		$fields->addFieldToTab("Root.Main", new CheckboxField('FeatureOnHomePage','Can this lecture be featured on the homepage?'));
 
-		$fields->removeFieldFromTab("Root.Content.Main","Content");
+		$fields->removeFieldFromTab("Root.Main","Content");
 		$datefield = new DateField('EventDate','Date of the event.');
 		
-		$fields->addFieldToTab("Root.Content.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
+		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
 		$datefield->setConfig('showcalendar', true);
-		$fields->addFieldToTab("Root.Content.Main", $datefield);
+		$fields->addFieldToTab("Root.Main", $datefield);
 
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Time','Time of the lecture.'));
+		$fields->addFieldToTab("Root.Main", new TextField('Time','Time of the lecture.'));
 		/*$fields->addFieldToTab("Root.Content.Main", new TextField('FirstHeading','First Heading'));
 		$fields->addFieldToTab("Root.Content.Main", new TextField('Second','Second Heading'));
 		$fields->addFieldToTab("Root.Content.Main", new TextField('Third','Third Heading'));
 		$fields->addFieldToTab("Root.Content.Main", new TextField('Fourth','Fourth Heading'));
 		*/
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Location','Location of the lecture.'));
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Price','Cost of lecture or Free Admission.'));
-		$fields->addFieldToTab("Root.Content.Main", new TextField('Youtube','Video ID of youtube video. (Only the part between v= and &)'));
-		$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('Content','Lecture description below.'));
+		$fields->addFieldToTab("Root.Main", new TextField('Location','Location of the lecture.'));
+		$fields->addFieldToTab("Root.Main", new TextField('Price','Cost of lecture or Free Admission.'));
+		//$fields->addFieldToTab('Root.Main', new TextField('Cost of lecture or Firey Admission.'),'Price');
+		$fields->addFieldToTab("Root.Main", new TextField('Youtube','Video ID of youtube video. (Only the part between v= and &)'));
+		$fields->addFieldToTab("Root.Main", new HTMLEditorField('Content','Lecture description below.'));
 		//$fields->addFieldToTab("Root.Content.Main", new HTMLEditorField('Details','Summary of the event for the left sidebar below.'));
-		$fields->addFieldToTab("Root.Content.Image", new DropdownField('PictureAlignment', 'Align text to the right or left inside of the image:',$alignments));
-		$fields->addFieldToTab("Root.Content.Image", new ImageField('Picture'));
-		$fields->addFieldToTab("Root.Content.Image", new TextField('FeatureBackgroundColor','Image Background Color. Defaults to blue (#6C819E) if left blank.'));
+		$fields->addFieldToTab("Root.Image", new DropdownField('PictureAlignment', 'Align text to the right or left inside of the image:',$alignments));
+		$fields->addFieldToTab("Root.Image", new ImageField('Picture'));
+		$fields->addFieldToTab("Root.Image", new TextField('FeatureBackgroundColor','Image Background Color. Defaults to blue (#6C819E) if left blank.'));
 
 		return $fields;
 	}

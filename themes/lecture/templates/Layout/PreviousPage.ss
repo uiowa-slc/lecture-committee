@@ -1,11 +1,11 @@
 $Content
 
 <div id="previous">
-<% control PreviousLectures %>
+<% loop PreviousLectures %>
 	<p>
 	<a href="$Link">$Title</a><br />
 	<span>$EventDate.format(l), $EventDate.format(F j), $EventDate.format(Y)</span>
 	</p>
-<% end_control %>
+<% end_loop %>
 </div>
 $Form

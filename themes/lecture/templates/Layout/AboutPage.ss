@@ -2,7 +2,7 @@ $Content
 $Form
 
 <div id="members">
-<% control Children %>
+<% loop Children %>
 <div class="member">
 	<div class="memberimage">
 	<img src="$LeaderImage.LeaderPicture.URL" />
@@ -12,5 +12,5 @@ $Form
 	$Position
 	</div>
 </div>
-<% end_control %>
+<% end_loop %>
 </div>

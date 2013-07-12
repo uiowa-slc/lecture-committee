@@ -3,9 +3,9 @@
 			<div id="foot_logo"></div>
 			<div id="foot_text">
 			<ul>
-				<% control Menu(1) %>
+				<% loop Menu(1) %>
 					<li><a href="$Link" title="Go to the $Title.XML page" class="$LinkingMode"><span>$MenuTitle.XML</span></a></li>
-				<% end_control %>
+				<% end_loop %>
 			</ul>
 				
 				<br />

@@ -1,7 +1,7 @@
 <div class="typography">
 	<% if Results %>
 	    <ul id="SearchResults">
-	      <% control Results %>
+	      <% loop Results %>
 	        <li>
 	            <% if MenuTitle %>
 	              <h3><a class="searchResultHeader" href="$Link">$MenuTitle</a></h3>
@@ -13,7 +13,7 @@
 			  <% end_if %>
 	          <a class="readMoreLink" href="$Link" title="Read more about &quot;{$Title}&quot;">Read more about &quot;{$Title}&quot;...</a>
 	        </li>
-	      <% end_control %>
+	      <% end_loop %>
 	    </ul>
 	  <% else %>
 	    <p>Sorry, your search query did not return any results.</p>
@@ -28,13 +28,13 @@
 	        <a class="prev" href="$Results.PrevLink" title="View the previous page">Prev</a>
 	      <% end_if %>
 	      <span>
-	        <% control Results.SummaryPagination(5) %>
+	        <% loop Results.SummaryPagination(5) %>
 	          <% if CurrentBool %>
 	            $PageNum
 	          <% else %>
 	            <a href="$Link" title="View page number $PageNum">$PageNum</a>
 	          <% end_if %>
-	        <% end_control %>
+	        <% end_loop %>
 	      </span>
       
 	    </div>

@@ -1,12 +1,12 @@
 <% if UpcomingLectures %>
 	<div class="upcoming-lectures">
-		<% control UpcomingLectures %>
+		<% loop UpcomingLectures %>
 			<div class="lecture">
 				<div class="lecture_name"><a href="$Link">$Title</a></div>
 				<div>$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)&nbsp;&nbsp;&nbsp;$Time</div>
 				$Location
 			</div>
-		<% end_control %>
+		<% end_loop %>
 	</div>
 <% else %>
 	<p>No upcoming lectures scheduled.</p>
