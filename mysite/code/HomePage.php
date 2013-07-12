@@ -22,7 +22,11 @@ class HomePage_Controller extends Page_Controller {
 	
 	public function NextLecture(){
 		$lecture = DataObject::get_one("LecturePage", "EventDate >= CURDATE() AND FeatureOnHomePage = 1", null, "EventDate ASC");
+		
+		/*$curDate = date("Y-m-d");
 
+$holder = ArticleHolder::get()->filter('URLSegment', 'meetings')->first(); 
+return ($holder) ? ArticlePage::get()->filter(array('ParentID' => $holder->ID,'Date:GreaterThan' => $curDate))->sort('Date DESC') : false; */
 		if($lecture){
 			return $lecture;
 		}else{
