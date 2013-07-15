@@ -29,14 +29,14 @@ class Page_Controller extends ContentController {
 	);
 	
 	function UpcomingLectures() {
-		//$lectures = DataObject::get("LecturePage", "EventDate >= CURDATE()", "EventDate ASC", "");
-		$lectures = LecturePage::get()->filter(array('EventDate'))->sort('EventDate ASC');
+		$curDate = date("Y-m-d");
+		$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate ))->sort('EventDate ASC');
 		return $lectures;
 	}
 	
 	function PreviousLectures() {
-		//$lectures = DataObject::get("LecturePage", "EventDate <= CURDATE()", "EventDate DESC", "");
-		$lectures = LecturePage::get()->filter(array('EventDate' <= 'CURDATE()'))->sort('EventDate DESC');
+		$curDate = date("Y-m-d");
+		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
 		return $lectures;
 	}
 

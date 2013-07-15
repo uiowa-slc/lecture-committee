@@ -21,16 +21,17 @@ class HomePage_Controller extends Page_Controller {
 	}
 	
 	public function NextLecture(){
-		$lecture = DataObject::get_one("LecturePage", "EventDate >= CURDATE() AND FeatureOnHomePage = 1", null, "EventDate ASC");
+		//$lecture = DataObject::get_one("LecturePage", "EventDate >= CURDATE() AND FeatureOnHomePage = 1", null, "EventDate ASC");
 		
-		/*$curDate = date("Y-m-d");
+		$curDate = date("Y-m-d");
+		$lecture = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate, 'FeatureOnHomePage' => 1))->sort('EventDate ASC')->First();
 
-$holder = ArticleHolder::get()->filter('URLSegment', 'meetings')->first(); 
-return ($holder) ? ArticlePage::get()->filter(array('ParentID' => $holder->ID,'Date:GreaterThan' => $curDate))->sort('Date DESC') : false; */
 		if($lecture){
 			return $lecture;
 		}else{
-			$lecture = DataObject::get_one("LecturePage", "EventDate >= CURDATE()", null, "EventDate ASC");
+			//$lecture = DataObject::get_one("LecturePage", "EventDate >= CURDATE()", null, "EventDate ASC");
+			//$curDate = date("Y-m-d");
+			$lecture = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate))->sort('EventDate ASC')->First();
 				if($lecture){
 					return $lecture;
 				}else{
