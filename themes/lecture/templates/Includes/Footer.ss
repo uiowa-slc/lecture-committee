@@ -12,7 +12,7 @@
 				<div id="foot_info">
 					Email questions or comments to <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a><br />
 					All lectures and co-sponsored events are free and open to the public.<br />
-					<small>&copy; <a href="http://www.uiowa.edu">The University of Iowa</a> $Now.Year. All rights reserved</small>
+					<small>&copy; <a href="http://www.uiowa.edu">The University of Iowa</a> {$Now.Year}. All rights reserved</small>
 				</div>
 			</div>
 			<div class="clear"></div>

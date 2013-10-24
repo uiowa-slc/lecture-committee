@@ -21,7 +21,7 @@ class HomePage_Controller extends Page_Controller {
 	}
 	
 	public function NextLecture(){
-		$curDate = date("Y-m-d");
+		$curDate = date("Y-m-d", time() - 86400);
 		$lecture = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate, 'FeatureOnHomePage' => 1))->sort('EventDate ASC')->First();
 
 		if($lecture){
