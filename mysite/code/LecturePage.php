@@ -2,7 +2,7 @@
 
 class LecturePage extends Page {
 	
-	public static $db = array(
+	private static $db = array(
 		'FirstHeading' => 'Text',
 		'Second' => 'Text',
 		'Third' => 'Text',
@@ -19,7 +19,7 @@ class LecturePage extends Page {
 		"FeatureOnHomePage" => "Boolean"
 	);
 	
-	public static $has_one = array(
+	private static $has_one = array(
 		'Picture' => 'Image'
 	);
 	

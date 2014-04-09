@@ -1,7 +1,7 @@
 <% if NextLecture %>
 <% loop NextLecture %>
 <div id="main_feature" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>;">
-	<div id="main_feature_item" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>; background-image: url(<% control Picture.SetWidth(500) %> $URL <% end_control %>);">
+	<div id="main_feature_item" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>; background-image: url(<% with Picture.SetWidth(500) %> $URL <% end_with %>);">
 
 	<div id="main_feature_description" class="$PictureAlignment" >
 		<% if LectureTitle %> <p><strong><em>$LectureTitle</em></strong></p> <% end_if %>

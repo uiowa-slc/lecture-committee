@@ -1,4 +1,3 @@
-
 <h1 class="page-title"><span>$Title</span></h1>
 <div id="main_content">
 	<div id="details">

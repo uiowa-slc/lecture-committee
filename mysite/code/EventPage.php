@@ -2,14 +2,14 @@
 
 class EventPage extends Page {
 	
-	public static $db = array(
+	private static $db = array(
 		'EventDate' => 'Date',
 		'Location' => 'Text',
 		'Time' => 'Text',
 		'Details' => 'HTMLText'
 	);
 	
-	public static $has_one = array(
+	private static $has_one = array(
 		'Picture' => 'Image'
 	);
 	

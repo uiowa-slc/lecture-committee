@@ -5,7 +5,7 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.1.4",
 		"silverstripe/framework": "3.1.4",
-		"silverstripe/googlesitemaps": "*",
+		"silverstripe/googlesitemaps": "*"
 	},
 	"config": {
 		"process-timeout": 600	

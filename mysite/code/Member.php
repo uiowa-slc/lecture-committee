@@ -1,10 +1,10 @@
 <?php
 class CommitteeMember extends Page {
 	
-	public static $db = array(
+	private static $db = array(
 		'Position' => 'Text'
 	);
-	public static $has_one = array(
+	private static $has_one = array(
 		'LeaderImage' => 'LeaderImage'
 	);
 	function getCMSFields() {
