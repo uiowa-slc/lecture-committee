@@ -6,7 +6,7 @@
 	<div id="main_feature_description" class="$PictureAlignment" >
 		<% if LectureTitle %> <p><strong><em>$LectureTitle</em></strong></p> <% end_if %>
 		<p><strong>$Title</strong></p>
-		<p>$EventDate.format(l) $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</p>
+		<p>$EventDate.format(l), $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</p>
 		<p>$Location, $Time</p>
 		<% if Price %><p>$Price</p><% end_if %>
 	</div>
@@ -36,7 +36,11 @@
 <% else %>
 <div id="main_content">
 	<div id="details">
-		<h1>No Upcoming Lectures Currently Scheduled. Check Back Soon!</h1>
+		<h1>No Upcoming Lectures Currently Scheduled.</h1>
+		
+		<% with Page(lectures) %>
+			$Content
+		<% end_with %>
 	
 	</div>
 </div>
@@ -65,7 +69,6 @@
 		
 		<h2>Connect With Us</h2>
 		<a href="http://www.facebook.com/iowa.ulc"><span style="background: url('{$BaseHref}assets/uclips.png') -420px -20px; display: block; float: left; height: 60px; width: 60px;"></span></a>
-		<!--<a href="/"><span style="background: url('http://uber.imu.uiowa.edu/lecture/assets/uclips.png') -350px -20px; display: block; float: left; height: 60px; width: 60px;"></span></a>-->
 
 		
 	</div>

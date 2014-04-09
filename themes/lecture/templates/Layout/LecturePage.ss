@@ -1,27 +1,10 @@
-<!--<div id="mid_magic_content">
-	<div id="mid_mid">
-		
-		<div id="mid_pic" style="background: url('$Picture.URL');">
-		</div>
-		<div id="mid_gradient"></div>
-		<div id="mid_right">
-			<div id="mid_1">$FirstHeading</div>
-			<div id="mid_2">$Second</div>
-			<div id="mid_3">$Third</div>
-			<div id="mid_4">$Fourth</div>
-		</div>
-	</div>
-</div>
-<div id="mid_magic_bottom"></div>
--->
-
 <div id="main_feature" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>;">
 	<div id="main_feature_item" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>; background-image: url(<% loop Picture.SetWidth(500) %> $URL <% end_loop %>);">
 
 	<div id="main_feature_description" class="$PictureAlignment" >
 		<% if LectureTitle %> <p><strong><em>$LectureTitle</em></strong></p> <% end_if %>
 		<p><strong>$Title</strong></p>
-		<p>$EventDate.format(l) $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</p>
+		<p>$EventDate.format(l), $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</p>
 		<p>$Location, $Time</p>
 		<% if Price %><p>$Price</p><% end_if %>
 	</div>
@@ -34,9 +17,6 @@
 <div id="main_content">
 	<div id="details">
 		<h1>$Title</h1>
-		<!--<h2>$EventDate.format(l)<br />$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</h2>
-		<div id="lecture_location_time">$Location, $Time</div>
-		<div id="lecture_price">$Price</div>-->
 		
 		<div id="lecture_content">
 			$Content
