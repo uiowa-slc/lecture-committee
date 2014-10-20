@@ -27,7 +27,15 @@ class Page_Controller extends ContentController {
 	 */
 	private static $allowed_actions = array (
 	);
-	
+	public function NextLecture(){
+		$lecture = $this->UpcomingLectures()->First;
+		
+		if($lecture)
+			return true;
+		else
+			return false;
+	}
+		
 	function UpcomingLectures() {
 		$curDate = date("Y-m-d", time() - 86400);
 		$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate ))->sort('EventDate ASC');
