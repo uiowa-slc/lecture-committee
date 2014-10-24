@@ -76,42 +76,9 @@
 
 
 .HomePage .main-nav {
-	list-style: none;
-	margin: 3em 0 .5em;
-	padding: 0;
-	width: 100%;
-	& li {
-		float: left;
-		padding-bottom: 0;
-	}
-	& a {
-		color: #fff;
-		display: block;
-		font-family: $header-font-family;
-		font-weight: 600;
-		letter-spacing: 1px;
-		padding: 5px 2px;
-		text-align: center;
-		text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-		text-transform: uppercase;
-		&:hover {
-			text-decoration: underline;
-		}
-		@media #{$small-up} {
-			padding: 5px 5px;
-		}
-		@media #{$large-up} {
-			font-size: rem-calc(16);
-			padding: 5px 5px;
-		}
-		@media (min-width: 870px) {
-			font-size: rem-calc(19);
-			padding: 5px 5px;
-		}
-		@media #{$xlarge-up} {
-			padding: 5px 17px;
-		}
-	}
+	
+	margin: 0 ;
+	
 }
 
 
