@@ -43,7 +43,7 @@ $include-xl-html-grid-classes: true;
 // $font-weight-bold: bold !default;
 
 // We use these to control various global styles
- $body-bg: #24bad5;
+ $body-bg: #000000;
 // $body-font-color: #222;
 $body-font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-weight-normal:normal;
@@ -59,8 +59,8 @@ $body-font-weight: $font-weight-normal;
 // $default-float: left;
 
 // We use these as default colors throughout
-$primary-color: #3399cc;
-$bijoublue: #5cacc9;
+$primary-color: #000000;
+$bijoublue: #435979;
 $yellow: #ffce39;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
@@ -129,7 +129,7 @@ $xxlarge-range: (120.063em, 99999999em);
  $header-font-family: "proxima-nova-condensed",sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+//$header-font-color: #222;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;

@@ -27,6 +27,13 @@ class Page_Controller extends ContentController {
 	 */
 	private static $allowed_actions = array (
 	);
+
+
+	public function FirstAboutParagraph(){
+		$about = AboutPage::get();
+
+	}
+
 	public function NextLecture(){
 		$lecture = $this->UpcomingLectures()->First;
 		
