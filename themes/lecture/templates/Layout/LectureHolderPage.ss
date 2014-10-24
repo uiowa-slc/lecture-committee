@@ -2,13 +2,12 @@
 <div id="main_content">
 	<div id="details">
 	
-			<% include UpcomingLectures %>
-	
 		<div class="clear"></div>
+		<p> But, this...is only! A test? for THE OLD </p>
 		$Content
-		
-		$Form
-			
+		$Form	
+
+		<% include UpcomingLectures %>
 	</div>
 
 	<div id="extra">

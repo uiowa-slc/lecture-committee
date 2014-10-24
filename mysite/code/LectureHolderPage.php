@@ -22,5 +22,12 @@ class LectureHolderPage_Controller extends Page_Controller {
 		parent::init();
 	}
 	
+	
+	function paginatedPreviousLectures() {
+		$curDate = date("Y-m-d");		
+		$pagiList = new PaginatedList(LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC'), $this->request);
+		
+		return $pagiList;
+	}
+	
 }
-?>

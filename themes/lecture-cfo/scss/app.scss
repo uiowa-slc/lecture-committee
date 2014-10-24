@@ -61,3 +61,22 @@
 /* Theme Styles
 -------------------------------------------*/
 @import "_theme";
+
+
+
+
+
+#previous_lectures {
+	
+	text-align: center;
+	
+	img {
+		border: solid 2px black;
+	}
+	
+	> ul {
+		list-style: none;
+	}
+	
+	
+}
