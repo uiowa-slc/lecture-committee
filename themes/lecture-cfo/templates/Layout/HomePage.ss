@@ -1,76 +1,59 @@
-<% if NextLecture %>
-<% loop NextLecture %>
-<div id="main_feature" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>;">
-	<div id="main_feature_item" style="background-color: <% if FeatureBackgroundColor %>$FeatureBackgroundColor<% else %>#6C819E<% end_if %>; background-image: url(<% with Picture.SetWidth(500) %> $URL <% end_with %>);">
-
-	<div id="main_feature_description" class="$PictureAlignment" >
-		<% if LectureTitle %> <p><strong><em>$LectureTitle</em></strong></p> <% end_if %>
-		<p><strong>$Title</strong></p>
-		<p>$EventDate.format(l), $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</p>
-		<p>$Location, $Time</p>
-		<% if Price %><p>$Price</p><% end_if %>
-	</div>
-	<div class="clear"></div>
-	</div>
-
-</div>
 
 
-<div id="main_content">
-	<div id="details">
-		<h1>$Title</h1>
-		<!--<h2>$EventDate.format(l)<br />$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</h2>
-		<div id="lecture_location_time">$Location, $Time</div>
-		<div id="lecture_price">$Price</div>-->
-		
-		<div id="lecture_content">
-			$Content
-			
-			<% if Youtube %>
-				<br />
-				<iframe width="540" height="333" src="http://www.youtube.com/embed/$Youtube" frameborder="0" allowfullscreen="1"></iframe>
-			<% end_if %>
+	<div class="large-12 columns">
+		<!-- $Content -->
+		<!-- $Form -->
+		<div class="our-programs">
+			<h4 class="subtitle">Our Programs</h4>
+			<% with Page(our-programs) %>
+				<div class="row">
+					<% loop $Titles %>
+						<div class="medium-6 large-3 columns">
+							<h5><a href="{$baseUrl}our-programs">$Title</a> </h5>
+							<p>$DescriptionShort</p>
+						</div>
+					<% end_loop %>
+				</div>
+			<% end_with %>
 		</div>
 	</div>
-<% end_loop %> <%-- end loop NextLecture --%>
-<% else %>
-<div id="main_content">
-	<div id="details">
-		<h1>No Upcoming Lectures Currently Scheduled.</h1>
-		
-		<% with Page(lectures) %>
+</div>
+
+<div class="row collapse">
+	<div class="large-12 columns">
+		<div class="mission-statement">
 			$Content
-		<% end_with %>
-	
+		</div>
 	</div>
 </div>
-<% end_if %> <%-- end if NextLecture --%>
 
-	<div id="extra">
-		<h2><a href="{$BaseHref}lectures/">Upcoming Lectures</a></h2>
-		<% include UpcomingLectures %>
-		
-		<br /><br /><br />
-		
-		<div id="share-lecture">
-		<h2>Share This Lecture</h2>
-			<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
-<a class="addthis_button_compact"></a>
-<a class="addthis_counter addthis_bubble_style"></a>
-</div>
-
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e95cc4602e10a17"></script>
-</div>
-		
-		<h2>Connect With Us</h2>
-		<a href="http://www.facebook.com/iowa.ulc"><span style="background: url('{$BaseHref}assets/uclips.png') -420px -20px; display: block; float: left; height: 60px; width: 60px;"></span></a>
-
-		
+<div class="row board-list">
+	<div class="large-12 columns">
+		<h4 class="subtitle">Our Board Members</h4>
+		<a href="{$baseUrl}about-us/" class="text-center"><small>View all board members</small></a>
+		<br>
+		<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
+			<% loop RandomStaffMembers(5) %>
+				<li>
+					<% if $Photo %>
+						<a href="$Link" class="staff-link">
+							<img src="$Photo.CroppedImage(230,230).URL" alt="$FirstName $LastName" class="staff-img">
+						</a>
+					<% else %>
+						<a href="$Link" class="staff-link">
+							<img src="{$ThemeDir}/images/placeholder.gif" alt="$FirstName $LastName" class="staff-img">
+						</a>
+					<% end_if %>
+					<p class="staff-name">
+						<a href="$Link">$FirstName $LastName</a>
+					</p>
+				</li>
+			<% end_loop %>
+		</ul>
 	</div>
+
 </div>
+
+
+
 
