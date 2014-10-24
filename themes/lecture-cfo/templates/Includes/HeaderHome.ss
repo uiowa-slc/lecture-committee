@@ -39,7 +39,8 @@
 				navigation_arrows:true;
 				bullets:false;
 				timer:false;">
-				<% loop PreviousLectures.Limit(3) %>
+				<% if UpcomingLectures %>
+					<% loop UpcomingLectures.Limit(3) %>
 					<li>
 					<a href="$Link">
 								<img src="$Picture.CroppedImage(644,390).URL" alt="$Title">
@@ -47,11 +48,22 @@
 						<div class="orbit-caption">
 	
 								<a href="$Link">$Title, $EventDate.Format("M j")</a>
-
-
 						</div>
 					</li>
-				<% end_loop %>
+					<% end_loop %>
+				<% else %>
+					<% loop PreviousLectures.Limit(3) %>
+					<li>
+					<a href="$Link">
+								<img src="$Picture.CroppedImage(644,390).URL" alt="$Title">
+							</a>
+						<div class="orbit-caption">
+	
+								<a href="$Link">$Title, $EventDate.Format("M j")</a>
+						</div>
+					</li>
+					<% end_loop %>
+				<% end_if %>
 			</ul>
 		</div>
 	</div>
