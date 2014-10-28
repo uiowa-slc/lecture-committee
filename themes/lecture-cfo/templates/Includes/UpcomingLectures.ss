@@ -1,15 +1,19 @@
+<section id="upcoming-lectures">
 <% if UpcomingLectures %>
-	<div class="upcoming-lectures">
+	<h2> Upcoming Lectures: </h2>
+		
 		<% loop UpcomingLectures %>
-			<div class="lecture">
-				<div class="lecture_name"><a href="$Link">$Title</a></div>
-				<div>$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)&nbsp;&nbsp;&nbsp;$Time</div>
-				$Location
-			</div>
+		<h3 class="upcoming-lecture-title"><a href="$Link">$Title.LimitWordCount(4)</a></h3>
+		<ul>
+			<li>$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</li>
+			<li>$Time</li>
+			<li>$Location</li>
+		</ul>
 		<% end_loop %>
-	</div>
+
 <% else %>
-	<p>No upcoming lectures scheduled.</p>
+	<h3>No upcoming lectures scheduled.</h3>
 <% end_if %>
-<p><a href="{$BaseHref}contact">To request a lecture, contact the UI Lecture Committee.</a></p>
-<p><a href="{$BaseHref}lectures">View previous lectures.</a></p>
+	<p><a href="{$BaseHref}contact">To request a lecture, contact the UI Lecture Committee.</a></p>
+	<p><a href="{$BaseHref}lectures">View previous lectures.</a></p>
+</section>

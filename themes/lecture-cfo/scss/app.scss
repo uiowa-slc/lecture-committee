@@ -66,17 +66,57 @@
 
 
 
-#previous_lectures {
+#previous-lectures {
 	
-	text-align: center;
+	.curPage {
+		background: #D4E3F9;
+	}
+	
+	.panel {
+		background: white;
+		border-top: .5px outset silver;
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+	}
+	
+	.panel:hover {
+		background: #D4E3F9;
+	}
+	
+	h2 {
+		text-align: center;
+	}
 	
 	img {
-		border: solid 2px black;
+		border: solid 2px #eee;
 	}
 	
-	> ul {
+	ul {
 		list-style: none;
+		
+		li {
+			padding: .5rem .7rem;
+			//margin-left: .375rem;
+		}
 	}
 	
+	
+}
+
+#upcoming-lectures {
+	
+	.upcoming-lecture-title > a{
+		color: #000;
+	}
+	
+	
+	ul {
+		list-style: none;
+		list-style-position: outside;
+	}
+	
+	
+
 	
 }

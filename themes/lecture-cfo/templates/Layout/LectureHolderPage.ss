@@ -10,7 +10,6 @@
 </div>
 
 	<div class="large-3 columns content-right">
-		<h2> Upcoming Lecutres </h2>
 		<% include UpcomingLectures %>
 	</div>
 </div>
