@@ -2,14 +2,12 @@
 <% if UpcomingLectures %>
 	<h2> Upcoming Lectures: </h2>
 		
-		<% loop UpcomingLectures %>
-		<h3 class="upcoming-lecture-title"><a href="$Link">$Title.LimitWordCount(4)</a></h3>
-		<ul>
-			<li>$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y)</li>
-			<li>$Time</li>
-			<li>$Location</li>
-		</ul>
-		<% end_loop %>
+	<% loop UpcomingLectures %>
+		<a href="$Link">$picture.CroppedImage(250,250)</a>
+		<h4><a href="$Link">$Title.LimitWordCount(5)</a></h4>
+		<hr>
+		<!--<img src="$picture.URL" alt="Image for $Title" />-->
+	<% end_loop %>
 
 <% else %>
 	<h3>No upcoming lectures scheduled.</h3>

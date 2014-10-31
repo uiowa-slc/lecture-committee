@@ -106,7 +106,7 @@
 
 #upcoming-lectures {
 	
-	.upcoming-lecture-title > a{
+	h4 > a {
 		color: #000;
 	}
 	
@@ -114,6 +114,10 @@
 	ul {
 		list-style: none;
 		list-style-position: outside;
+		
+		li {
+			
+		}
 	}
 	
 	
