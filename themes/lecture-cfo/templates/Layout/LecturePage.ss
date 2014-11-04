@@ -1,20 +1,10 @@
-<div class="<% if $Children || $Parent %>large-9 columns content-left<% else %>large-12<% end_if %> columns">
-	<article class="article">
-		<h1>$Title</h1>
-		
-		<h5>$Time on $EventDate </h5>
-		<h5>Located at: $Location</h5>
-		<h5>$Details</h5>
+<div class="large-12 columns">
+	<article class="article lecture-single">
 		$Picture
-		<br>
-		<br>
+		<h1>$Title.LimitWordCount(10)</h1>
+		<p><strong>Date:</strong>
+		$EventDate.format(F) $EventDate.format(j), $EventDate.format(Y) $Time <br />
+		<strong>Location:</strong> $Location <br />
 		$Content
-		$Form
 	</article>
 </div>
-<% if $Children || $Parent %><%--Determine if Side Nav should be rendered, you can change this logic--%>
-<div class="large-3 columns content-right">
-	<br>
-	<% include SideNav %>
-</div>
-<% end_if %>

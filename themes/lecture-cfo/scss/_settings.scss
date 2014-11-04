@@ -130,7 +130,7 @@ $xxlarge-range: (120.063em, 99999999em);
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 //$header-font-color: #222;
-// $header-line-height: 1.4;
+ $header-line-height: 1.2;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
@@ -376,7 +376,7 @@ $anchor-text-decoration-hover: underline;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+ $button-bg-color: lighten($primary-color, 70 );
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);

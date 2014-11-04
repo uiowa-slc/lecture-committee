@@ -4,6 +4,8 @@
 			<div class="logo-quicklinks">
 				<% include HeaderLogo %>
 				<% include NavMobile %>
+
+
 				<% if HomePageQuicklinks %>
 					<ul class="home-quicklinks">
 						<% loop HomePageQuicklinks %>
@@ -43,7 +45,7 @@
 					<% loop UpcomingLectures.Limit(3) %>
 					<li>
 					<a href="$Link">
-								<img src="$Picture.CroppedImage(644,390).URL" alt="$Title">
+								<img src="$Picture.CroppedFocusedImage(644,390).URL" alt="$Title">
 							</a>
 						<div class="orbit-caption">
 	
@@ -55,11 +57,11 @@
 					<% loop PreviousLectures.Limit(3) %>
 					<li>
 					<a href="$Link">
-								<img src="$Picture.CroppedImage(644,390).URL" alt="$Title">
+								<img src="$Picture.CroppedFocusedImage(644,390).URL" alt="$Title">
 							</a>
 						<div class="orbit-caption">
 	
-								<a href="$Link">$Title, $EventDate.Format("M j")</a>
+								<a href="$Link">Previously Presented: $Title, $EventDate.Format("M j")</a>
 						</div>
 					</li>
 					<% end_loop %>

@@ -35,3 +35,4 @@ ErrorDocument 500 /assets/error-500.html
 </IfModule>
 ### SILVERSTRIPE END ###
 php_value display_errors On
+php_value memory_limit 2G
