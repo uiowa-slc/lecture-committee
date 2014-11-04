@@ -1,12 +1,14 @@
 <div class="large-12 columns">
-	<h1>Calendar</h1>
-		$Content
-		$Form
 	<div id="upcoming-lectures">
-		<h2>Next:</h2>
+	<% if $UpcomingLectures %>
 		<% loop UpcomingLectures %>
 			<% include LectureCardBig %>
 		<% end_loop %>
+	<% else %>
+		<h1>Calendar</h1>
+		$Content
+		$Form
+	<% end_if %>
 	</div>
 	<div id="previous-lectures">
 		<h2>Previously presented by the Lecture Committee:</h2>
