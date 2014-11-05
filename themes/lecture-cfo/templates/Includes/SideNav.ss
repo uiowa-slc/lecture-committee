@@ -27,11 +27,11 @@
 		<% end_if %>
 	<% else %>
 		<h4>Previous Lectures</h4>
-		 <% with $Page("lectures") %>
-		 	<% loop Children.Sort("EventDate DESC").Limit(10) %>
+		
+		 	<% loop PreviousLectures.Limit(10) %>
 		 		<% include SideNavMenuItem %>
 		 	<% end_loop %>
-		 <% end_with %>
+		
 		 <li><a href="{$BaseHref}lectures">See all previous lectures</a></li>
 	<% end_if %>
 </ul>
