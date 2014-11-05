@@ -17,6 +17,7 @@
     @media #{$large-up} {
         float: left;
         width: 20%;
+        padding: 10px 0;
     }
 }
 
@@ -153,10 +154,13 @@ a {
 		color: white;
 		padding-left: 1em;
 		padding-right: 1em;
+		margin-top: 0;
+
 		@media #{$xlarge-up} {
 			padding-left: 0;
 			padding-right: 0;
 		}
+
 
 		img{
 			float: right;
