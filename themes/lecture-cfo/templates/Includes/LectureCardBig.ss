@@ -1,6 +1,6 @@
 <a href="$Link" class="lecture-card-link">
 	<div class="row">
-	<% if $First %><h1>Next Up:</h1><% end_if %>
+	<% if $First %><h1>Next Up:</h1> <hr /><% end_if %>
 		<article class="lecture-card">
 			<% if $Picture %>
 				<img src="$Picture.CroppedFocusedImage(600,700).URL" alt="Image for $Title" />
