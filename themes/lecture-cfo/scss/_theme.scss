@@ -98,7 +98,6 @@ a {
 }
 
 
-// Lecture Holder
 
 .lecture-card {
 	@include panel(
@@ -128,6 +127,8 @@ a {
 }
 
 #previous-lectures {
+    padding: $column-gutter/2;
+    background: white;
 	h2{
 		margin-top: 0.7em;
 	}
@@ -199,5 +200,5 @@ a {
 
 .social-blog{
 	border-top: none;
-	background-color: #333;
+	background-color: #f4f4f4;
 }
