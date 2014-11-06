@@ -205,11 +205,16 @@ ul.lecture-details {
     }
 }
 
+.previous-lectures-container{
+    background: white;
+}
 
 #previous-lectures {
     padding: $column-gutter/2;
     padding-top: 1em;
     background: white;
+    max-width: 1600px;
+    margin: auto;
 
 	article.lecture-card {
 		padding: 0;
