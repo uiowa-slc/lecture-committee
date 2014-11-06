@@ -1,9 +1,7 @@
 <div class="large-12 columns">
-	<div id="upcoming-lectures">
-
+	<section id="upcoming-lectures">
 	<% if $UpcomingLectures %>
 		<% loop UpcomingLectures %>
-			
 			<% include LectureCardBig %>
 		<% end_loop %>
 	<% else %>
@@ -11,23 +9,21 @@
 		$Content
 		$Form
 	<% end_if %>
-	</div>
-
+	</section>
 </div>
 
 </div><!-- end main-content from ../Page.ss -->
 </div><!-- end main from ../Page.ss -->
 
 
-	<div id="previous-lectures">
-		<h2>Previously presented:</h2>
-		<ul class="xxlarge-block-grid-5 xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
-			<% loop paginatedPreviousLectures %>
-	  			<li><% include LectureCard %></li>
-			<% end_loop %>
-		</ul>
-			<% include LecturePagination %>
-	</div>
-</div>
+<section id="previous-lectures">
+	<h1>Previously presented:</h1>
+	<ul class="xxlarge-block-grid-5 xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
+		<% loop paginatedPreviousLectures %>
+  			<li><% include LectureCard %></li>
+		<% end_loop %>
+	</ul>
+	<% include LecturePagination %>
+</section>
 
 
