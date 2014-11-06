@@ -10,7 +10,7 @@
 			<% else %>
 				<h1>$Title.LimitWordCount(10)</h1>
 			<% end_if %>
-			<% include LectureDetails %>
+			<% include LectureDetails %>4
 			$Content.LimitWordCount(40) <strong>Continue Reading</strong>
 	</article>
 </a>

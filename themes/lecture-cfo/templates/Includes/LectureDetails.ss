@@ -3,3 +3,4 @@
 	<li><strong>Date:</strong> $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y) $Time</li>
 	<li><strong>Location:</strong> $Location</li>
 </ul>
+<br />
