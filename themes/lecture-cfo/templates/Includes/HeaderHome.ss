@@ -49,7 +49,7 @@
 							</a>
 						<div class="orbit-caption">
 	
-								<a href="$Link"><% if $LectureTitle %>$LectureTitle<% else %>$Title<% end_if %>, $EventDate.Format("M j")</a>
+								<a href="$Link">$Title, $EventDate.Format("M j")</a>
 						</div>
 					</li>
 					<% end_loop %>
@@ -61,7 +61,7 @@
 							</a>
 						<div class="orbit-caption">
 	
-								<a href="$Link">Previously Presented: <% if $LectureTitle %>$LectureTitle<% else %>$Title<% end_if %>, $EventDate.Format("M j")</a>
+								<a href="$Link">Previously Presented: $Title, $EventDate.Format("M j")</a>
 						</div>
 					</li>
 					<% end_loop %>
