@@ -10,6 +10,7 @@
 }
 
 .header .logo {
+    padding: 10px 0;
     @media #{$medium-up} {
         display: block;
         width: 30%;
@@ -17,7 +18,7 @@
     @media #{$large-up} {
         float: left;
         width: 20%;
-        padding: 10px 0;
+       
     }
 }
 
@@ -26,6 +27,12 @@
         float: none;
         width: 100%;
         padding-right: 10px;
+    }
+}
+
+.HomePage {
+    .orbit-container .orbit-slides-container>* .orbit-caption {
+        padding-left: 0;
     }
 }
 
@@ -109,11 +116,12 @@ a {
   	}
     background: white;
     border: none;
-    ul {
+}
+
+ul.lecture-details {
         list-style: none;
         margin: 0;
     }
-}
 
 .lecture-card:hover{
 	background: #eff3f9;
@@ -170,9 +178,12 @@ a {
 
 
 		img{
-			float: right;
-			padding: 1em;
-		}
+            @media #{$large-up} {
+                float: right;
+                padding: 1em;
+            }
+        }
+
 		.lecture-card-details{
 			float: left;
 		}

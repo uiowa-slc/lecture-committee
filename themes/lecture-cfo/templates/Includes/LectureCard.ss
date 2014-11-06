@@ -5,11 +5,12 @@
 		<% else %>
 			<img src="{$ThemeDir}/images/lecture-placeholder.jpg" alt="Placeholder photo representing $Title" />
 		<% end_if %>
-			<h1>$Title.LimitWordCount(10)</h1>
-			<ul>
-				<li><strong>Date:</strong> $EventDate.format(F) $EventDate.format(j), $EventDate.format(Y) $Time</li>
-				<li><strong>Location:</strong> $Location</li>
-				<li>$Content.LimitWordCount(40) <strong>Continue Reading</strong></li>
-			</ul>
+			<% if $LectureTitle %>
+				<h1>$LectureTitle.LimitWordCount(10)</h1>
+			<% else %>
+				<h1>$Title.LimitWordCount(10)</h1>
+			<% end_if %>
+			<% include LectureDetails %>
+			$Content.LimitWordCount(40) <strong>Continue Reading</strong>
 	</article>
 </a>

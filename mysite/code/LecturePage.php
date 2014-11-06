@@ -20,7 +20,7 @@ class LecturePage extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
-
+		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main","Content");
 		$fields->removeByName("Metadata");
 		$datefield = new DateField('EventDate','Date');
