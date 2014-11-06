@@ -2,6 +2,8 @@
 	<article class="lecture-card">
 		<% if $Picture %>
 			<img src="$Picture.CroppedFocusedImage(500, 600).URL" alt="Photo representing $Title" />
+		<% else %>
+			<img src="{$ThemeDir}/images/lecture-placeholder.jpg" alt="Placeholder photo representing $Title" />
 		<% end_if %>
 			<h1>$Title.LimitWordCount(10)</h1>
 			<ul>
