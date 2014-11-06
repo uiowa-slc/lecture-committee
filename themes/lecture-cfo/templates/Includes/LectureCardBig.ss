@@ -12,7 +12,7 @@
 					<h1>$Title</h1>
 				<% end_if %>
 				<% include LectureDetails %>
-				<p>$Content.Summary <strong>Continue Reading</strong></p>
+				<p>$Content</p>
 			</div>
 		</article>
 		<% if not $Last %>

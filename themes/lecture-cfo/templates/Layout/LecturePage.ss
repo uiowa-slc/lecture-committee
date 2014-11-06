@@ -7,6 +7,7 @@
 			<h1>$Title</h1>
 		<% end_if %>
 		<% include LectureDetails %>
+		<br />
 		$Content
 	</article>
 </div>
