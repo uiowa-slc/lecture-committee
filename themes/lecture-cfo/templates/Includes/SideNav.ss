@@ -1,3 +1,16 @@
+<ul class="side-nav">
+	<% if $Parent.Parent %>
+		<% with $Parent.Parent  %>
+			<% include SideNavMenuItems %>
+		<% end_with %>
+	<% else_if $Parent %>
+		<% with $Parent %>
+			<% include SideNavMenuItems %>
+		<% end_with %>
+	<% else %>
+		<% include SideNavMenuItems %>
+	<% end_if %>
+</ul>
 <section class="upcoming-lectures">
 	<% if UpcomingLectures %>
 		<h2>Next: </h2>
@@ -13,19 +26,6 @@
 </section>
 <hr />
 <ul class="side-nav">
-	<% if $InSection("lectures") %> 
-		<% if $Parent.Parent %>
-			<% with $Parent.Parent  %>
-				<% include SideNavMenuItems %>
-			<% end_with %>
-		<% else_if $Parent %>
-			<% with $Parent %>
-				<% include SideNavMenuItems %>
-			<% end_with %>
-		<% else %>
-			<% include SideNavMenuItems %>
-		<% end_if %>
-	<% else %>
 		<h4>Previous Lectures</h4>
 		
 		 	<% loop PreviousLectures.Limit(10) %>
@@ -33,6 +33,5 @@
 		 	<% end_loop %>
 		
 		 <li><a href="{$BaseHref}lectures">See all previous lectures</a></li>
-	<% end_if %>
 </ul>
 <p><a href="{$BaseHref}contact">To request a lecture, contact the UI Lecture Committee.</a></p>
