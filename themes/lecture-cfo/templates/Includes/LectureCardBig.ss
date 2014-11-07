@@ -8,7 +8,7 @@
 				<h1><a href="$Link">$Title</a></h1>
 			<% end_if %>
 			<% include LectureDetails %>
-			<p>$Content</p>
+			<p>$Content.Summary(75) <a href="$Link">Continue Reading</a></p>
 		</div>
 		<div class="lecture-image large-5 columns">
 			<% if $Picture %>
