@@ -1,5 +1,5 @@
 <div class="large-12 columns">
-	<section id="upcoming-lectures">
+	<section id="upcoming-lectures" class="row">
 	<% if $UpcomingLectures %>
 		<% loop UpcomingLectures %>
 			<% include LectureCardBig %>
