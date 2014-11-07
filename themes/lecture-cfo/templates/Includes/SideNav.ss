@@ -26,7 +26,7 @@
 </section>
 <hr />
 <ul class="side-nav">
-		<h4>Previous Lectures</h4>
+		<h4>Previous Lectures:</h4>
 		
 		 	<% loop PreviousLectures.Limit(10) %>
 		 		<% include SideNavMenuItem %>
