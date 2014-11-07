@@ -11,7 +11,7 @@
 		$Content
 	</article>--%>
 
-<article>
+<article class="row">
 	<div class="lecture-details large-7 columns">
 		<% if $LectureTitle %>
 			<h1>$LectureTitle</h1>
