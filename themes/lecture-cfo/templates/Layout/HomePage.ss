@@ -4,17 +4,20 @@
 		<!-- $Content -->
 		<!-- $Form -->
 		<div class="our-programs">
-			<h4 class="subtitle">Our Programs</h4>
-			<% with Page(our-programs) %>
 				<div class="row">
-					<% loop $Titles %>
-						<div class="medium-6 large-3 columns">
-							<h5><a href="{$baseUrl}our-programs">$Title</a> </h5>
-							<p>$DescriptionShort</p>
+					<% with Page(sponsorships) %>
+						<div class="medium-6 large-6 columns">
+							<h5><a href="{$Link}">$Title</a> </h5>
+							<p>$Content.Summary(50) <a href="$Link">Continue Reading</a></p>
 						</div>
-					<% end_loop %>
+					<% end_with %>
+					<% with Page(about) %>
+						<div class="medium-6 large-6 columns">
+							<h5><a href="{$baseUrl}our-programs">$Title</a> </h5>
+							<p>$Content.Summary(50) <a href="$Link">Continue Reading</a></p>
+						</div>
+					<% end_with %>
 				</div>
-			<% end_with %>
 		</div>
 	</div>
 </div>
@@ -29,8 +32,8 @@
 
 <div class="row board-list">
 	<div class="large-12 columns">
-		<h4 class="subtitle">Our Board Members</h4>
-		<a href="{$baseUrl}about-us/" class="text-center"><small>View all board members</small></a>
+		<h4 class="subtitle">Our Members</h4>
+		<a href="{$baseUrl}about-us/" class="text-center"><small>View all members</small></a>
 		<br>
 		<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
 			<% loop RandomStaffMembers(5) %>
