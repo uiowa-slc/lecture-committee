@@ -15,7 +15,7 @@
 <div class="previous-lectures-container">
 	<section id="previous-lectures">
 	<% if not $UpcomingLectures %>
-		$Content
+		<div class="no-upcoming-content">$Content</div>
 	<% end_if %>
 		<h1 class="section-title">Previously presented:</h1>
 		<hr />

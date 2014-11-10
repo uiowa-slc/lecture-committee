@@ -218,6 +218,10 @@ ul.lecture-details {
     max-width: 1600px;
     margin: auto;
 
+    .no-upcoming-content{
+        text-align: center;
+    }
+
 	article.lecture-card {
 		padding: 0;
 		margin: 0;

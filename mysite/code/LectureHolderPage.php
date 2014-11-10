@@ -11,6 +11,7 @@ class LectureHolderPage extends Page {
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
+		$fields->renameField("Content", "Show the following content when there's no upcoming lectures:");
 		return $fields;
 	}
 	
