@@ -1,22 +1,22 @@
+<% if $UpcomingLectures %>
 <div class="large-12 columns">
 	<section id="upcoming-lectures" class="row">
-	<% if $UpcomingLectures %>
+	
 		<% loop UpcomingLectures %>
 			<% include LectureCardBig %>
 		<% end_loop %>
-	<% else %>
-		<h1>Calendar</h1>
-		$Content
-		$Form
-	<% end_if %>
+	
 	</section>
 </div>
-
+<% end_if %>
 </div><!-- end main-content from ../Page.ss -->
 </div><!-- end main from ../Page.ss -->
 
 <div class="previous-lectures-container">
 	<section id="previous-lectures">
+	<% if not $UpcomingLectures %>
+		$Content
+	<% end_if %>
 		<h1 class="section-title">Previously presented:</h1>
 		<hr />
 		<ul class="xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
