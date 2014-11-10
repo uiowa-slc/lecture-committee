@@ -108,6 +108,12 @@ a {
     color: #D4E3F9;
 }
 
+.content-right {
+    .upcoming-lectures h3{
+        margin-bottom: 0;
+    }
+}
+
 /* Lecture Holder Page */
 
 .LectureHolderPage{
@@ -153,8 +159,6 @@ ul.lecture-details {
 		
 	}
 }
-
-
 
 #upcoming-lectures {
      @media #{$large-up} {
