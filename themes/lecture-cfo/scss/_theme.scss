@@ -43,6 +43,20 @@
 .home-quicklinks .quicklinks-title span{
 	color: #939393;
 }
+
+.logo-quicklinks{
+    margin: 0;
+    @media #{$large-up} {
+        margin: 0 1em;
+    }
+}
+
+.home-quicklinks {
+    margin: 0.5em 0 0;
+    @media #{$large-up} {
+        margin: 2em 0 0;
+    }
+}
 // Navigation ========================================================
 
 .main-nav {
