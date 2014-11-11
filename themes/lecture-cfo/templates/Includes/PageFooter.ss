@@ -1,6 +1,6 @@
 <div class="social-blog">
 	<div class="row collapse">
-		<div class="large-12 columns">
+		<div class="large-12 columns facebook-container">
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
