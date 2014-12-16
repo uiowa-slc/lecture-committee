@@ -258,12 +258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/cfo-project.git",
-                "reference": "c187b06d8823f2c50714c63c7674a2822cdbc042"
+                "reference": "d3be4fe197e472420bd2fd15a08d85298168ea8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/c187b06d8823f2c50714c63c7674a2822cdbc042",
-                "reference": "c187b06d8823f2c50714c63c7674a2822cdbc042",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/d3be4fe197e472420bd2fd15a08d85298168ea8e",
+                "reference": "d3be4fe197e472420bd2fd15a08d85298168ea8e",
                 "shasum": ""
             },
             "require": {
@@ -300,7 +300,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/issues"
             },
-            "time": "2014-12-01 21:38:49"
+            "time": "2014-12-16 20:00:13"
         },
         {
             "name": "md/division-bar",
@@ -308,12 +308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "7dbf5471c30ce2905c9486ab4ec87c47e1fbefe8"
+                "reference": "65257b10cf6a5352146dc1697b43c923856d9b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/7dbf5471c30ce2905c9486ab4ec87c47e1fbefe8",
-                "reference": "7dbf5471c30ce2905c9486ab4ec87c47e1fbefe8",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/65257b10cf6a5352146dc1697b43c923856d9b92",
+                "reference": "65257b10cf6a5352146dc1697b43c923856d9b92",
                 "shasum": ""
             },
             "require": {
@@ -332,7 +332,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-11-25 16:38:15"
+            "time": "2014-12-11 17:54:52"
         },
         {
             "name": "rywa/silverstripe-foundation-forms",
@@ -416,12 +416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "1bd26052c92b7f7a36e9c9b083ec7840fe6820c5"
+                "reference": "9a56f5aabf81be7a4d89148141d475df8846ec55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/1bd26052c92b7f7a36e9c9b083ec7840fe6820c5",
-                "reference": "1bd26052c92b7f7a36e9c9b083ec7840fe6820c5",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/9a56f5aabf81be7a4d89148141d475df8846ec55",
+                "reference": "9a56f5aabf81be7a4d89148141d475df8846ec55",
                 "shasum": ""
             },
             "require": {
@@ -449,7 +449,7 @@
                 "blog",
                 "silverstripe"
             ],
-            "time": "2014-11-03 01:09:18"
+            "time": "2014-12-05 02:18:04"
         },
         {
             "name": "silverstripe/cms",
@@ -590,12 +590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-mathspamprotection.git",
-                "reference": "ae63604f08100435b11406741c08f4970a686fbf"
+                "reference": "2df527478ea14345c477e90c9bc7d3adbabbaada"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/ae63604f08100435b11406741c08f4970a686fbf",
-                "reference": "ae63604f08100435b11406741c08f4970a686fbf",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/2df527478ea14345c477e90c9bc7d3adbabbaada",
+                "reference": "2df527478ea14345c477e90c9bc7d3adbabbaada",
                 "shasum": ""
             },
             "require": {
@@ -615,7 +615,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-11-05 02:52:42"
+            "time": "2014-12-05 02:18:17"
         },
         {
             "name": "silverstripe/recaptcha",
@@ -623,12 +623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillu/silverstripe-recaptcha.git",
-                "reference": "ac7db259142dba769a76541fc156ef57b82f2970"
+                "reference": "02a53f235c4965e79198c3934b8b27ce33abb9fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/ac7db259142dba769a76541fc156ef57b82f2970",
-                "reference": "ac7db259142dba769a76541fc156ef57b82f2970",
+                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/02a53f235c4965e79198c3934b8b27ce33abb9fc",
+                "reference": "02a53f235c4965e79198c3934b8b27ce33abb9fc",
                 "shasum": ""
             },
             "require": {
@@ -645,9 +645,7 @@
             "authors": [
                 {
                     "name": "Ingo Schommer",
-                    "email": "ingo@silverstripe.com",
-                    "homepage": "http://chillu.com",
-                    "role": "tech-lead"
+                    "email": "ingo@silverstripe.com"
                 }
             ],
             "description": "Provides a form field which allows form to validate for non-bot submissions by giving them a challenge to decrypt an image.",
@@ -655,7 +653,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-02-18 21:11:57"
+            "time": "2014-12-11 10:38:25"
         },
         {
             "name": "silverstripe/spamprotection",
@@ -663,12 +661,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "949ec2b3591e1922b310a99e0c6d39ef32f915ab"
+                "reference": "c1a8a83011e10e238afbd6f4804e9ba1df5d56f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/949ec2b3591e1922b310a99e0c6d39ef32f915ab",
-                "reference": "949ec2b3591e1922b310a99e0c6d39ef32f915ab",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/c1a8a83011e10e238afbd6f4804e9ba1df5d56f9",
+                "reference": "c1a8a83011e10e238afbd6f4804e9ba1df5d56f9",
                 "shasum": ""
             },
             "require": {
@@ -691,7 +689,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-11-11 22:24:21"
+            "time": "2014-12-05 02:18:33"
         },
         {
             "name": "silverstripe/timepickerfield",
@@ -737,12 +735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "7a76626cd268268bcfaba4faeb458ad96568a3d0"
+                "reference": "729318fc0a26e9e00e61c9c3ccc046f57ae8a291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/7a76626cd268268bcfaba4faeb458ad96568a3d0",
-                "reference": "7a76626cd268268bcfaba4faeb458ad96568a3d0",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/729318fc0a26e9e00e61c9c3ccc046f57ae8a291",
+                "reference": "729318fc0a26e9e00e61c9c3ccc046f57ae8a291",
                 "shasum": ""
             },
             "require": {
@@ -773,7 +771,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-11-28 05:16:50"
+            "time": "2014-12-08 09:17:41"
         },
         {
             "name": "silverstripe/widgets",
@@ -781,12 +779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-widgets.git",
-                "reference": "8ee406675e40ab7c978939c5cdacd810494baabe"
+                "reference": "674ea5d5913e8d40a226955c8c5936977a438e1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/8ee406675e40ab7c978939c5cdacd810494baabe",
-                "reference": "8ee406675e40ab7c978939c5cdacd810494baabe",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/674ea5d5913e8d40a226955c8c5936977a438e1e",
+                "reference": "674ea5d5913e8d40a226955c8c5936977a438e1e",
                 "shasum": ""
             },
             "require": {
@@ -807,7 +805,7 @@
                 "silverstripe",
                 "widgets"
             ],
-            "time": "2014-08-06 04:03:50"
+            "time": "2014-12-05 02:17:50"
         },
         {
             "name": "simplepie/simplepie",
