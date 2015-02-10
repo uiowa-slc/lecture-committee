@@ -29,6 +29,8 @@ module.exports = function(grunt) {
           'cfo-project/bower_components/foundation/js/foundation.min.js',
           'cfo-project/bower_components/FlexSlider/jquery.flexslider.js',
           'cfo-project/bower_components/fitvids/jquery.fitvids.js',
+          'cfo-project/javascript/responsive-nav.js',
+          'cfo-project/javascript/app.js',
           'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/javascript/*.js'
         ],
