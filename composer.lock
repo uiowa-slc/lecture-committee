@@ -259,12 +259,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/cfo-project.git",
-                "reference": "49afc565f4802a924304ec564885fb4233d75d04"
+                "reference": "264b00fb846067d9ba16dfc0074868fb5c318f8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/49afc565f4802a924304ec564885fb4233d75d04",
-                "reference": "49afc565f4802a924304ec564885fb4233d75d04",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/264b00fb846067d9ba16dfc0074868fb5c318f8a",
+                "reference": "264b00fb846067d9ba16dfc0074868fb5c318f8a",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/issues"
             },
-            "time": "2015-01-22 20:24:09"
+            "time": "2015-02-12 18:13:52"
         },
         {
             "name": "md/division-bar",
@@ -309,12 +309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "d2e960438c5dfa27d52dc2130d92f6e07e702cb2"
+                "reference": "ac90553b89756e0d45a4ba172d6dfc7a551937b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/d2e960438c5dfa27d52dc2130d92f6e07e702cb2",
-                "reference": "d2e960438c5dfa27d52dc2130d92f6e07e702cb2",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/ac90553b89756e0d45a4ba172d6dfc7a551937b0",
+                "reference": "ac90553b89756e0d45a4ba172d6dfc7a551937b0",
                 "shasum": ""
             },
             "require": {
@@ -333,7 +333,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2015-02-09 20:06:55"
+            "time": "2015-02-12 16:29:47"
         },
         {
             "name": "rywa/silverstripe-foundation-forms",
@@ -912,12 +912,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "9d60a5834323a00af49960b3eb3d080fa8878122"
+                "reference": "3e9b1b6e2e1111f636ca5b641135394538d75e57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/9d60a5834323a00af49960b3eb3d080fa8878122",
-                "reference": "9d60a5834323a00af49960b3eb3d080fa8878122",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/3e9b1b6e2e1111f636ca5b641135394538d75e57",
+                "reference": "3e9b1b6e2e1111f636ca5b641135394538d75e57",
                 "shasum": ""
             },
             "require": {
@@ -944,7 +944,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-01-17 16:46:20"
+            "time": "2015-02-11 13:29:12"
         }
     ],
     "packages-dev": [],
