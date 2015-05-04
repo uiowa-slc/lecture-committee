@@ -47,12 +47,7 @@
 
 /* import division bar
 -------------------------------------------*/
-@import "../../../division-bar/css/_division-bar.css";
-
-/* additional division bar styles for foundation:
--------------------------------------------*/
-@import "../../../cfo-project/scss/layout/division-bar";
-
+@import "../../../division-bar/scss/_division-bar-foundation";
 /* footer styles from division-project
 -------------------------------------------*/
 @import "../../../cfo-project/scss/layout/footer/footer";

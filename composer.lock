@@ -792,48 +792,6 @@
             "time": "2015-04-30 07:43:17"
         },
         {
-            "name": "silverstripe/widgets",
-            "version": "1.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-widgets.git",
-                "reference": "ccea929cb9308a61904b199e500060d01a2d3b1d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/ccea929cb9308a61904b199e500060d01a2d3b1d",
-                "reference": "ccea929cb9308a61904b199e500060d01a2d3b1d",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "3.1.*",
-                "silverstripe/framework": "3.1.*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7@stable"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Ingo Schommer",
-                    "email": "ingo@silverstripe.com"
-                }
-            ],
-            "description": "Widgets are small pieces of functionality such as showing the latest Comments or Flickr Photos. They normally display on the sidebar of your website.",
-            "keywords": [
-                "blog",
-                "silverstripe",
-                "widgets"
-            ],
-            "time": "2015-05-03 23:46:37"
-        },
-        {
             "name": "simplepie/simplepie",
             "version": "dev-master",
             "source": {

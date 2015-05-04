@@ -1,5 +1,6 @@
 <% if $paginatedPreviousLectures.MoreThanOnePage%>
-	<ul class="inline-list right pagination">
+<div class="pagination-centered">
+	<ul class="inline-list pagination">
 	<% if $paginatedPreviousLectures.NotFirstPage %>
    		<li class=""><a class="next" href="$paginatedPreviousLectures.PrevLink()#previous-lectures">Later</a></li>
 		<% end_if %>
@@ -14,5 +15,6 @@
 		<li class=""><a class="prev" href="$paginatedPreviousLectures.NextLink()#previous-lectures">Earlier</a></li>
 	<% end_if %>
 	</ul>
+</div>
 <% end_if %>
 <div class="clearfix"></div>
