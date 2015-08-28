@@ -27,8 +27,11 @@
 								</li>
 							<% end_if %>
 						<% end_loop %>
+
 					</ul>
 				<% end_if %>
+
+				<% include fbpage %>
 			</div>
 		</div>
 		<div class="large-8 columns">
@@ -45,7 +48,7 @@
 					<% loop UpcomingLectures.Limit(3) %>
 					<li>
 					<a href="$Link">
-								<img src="$Picture.CroppedFocusedImage(644,390).URL" alt="$Title">
+								<img src="$Picture.CroppedFocusedImage(544,690).URL" alt="$Title">
 							</a>
 						<div class="orbit-caption">
 	
