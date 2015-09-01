@@ -47,15 +47,15 @@
 				bullets:false;
 				timer:false;">
 					<% loop UpcomingLectures.Limit(3) %>
-					<li>
-					<a href="$Link">
-								<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
-							</a>
-						<div class="orbit-caption">
-	
-								<a href="$Link">$Title, $EventDate.Format("M j")</a>
-						</div>
-					</li>
+						<li>
+						<a href="$Link">
+									<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
+								</a>
+							<div class="orbit-caption">
+		
+									<a href="$Link">{$Title}, <% if $LectureTitle %>$LectureTitle<% end_if %> - $EventDate.Format("F j")</a>
+							</div>
+						</li>
 					<% end_loop %>
 				<% else %>
 				<div class="slider <% if $PreviousLectures.Count < 2 %>single<% end_if %>">
@@ -67,15 +67,15 @@
 						bullets:false;
 						timer:false;">
 					<% loop PreviousLectures.Limit(3) %>
-					<li>
-					<a href="$Link">
-								<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
-							</a>
-						<div class="orbit-caption">
-	
-								<a href="$Link">Previously presented: $Title, $EventDate.Format("M j")</a>
-						</div>
-					</li>
+						<li>
+						<a href="$Link">
+									<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
+								</a>
+							<div class="orbit-caption">
+		
+									<a href="$Link">{$Title}, <% if $LectureTitle %>$LectureTitle<% end_if %> - $EventDate.Format("F j")</a>
+							</div>
+						</li>
 					<% end_loop %>
 				<% end_if %>
 			</ul>
