@@ -37,6 +37,8 @@
 		<div class="large-8 columns">
 			<% include Nav %>
 
+			<% if UpcomingLectures %>
+			<div class="slider <% if $UpcomingLectures.Count < 2 %>single<% end_if %>">
 			<ul class="home-orbit" data-orbit data-options="
 				animation:slide;
 				animation_speed:1000;
@@ -44,11 +46,10 @@
 				navigation_arrows:true;
 				bullets:false;
 				timer:false;">
-				<% if UpcomingLectures %>
 					<% loop UpcomingLectures.Limit(3) %>
 					<li>
 					<a href="$Link">
-								<img src="$Picture.CroppedFocusedImage(544,690).URL" alt="$Title">
+								<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
 							</a>
 						<div class="orbit-caption">
 	
@@ -57,10 +58,18 @@
 					</li>
 					<% end_loop %>
 				<% else %>
+				<div class="slider <% if $PreviousLectures.Count < 2 %>single<% end_if %>">
+					<ul class="home-orbit" data-orbit data-options="
+						animation:slide;
+						animation_speed:1000;
+						pause_on_hover:true;
+						navigation_arrows:true;
+						bullets:false;
+						timer:false;">
 					<% loop PreviousLectures.Limit(3) %>
 					<li>
 					<a href="$Link">
-								<img src="$Picture.CroppedFocusedImage(644,390).URL" alt="$Title">
+								<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
 							</a>
 						<div class="orbit-caption">
 	
@@ -70,6 +79,7 @@
 					<% end_loop %>
 				<% end_if %>
 			</ul>
+			</div>
 		</div>
 	</div>
 </header>
