@@ -27,7 +27,7 @@
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 	<% end_if %>
-	<meta property="og:description" content="<% if $EventDate %>On $EventDate.Format("m j")<% end_if %>$Content.Summary(50).ATT" />
+	<meta property="og:description" content="<% if $EventDate %>On $EventDate.Format("F j"):<% end_if %>$Content.Summary(50).ATT" />
 
 
 <% end_if %>
