@@ -1,31 +1,27 @@
 <% if $URLSegment == "home" %>
 	<meta property="og:title" content="$SiteConfig.Title" />
 	<meta property="og:content" content="The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom." />
-  <% if $BackgroundFeature %>
-  	<meta property="og:image" content="$BackgroundFeature.Image.AbsoluteURL" />
-  <% else %>
- 	 <meta property="og:image" content="{$BaseHref}division-project/images/hero-image.jpg" />
-  <% end_if %>
+
+		<meta property="og:image" content="{$BaseHref}cfo-project/images/og-dsl.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+
 
 <% else %>
 	<meta property="og:title" content="$Title - $SiteConfig.Title" />
 
 	<% if $Image %>
 		<meta property="og:image" content="$Image.ScaleWidth(600).AbsoluteURL" />
-		<meta property="og:image:width" content="$Image.ScaleWidth(600).Width" />
-		<meta property="og:image:height" content="$Image.ScaleWidth(600).Height" />
+		<meta property="og:image:width" content="$Image.SetWidth(600).Width" />
+		<meta property="og:image:height" content="$Image.SetWidth(600).Height" />
 	<% else_if $Photo %>
 		<meta property="og:image" content="$Photo.ScaleWidth(600).AbsoluteURL" />
-		<meta property="og:image:width" content="$Photo.ScaleWidth(600).Width" />
-		<meta property="og:image:height" content="$Photo.ScaleWidth(600).Height" />
-	<% else_if $BackgroundImage %>
-		<meta property="og:image" content="$BackgroundImage.ScaleWidth(600).AbsoluteURL" />
-		<meta property="og:image:width" content="$BackgroundImage.ScaleWidth(600).Width" />
-		<meta property="og:image:height" content="$BackgroundImage.ScaleWidth(600).Height" />
+		<meta property="og:image:width" content="$Photo.SetWidth(600).Width" />
+		<meta property="og:image:height" content="$Photo.SetWidth(600).Height" />
 	<% else_if $Picture %>
-		<meta property="og:image" content="$Picture.ScaleWidth(600).AbsoluteURL" />
-		<meta property="og:image:width" content="$Picture.ScaleWidth(600).Width" />
-		<meta property="og:image:height" content="$Picture.ScaleWidth(600).Height" />
+		<meta property="og:image" content="$Picture.SetWidth(600).AbsoluteURL" />
+		<meta property="og:image:width" content="$Picture.SetWidth(600).Width" />
+		<meta property="og:image:height" content="$Picture.SetWidth(600).Height" />
 	<% else %>
 		<meta property="og:image" content="{$BaseHref}cfo-project/images/og-dsl.png" />
 		<meta property="og:image:width" content="1200" />
