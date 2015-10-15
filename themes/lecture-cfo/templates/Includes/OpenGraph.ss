@@ -27,11 +27,11 @@
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 	<% end_if %>
-	<meta property="og:description" content="$Content.Summary(50).ATT" />
+	<meta property="og:description" content="<% if $EventDate %>On $EventDate.Format("m j")<% end_if %>$Content.Summary(50).ATT" />
 
 
 <% end_if %>
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="$AbsoluteLink" />
 	<meta property="og:site_name" content="$SiteConfig.Title.ATT" />
-	<meta property="fb:admins" content="64131067165" />
+	<meta property="fb:app_id" content="127918570561161" />
