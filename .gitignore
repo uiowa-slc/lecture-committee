@@ -38,3 +38,8 @@ gridfieldextensions/
 segment-field
 lumberjack
 tagfield
+nocaptcha.yml
+nocaptcha/
+reports/
+secureassets/
+siteconfig/
