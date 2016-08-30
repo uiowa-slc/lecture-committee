@@ -51,16 +51,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "dev-master",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "0d41f816591f4a04f0468fbd5efee52505ac4ff1"
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/0d41f816591f4a04f0468fbd5efee52505ac4ff1",
-                "reference": "0d41f816591f4a04f0468fbd5efee52505ac4ff1",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
                 "shasum": ""
             },
             "require": {
@@ -114,11 +114,9 @@
                 "agl",
                 "aimeos",
                 "annotatecms",
-                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
-                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -142,18 +140,16 @@
                 "piwik",
                 "ppi",
                 "puppet",
-                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
-                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-08 19:44:05"
+            "time": "2016-07-05 06:18:20"
         },
         {
             "name": "jonom/focuspoint",
@@ -196,16 +192,16 @@
         },
         {
             "name": "jonom/silverstripe-betternavigator",
-            "version": "dev-master",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jonom/silverstripe-betternavigator.git",
-                "reference": "58fe5c8dd6f905e469b754cd53b81baa9fac542d"
+                "reference": "a050d926ded1157ad68b6dac3eb9733905a8847b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/58fe5c8dd6f905e469b754cd53b81baa9fac542d",
-                "reference": "58fe5c8dd6f905e469b754cd53b81baa9fac542d",
+                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/a050d926ded1157ad68b6dac3eb9733905a8847b",
+                "reference": "a050d926ded1157ad68b6dac3eb9733905a8847b",
                 "shasum": ""
             },
             "require": {
@@ -232,7 +228,7 @@
                 "navigator",
                 "silverstripe"
             ],
-            "time": "2016-07-22 22:26:01"
+            "time": "2015-12-18 03:34:13"
         },
         {
             "name": "md/ac-json-events",
@@ -240,12 +236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "ac0dc08b8b9ad97b5d55e61632f0efdfc7aa3a66"
+                "reference": "922a87b5fd2d33f4778e92597f6d7ef5ee1d9ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/ac0dc08b8b9ad97b5d55e61632f0efdfc7aa3a66",
-                "reference": "ac0dc08b8b9ad97b5d55e61632f0efdfc7aa3a66",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/922a87b5fd2d33f4778e92597f6d7ef5ee1d9ff2",
+                "reference": "922a87b5fd2d33f4778e92597f6d7ef5ee1d9ff2",
                 "shasum": ""
             },
             "require": {
@@ -264,7 +260,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2016-03-11 17:30:53"
+            "time": "2016-08-24 16:51:09"
         },
         {
             "name": "md/cfo-project",
@@ -272,32 +268,33 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/cfo-project.git",
-                "reference": "9a19378d92829dc26dfecfbff264d7ef011cb4a1"
+                "reference": "1028f46bd47d0e0aceee8309df0790d3377a72ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/9a19378d92829dc26dfecfbff264d7ef011cb4a1",
-                "reference": "9a19378d92829dc26dfecfbff264d7ef011cb4a1",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/1028f46bd47d0e0aceee8309df0790d3377a72ee",
+                "reference": "1028f46bd47d0e0aceee8309df0790d3377a72ee",
                 "shasum": ""
             },
             "require": {
                 "colymba/gridfield-bulk-editing-tools": "*",
                 "jonom/focuspoint": "*",
-                "jonom/silverstripe-betternavigator": "dev-master",
+                "jonom/silverstripe-betternavigator": "2.1.0",
                 "md/ac-json-events": "dev-master",
                 "md/division-bar": "*",
                 "php": ">=5.3.2",
-                "rywa/silverstripe-foundation-forms": "dev-master",
+                "rywa/silverstripe-foundation-forms": "1.0.x-dev",
                 "silverstripe-themes/simple": "*",
                 "silverstripe/blog": "2.*",
-                "silverstripe/cms": "3.4.0",
-                "silverstripe/framework": "3.4.0",
+                "silverstripe/cms": "3.4.1",
+                "silverstripe/framework": "3.4.1",
                 "silverstripe/googlesitemaps": "*",
                 "silverstripe/installer": "*",
                 "silverstripe/mathspamprotection": "*",
                 "silverstripe/recaptcha": "*",
+                "silverstripe/secureassets": "*",
                 "silverstripe/timepickerfield": "*",
-                "silverstripe/userforms": "2.*",
+                "silverstripe/userforms": "3.*",
                 "silverstripe/widgets": "*",
                 "simplepie/simplepie": "*",
                 "unclecheese/betterbuttons": "*",
@@ -312,10 +309,10 @@
             },
             "description": "The University of Iowa CFO Project Code and Theme",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/tree/cfo-3.4.x",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/tree/3.4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/issues"
             },
-            "time": "2016-08-10 18:21:04"
+            "time": "2016-08-30 16:37:36"
         },
         {
             "name": "md/division-bar",
@@ -397,16 +394,16 @@
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
-            "version": "1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
-                "reference": "302f7c0dc1ca929d7aa001453eaa16491afd4d5b"
+                "reference": "50ffec51e4c1d5a0a01fd1ae8bb6df00cbfd7c99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/302f7c0dc1ca929d7aa001453eaa16491afd4d5b",
-                "reference": "302f7c0dc1ca929d7aa001453eaa16491afd4d5b",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/50ffec51e4c1d5a0a01fd1ae8bb6df00cbfd7c99",
+                "reference": "50ffec51e4c1d5a0a01fd1ae8bb6df00cbfd7c99",
                 "shasum": ""
             },
             "require": {
@@ -418,6 +415,9 @@
             "type": "silverstripe-module",
             "extra": {
                 "installer-name": "gridfieldextensions",
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                },
                 "screenshots": [
                     "docs/en/_images/editable-rows.png",
                     "docs/en/_images/add-existing-search.png"
@@ -438,12 +438,12 @@
                 }
             ],
             "description": "A collection of useful grid field components",
-            "homepage": "http://github.com/ajshort/silverstripe-gridfieldextensions",
+            "homepage": "http://github.com/silverstripe-australia/silverstripe-gridfieldextensions",
             "keywords": [
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-03-04 01:28:24"
+            "time": "2016-08-25 23:38:23"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -487,12 +487,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "9f09218da2743754b59bb130b92e0f4df0f3c3ec"
+                "reference": "0f77789eb5bec968f400c9508245a5f7b5086c5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/9f09218da2743754b59bb130b92e0f4df0f3c3ec",
-                "reference": "9f09218da2743754b59bb130b92e0f4df0f3c3ec",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/0f77789eb5bec968f400c9508245a5f7b5086c5d",
+                "reference": "0f77789eb5bec968f400c9508245a5f7b5086c5d",
                 "shasum": ""
             },
             "require": {
@@ -532,20 +532,20 @@
                 "news",
                 "silverstripe"
             ],
-            "time": "2016-07-15 13:16:56"
+            "time": "2016-08-30 08:07:28"
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "1ea9444be9901abcac58c56c22d0d5c1ebb5e5b2"
+                "reference": "bffab11a549d314ba4e3ed2137eae9ceb4bc7f23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/1ea9444be9901abcac58c56c22d0d5c1ebb5e5b2",
-                "reference": "1ea9444be9901abcac58c56c22d0d5c1ebb5e5b2",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/bffab11a549d314ba4e3ed2137eae9ceb4bc7f23",
+                "reference": "bffab11a549d314ba4e3ed2137eae9ceb4bc7f23",
                 "shasum": ""
             },
             "require": {
@@ -556,11 +556,6 @@
                 "silverstripe/siteconfig": "~3.4"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "3.x-dev": "3.4.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/"
@@ -586,20 +581,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2016-06-02 05:07:41"
+            "time": "2016-08-15 06:27:31"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "8008fcbe9769f1d2cb53c542f302ad6d32d185d6"
+                "reference": "1f06e6dd18419cda02d58a78f39f6613c067a3ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/8008fcbe9769f1d2cb53c542f302ad6d32d185d6",
-                "reference": "8008fcbe9769f1d2cb53c542f302ad6d32d185d6",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/1f06e6dd18419cda02d58a78f39f6613c067a3ed",
+                "reference": "1f06e6dd18419cda02d58a78f39f6613c067a3ed",
                 "shasum": ""
             },
             "require": {
@@ -610,11 +605,6 @@
                 "phpunit/phpunit": "~3.7"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "3.x-dev": "3.4.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "tests/behat/features/bootstrap"
@@ -640,7 +630,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2016-06-02 22:59:29"
+            "time": "2016-08-15 06:29:38"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -685,12 +675,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-lumberjack.git",
-                "reference": "b92b53bf670215796975f4ad0d38e8d0c57ddcbc"
+                "reference": "794af261d7d31f1418b2f743ab161d97ea4048eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/b92b53bf670215796975f4ad0d38e8d0c57ddcbc",
-                "reference": "b92b53bf670215796975f4ad0d38e8d0c57ddcbc",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/794af261d7d31f1418b2f743ab161d97ea4048eb",
+                "reference": "794af261d7d31f1418b2f743ab161d97ea4048eb",
                 "shasum": ""
             },
             "require": {
@@ -712,7 +702,7 @@
                 }
             ],
             "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
-            "time": "2016-05-20 03:37:50"
+            "time": "2016-08-16 23:08:00"
         },
         {
             "name": "silverstripe/mathspamprotection",
@@ -793,13 +783,13 @@
             "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-reports.git",
-                "reference": "a446714e5ef39a9954f9e2e7fb0692fb5efbe60b"
+                "url": "https://github.com/silverstripe/silverstripe-reports.git",
+                "reference": "8f14b94433652952393c1c2ff07bcb4e436e0510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-reports/zipball/a446714e5ef39a9954f9e2e7fb0692fb5efbe60b",
-                "reference": "a446714e5ef39a9954f9e2e7fb0692fb5efbe60b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-reports/zipball/8f14b94433652952393c1c2ff07bcb4e436e0510",
+                "reference": "8f14b94433652952393c1c2ff07bcb4e436e0510",
                 "shasum": ""
             },
             "require": {
@@ -836,7 +826,92 @@
                 "reports",
                 "silverstripe"
             ],
-            "time": "2016-08-05 07:15:26"
+            "time": "2016-08-15 07:05:25"
+        },
+        {
+            "name": "silverstripe/secureassets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-secureassets.git",
+                "reference": "42d0e81bf934812d9f8211d69b3086a1e5e6cefe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-secureassets/zipball/42d0e81bf934812d9f8211d69b3086a1e5e6cefe",
+                "reference": "42d0e81bf934812d9f8211d69b3086a1e5e6cefe",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "suggest": {
+                "silverstripe/cms": "Allows you to easily edit file permissions in the CMS"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Harvey",
+                    "email": "sean@silverstripe.com"
+                }
+            ],
+            "description": "Adds access restrictions to folders in assets, similar to the way you secure pages",
+            "homepage": "http://silverstripe.org",
+            "keywords": [
+                "assets",
+                "files",
+                "secure",
+                "silverstripe"
+            ],
+            "time": "2016-08-18 20:48:21"
+        },
+        {
+            "name": "silverstripe/segment-field",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/assertchris/silverstripe-segment-field.git",
+                "reference": "0b1445307bac488ddc35d624564f4300e8080029"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/assertchris/silverstripe-segment-field/zipball/0b1445307bac488ddc35d624564f4300e8080029",
+                "reference": "0b1445307bac488ddc35d624564f4300e8080029",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^3.1",
+                "silverstripe/framework": "^3.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9",
+                "phpunit/phpunit": "^3.7"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Forms\\": "code"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A reusable approach to segment-generating fields",
+            "keywords": [
+                "segment",
+                "silverstripe"
+            ],
+            "time": "2015-08-18 04:44:43"
         },
         {
             "name": "silverstripe/siteconfig",
@@ -844,12 +919,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "aa88cb93faea4cac053734cda5e2ecea48f73733"
+                "reference": "c00dc4876bdeaeca39b67b33a87e0f26dd358192"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/aa88cb93faea4cac053734cda5e2ecea48f73733",
-                "reference": "aa88cb93faea4cac053734cda5e2ecea48f73733",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/c00dc4876bdeaeca39b67b33a87e0f26dd358192",
+                "reference": "c00dc4876bdeaeca39b67b33a87e0f26dd358192",
                 "shasum": ""
             },
             "require": {
@@ -879,7 +954,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2016-08-10 06:20:14"
+            "time": "2016-08-15 07:05:29"
         },
         {
             "name": "silverstripe/spamprotection",
@@ -887,12 +962,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "9db26d69f07effe5204cc1efce484a9c26e5662b"
+                "reference": "38d168bd0194f804e9b7e5055b135812cd97b920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/9db26d69f07effe5204cc1efce484a9c26e5662b",
-                "reference": "9db26d69f07effe5204cc1efce484a9c26e5662b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/38d168bd0194f804e9b7e5055b135812cd97b920",
+                "reference": "38d168bd0194f804e9b7e5055b135812cd97b920",
                 "shasum": ""
             },
             "require": {
@@ -926,20 +1001,20 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2016-05-21 20:44:21"
+            "time": "2016-08-16 23:08:00"
         },
         {
             "name": "silverstripe/tagfield",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-tagfield.git",
-                "reference": "35773d4a5629569170034f4425f4a6884ef18a56"
+                "url": "https://github.com/silverstripe/silverstripe-tagfield.git",
+                "reference": "00c950eecf07ec279240445a450fd10caa52a31f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/35773d4a5629569170034f4425f4a6884ef18a56",
-                "reference": "35773d4a5629569170034f4425f4a6884ef18a56",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/00c950eecf07ec279240445a450fd10caa52a31f",
+                "reference": "00c950eecf07ec279240445a450fd10caa52a31f",
                 "shasum": ""
             },
             "require": {
@@ -968,7 +1043,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2016-08-08 02:31:09"
+            "time": "2016-08-22 09:56:00"
         },
         {
             "name": "silverstripe/timepickerfield",
@@ -1012,30 +1087,32 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "2.x-dev",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "e5765dc367f5e02b536b3aad851777ab4d1ab82b"
+                "reference": "ca2a6a3e99c484f6282fab9d5641ce92f28311ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/e5765dc367f5e02b536b3aad851777ab4d1ab82b",
-                "reference": "e5765dc367f5e02b536b3aad851777ab4d1ab82b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/ca2a6a3e99c484f6282fab9d5641ce92f28311ab",
+                "reference": "ca2a6a3e99c484f6282fab9d5641ce92f28311ab",
                 "shasum": ""
             },
             "require": {
-                "silverstripe-australia/gridfieldextensions": "1.1.0",
-                "silverstripe/cms": ">=3.1.0",
-                "silverstripe/framework": ">=3.1.0"
+                "silverstripe-australia/gridfieldextensions": "~1.1",
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1",
+                "silverstripe/segment-field": "^1.0"
             },
             "suggest": {
-                "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions"
+                "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions",
+                "silverstripe/secureassets": "Enables files uploaded via userforms to be secured from public access"
             },
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
-                    "2.x-dev": "2.1.x-dev"
+                    "dev-master": "3.1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1044,8 +1121,24 @@
             ],
             "authors": [
                 {
+                    "name": "David Craig",
+                    "email": "david@silverstripe.com"
+                },
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                },
+                {
                     "name": "Will Rossiter",
                     "email": "will@fullscreen.io"
+                },
+                {
+                    "name": "Christopher Pitt",
+                    "email": "chris@silverstripe.com"
+                },
+                {
+                    "name": "Scott Hutchinson",
+                    "email": "scott@silverstripe.com"
                 }
             ],
             "description": "UserForms enables CMS users to create dynamic forms via a drag and drop interface and without getting involved in any PHP code",
@@ -1053,7 +1146,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2015-08-30 23:27:36"
+            "time": "2016-07-25 06:17:01"
         },
         {
             "name": "silverstripe/widgets",
@@ -1061,12 +1154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-widgets.git",
-                "reference": "cbebc589b2dcef82aedfd5f1c1362fd138cc3dee"
+                "reference": "8d5203c08ab510f862c4e9763f2f845fc818f038"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/cbebc589b2dcef82aedfd5f1c1362fd138cc3dee",
-                "reference": "cbebc589b2dcef82aedfd5f1c1362fd138cc3dee",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/8d5203c08ab510f862c4e9763f2f845fc818f038",
+                "reference": "8d5203c08ab510f862c4e9763f2f845fc818f038",
                 "shasum": ""
             },
             "require": {
@@ -1098,7 +1191,7 @@
                 "silverstripe",
                 "widgets"
             ],
-            "time": "2016-07-17 23:44:14"
+            "time": "2016-08-16 23:08:01"
         },
         {
             "name": "simplepie/simplepie",
@@ -1106,16 +1199,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplepie/simplepie.git",
-                "reference": "82ecc9b71744b7bdd8e1b70b53bf8cb1038deaf1"
+                "reference": "b6a4f48c3e69cb3bc58fd4d6cb926d5fbd5ffbb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/82ecc9b71744b7bdd8e1b70b53bf8cb1038deaf1",
-                "reference": "82ecc9b71744b7bdd8e1b70b53bf8cb1038deaf1",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/b6a4f48c3e69cb3bc58fd4d6cb926d5fbd5ffbb7",
+                "reference": "b6a4f48c3e69cb3bc58fd4d6cb926d5fbd5ffbb7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4 || ~5"
             },
             "type": "library",
             "autoload": {
@@ -1152,7 +1248,7 @@
                 "feeds",
                 "rss"
             ],
-            "time": "2016-07-28 04:53:19"
+            "time": "2016-08-29 00:39:58"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -1160,12 +1256,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "92d2d60733a428143b4ad61e1d198804b0317c8e"
+                "reference": "a7260e65a66dc2d4487de875584d13a1501e571e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/92d2d60733a428143b4ad61e1d198804b0317c8e",
-                "reference": "92d2d60733a428143b4ad61e1d198804b0317c8e",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/a7260e65a66dc2d4487de875584d13a1501e571e",
+                "reference": "a7260e65a66dc2d4487de875584d13a1501e571e",
                 "shasum": ""
             },
             "require": {
@@ -1188,7 +1284,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2016-06-30 07:56:55"
+            "time": "2016-08-24 23:32:19"
         },
         {
             "name": "undefinedoffset/silverstripe-nocaptcha",
