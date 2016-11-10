@@ -16,7 +16,7 @@ class LecturePage extends Page {
 		'Picture' => 'Image'
 	);
 	
-
+	private static $allowed_children = array();
 	
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
