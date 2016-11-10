@@ -49,11 +49,15 @@
 					<% loop UpcomingLectures.Limit(3) %>
 						<li>
 						<a href="$Link">
-									<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
+							<% if $Picture %>
+								<img src="$Picture.CroppedFocusedImage(544,650).URL" alt="$Title">
+							<% else %>
+								<img src="{$ThemeDir}/images/lecture-placeholder.jpg" alt="$Title">
+							<% end_if %>
 								</a>
 							<div class="orbit-caption">
 		
-									<a href="$Link">{$Title}, <% if $LectureTitle %>$LectureTitle<% end_if %> - $EventDate.Format("F j")</a>
+									<a href="$Link">{$Title}<% if $LectureTitle %>, $LectureTitle<% end_if %><% if $EventDate %> - $EventDate.Format("F j")<% end_if %></a>
 							</div>
 						</li>
 					<% end_loop %>
