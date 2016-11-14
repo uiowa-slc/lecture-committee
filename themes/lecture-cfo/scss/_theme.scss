@@ -38,6 +38,13 @@
     .orbit-container .orbit-slides-container>* .orbit-caption {
         padding-left: 0;
     }
+
+    .slider{
+        margin-top: 20px;
+        @media #{$large-up} {
+            margin-top: 0;
+        }
+    }
 }
 
 .home-quicklinks .quicklinks-title span{
