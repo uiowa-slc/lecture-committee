@@ -273,12 +273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/cfo-project.git",
-                "reference": "33bdf3e83ae5ccc8fa25aa1072a1070379d2d079"
+                "reference": "5e6fa946c5bd5fe92dc316318eee180d1fe20ec1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/33bdf3e83ae5ccc8fa25aa1072a1070379d2d079",
-                "reference": "33bdf3e83ae5ccc8fa25aa1072a1070379d2d079",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/cfo-project/zipball/5e6fa946c5bd5fe92dc316318eee180d1fe20ec1",
+                "reference": "5e6fa946c5bd5fe92dc316318eee180d1fe20ec1",
                 "shasum": ""
             },
             "require": {
@@ -288,7 +288,6 @@
                 "md/ac-json-events": "dev-master",
                 "md/division-bar": "*",
                 "php": ">=5.3.2",
-                "rywa/silverstripe-foundation-forms": "1.0.x-dev",
                 "silverstripe-themes/simple": "*",
                 "silverstripe/blog": "2.*",
                 "silverstripe/cms": "3.4.3",
@@ -299,7 +298,7 @@
                 "silverstripe/recaptcha": "*",
                 "silverstripe/secureassets": "*",
                 "silverstripe/timepickerfield": "*",
-                "silverstripe/userforms": "4.1.0",
+                "silverstripe/userforms": "4.2.*",
                 "silverstripe/widgets": "*",
                 "simplepie/simplepie": "*",
                 "unclecheese/betterbuttons": "*",
@@ -314,10 +313,10 @@
             },
             "description": "The University of Iowa CFO Project Code and Theme",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/tree/3.4.x",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/tree/3.4.x-no-foundation-forms",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/cfo-project/issues"
             },
-            "time": "2017-01-12 16:00:51"
+            "time": "2017-01-12 21:56:53"
         },
         {
             "name": "md/division-bar",
@@ -350,52 +349,6 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
             "time": "2016-10-14 20:47:47"
-        },
-        {
-            "name": "rywa/silverstripe-foundation-forms",
-            "version": "1.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ryanwachtl/silverstripe-foundation-forms.git",
-                "reference": "e2f80285ae3ec42026b339efd8e4b05fcb970c6d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ryanwachtl/silverstripe-foundation-forms/zipball/e2f80285ae3ec42026b339efd8e4b05fcb970c6d",
-                "reference": "e2f80285ae3ec42026b339efd8e4b05fcb970c6d",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "silverstripe/framework": "~3.1"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "installer-name": "foundationforms",
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT Open Source License"
-            ],
-            "authors": [
-                {
-                    "name": "Ryan Wachtl",
-                    "email": "ryan@beyondusability.pro",
-                    "homepage": "http://beyondusability.pro",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Add Foundation framework forms compatibility to SilverStripe 3",
-            "keywords": [
-                "Forms",
-                "foundation",
-                "silverstripe",
-                "zurb foundation"
-            ],
-            "time": "2016-02-04 19:17:22"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -1100,16 +1053,16 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "4.1.0",
+            "version": "4.2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "1aae3d116958c3079773ad092ba63e08e6d70687"
+                "reference": "2c0c03435d899f2b5087ad1fbdc3d27ac8eb6d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/1aae3d116958c3079773ad092ba63e08e6d70687",
-                "reference": "1aae3d116958c3079773ad092ba63e08e6d70687",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/2c0c03435d899f2b5087ad1fbdc3d27ac8eb6d86",
+                "reference": "2c0c03435d899f2b5087ad1fbdc3d27ac8eb6d86",
                 "shasum": ""
             },
             "require": {
@@ -1123,11 +1076,6 @@
                 "silverstripe/secureassets": "Enables files uploaded via userforms to be secured from public access"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -1159,7 +1107,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2016-08-18 06:24:51"
+            "time": "2016-12-21 02:56:13"
         },
         {
             "name": "silverstripe/widgets",
