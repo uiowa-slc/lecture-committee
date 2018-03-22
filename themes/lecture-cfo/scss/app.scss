@@ -1,6 +1,9 @@
 /* theme's settings import
 -------------------------------------------*/
 @import "settings";
+/* Uiowa Bar
+-------------------------------------------*/
+@import "../../../uiowa-bar/scss/uiowa-bar";
 
 @import "../../../cfo-project/scss/app";
 
@@ -8,6 +11,3 @@
 -------------------------------------------*/
 @import "_theme";
 
-/* Uiowa Bar
--------------------------------------------*/
-@import "../../../uiowa-bar/scss/uiowa-bar";
