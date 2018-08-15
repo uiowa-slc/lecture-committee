@@ -1,5 +1,11 @@
 <?php
 
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\DateField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+
+
 class EventPage extends Page {
 	
 	private static $db = array(
@@ -10,7 +16,7 @@ class EventPage extends Page {
 	);
 	
 	private static $has_one = array(
-		'Picture' => 'Image'
+		'Picture' => Image::class
 	);
 	
 	function getCMSFields() {
@@ -37,13 +43,4 @@ class EventPage extends Page {
 	
 }
  
-class EventPage_Controller extends Page_Controller {
-	
-	function init() {
-		parent::init();
-	}
-	
-	
-	
-}
 ?>

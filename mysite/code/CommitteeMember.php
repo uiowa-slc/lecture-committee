@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Forms\TextField;
+use SilverStripe\Assets\Image;
+
 class CommitteeMember extends Page {
 	
 	private static $db = array(
@@ -16,16 +20,5 @@ class CommitteeMember extends Page {
 		return $fields;
 	}
 }
-class LeaderImage extends Image {
-	function generateLeaderPicture($gd) {
-		$gd->setQuality(90);
-		return $gd->paddedResize(100,120);
-	}
-}
 
-class CommitteeMember_Controller extends Page_Controller {
-	function init() {
-		parent::init();
-	}
-}
 ?>
