@@ -1,4 +1,5 @@
 <?php
+use SilverStripe\ORM\PaginatedList;
 
 class LectureHolderPageController extends PageController {
 	

@@ -11,7 +11,7 @@
 		</div>
 		<div class="lecture-image medium-4 large-5 columns">
 			<% if $Picture %>
-				<img src="$Picture.CroppedFocusedImage(600,700).URL" alt="Image for $Title" />
+				<img src="$Picture.FocusFill(600,700).URL" alt="Image for $Title" />
 			<% end_if %>
 		</div>
 	</article>

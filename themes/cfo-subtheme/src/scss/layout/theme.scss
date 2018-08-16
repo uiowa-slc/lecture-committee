@@ -4,7 +4,7 @@ body{
 	background-position-y: 170px;
 }
 .main-content__container{
-	background: white;
+	background: #000000;
 	box-shadow: inset 0px 10px 13px -7px rgba(0,0,0,0.31);
 }
 
@@ -12,10 +12,21 @@ body{
 	border-color: darken($highlight,10);
 }
 
+.main-content__header h1{
+	color:#fff;
 
-
+}
+.main-content__text p{
+	color:#fff;
+}
+.breadcrumb__listitem{
+	color:#fff;
+}
+.nav__menu-icon--light-header{
+	color:#fff;
+}
 .button, input.action {
-	color: #e2393e;
+	color: #fff;
 	background: white;
 	font-weight: bold;
 	text-transform: uppercase;

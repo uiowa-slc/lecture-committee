@@ -1,0 +1,69 @@
+$Header
+<main class="main-content__container" id="main-content__container">
+	<!-- Background Image Feature -->
+	<% if $BackgroundImage %>
+	<% include FeaturedImage %>
+	<% end_if %>
+	$Breadcrumbs
+	<% if not $BackgroundImage %>
+	<div class="column row">
+		<div class="main-content__header">
+			<h1>$Title</h1>
+		</div>
+	</div>
+	<% end_if %>
+	$BeforeContent
+	<div class="row">
+		<article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarArea.Elements ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
+			$BeforeContentConstrained
+			<% if $MainImage %>
+			<img class="main-content__main-img" src="$MainImage.ScaleMaxWidth(500).URL" alt="" role="presentation"/>
+			<% end_if %>
+			<div class="main-content__text">
+				$Content
+			</div>
+			$AfterContentConstrained
+			$Form
+		</article>
+		<aside class="sidebar dp-sticky">
+			<% include SideNav %>
+			<% if $SideBarView %>
+			$SideBarView
+			<% end_if %>
+			$SidebarArea
+		</aside>
+	</div>
+	$AfterContent
+</main>
+
+
+
+<%-- 
+<% if $UpcomingLectures %>
+<div class="large-12 columns">
+	<section id="upcoming-lectures" class="row">
+		
+		<% loop UpcomingLectures %>
+		<% include LectureCardBig %>
+		<% end_loop %>
+		
+	</section>
+</div>
+<% end_if %>
+</div><!-- end main-content from ../Page.ss -->
+</div><!-- end main from ../Page.ss -->
+<div class="previous-lectures-container">
+	<section id="previous-lectures">
+		<% if not $UpcomingLectures %>
+		<div class="no-upcoming-content">$Content</div>
+		<% end_if %>
+		<h1 class="section-title">Previously presented:</h1>
+		<hr />
+		<ul class="xlarge-block-grid-4 large-block-grid-3 medium-block-grid-2">
+			<% loop paginatedPreviousLectures %>
+			<li><% include LectureCard %></li>
+			<% end_loop %>
+		</ul>
+		<% include LecturePagination %>
+	</section>
+</div>  --%>

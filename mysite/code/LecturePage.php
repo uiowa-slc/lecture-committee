@@ -33,7 +33,6 @@ class LecturePage extends Page {
 		$fields->removeByName("Metadata");
 		$datefield = new DateField('EventDate',DBDate::class);
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
-		$datefield->setConfig('showcalendar', true);
 		$fields->addFieldToTab("Root.Main", $datefield);
 
 		$fields->addFieldToTab("Root.Main", new TextField('Time','Time'));
