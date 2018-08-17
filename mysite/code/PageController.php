@@ -38,13 +38,16 @@ class PageController extends ContentController {
 		
 	public function UpcomingLectures() {
 		$curDate = date("Y-m-d", time() - 86400);
-		$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate ))->sort('EventDate ASC');
+		// $lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate ))->sort('EventDate ASC');
+		$lectures = LecturePage::get()->limit(2);
+		//print_r($lectures->toArray());
 		return $lectures;
 	}
 	
 	public function PreviousLectures() {
 		$curDate = date("Y-m-d");
-		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
+		// $lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
+		$lectures = LecturePage::get();
 		return $lectures;
 	}
 

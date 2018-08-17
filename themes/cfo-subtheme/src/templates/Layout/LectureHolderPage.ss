@@ -13,26 +13,54 @@ $Header
 	</div>
 	<% end_if %>
 	$BeforeContent
-	<div class="row">
-		<article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarArea.Elements ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
-			$BeforeContentConstrained
-			<% if $MainImage %>
-			<img class="main-content__main-img" src="$MainImage.ScaleMaxWidth(500).URL" alt="" role="presentation"/>
-			<% end_if %>
-			<div class="main-content__text">
+
+
+
+
+
+<div>
 				$Content
+				
+		<% include LectureCardBig %>
+		
+		<% loop UpcomingLectures %>
+		<div class="upnext grid-x grid-padding-x small-up-2 medium-up-2 large-up-3">
+  <div class="cell"><h2 class="upnext__header">UP NEXT ▶</h2></div>
+  <div class="cell"> 
+		<% include LectureCardBig %>
+		<% include LectureDetails %>
+		<% include LecturePagination %>
+		</div>
+  <div class="cell"> <img src= "{$ThemeDir}/dist/images/cokie-roberts2.jpg" > </div>
+  
+</div>
+<% end_loop %>
+		<hr>
+
+<div class="grid-x">
+  <div class="cell">Previously Presented</div>
+</div>
+
+<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6">
+  <div class="cell">cell
+	<div class="cell">cell</div>
+  </div>
+  <div class="cell">cell
+  	<div class="cell">cell</div>
+  </div>
+  <div class="cell">cell
+  	<div class="cell">cell</div>
+  </div>
+  
+</div>
+
+
 			</div>
-			$AfterContentConstrained
-			$Form
-		</article>
-		<aside class="sidebar dp-sticky">
-			<% include SideNav %>
-			<% if $SideBarView %>
-			$SideBarView
-			<% end_if %>
-			$SidebarArea
-		</aside>
-	</div>
+
+
+
+
+
 	$AfterContent
 </main>
 
@@ -43,9 +71,7 @@ $Header
 <div class="large-12 columns">
 	<section id="upcoming-lectures" class="row">
 		
-		<% loop UpcomingLectures %>
-		<% include LectureCardBig %>
-		<% end_loop %>
+		
 		
 	</section>
 </div>
