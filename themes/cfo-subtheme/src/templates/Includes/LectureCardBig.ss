@@ -22,5 +22,4 @@
 			<% if $LectureTitle %>
 				<h1><a href="$Link">$LectureTitle</a></h1>
 			<% else %>
-				<h1><a href="$Link">$Title</a></h1>
 			<% end_if %>

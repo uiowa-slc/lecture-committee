@@ -7,7 +7,7 @@ $Header
 	$Breadcrumbs
 	<% if not $BackgroundImage %>
 	<div class="column row">
-		<div class="main-content__header">
+		<div class="main-content__header ">
 			<h1>$Title</h1>
 		</div>
 	</div>
@@ -24,12 +24,12 @@ $Header
 		<% include LectureCardBig %>
 		
 		<% loop UpcomingLectures %>
-		<div class="upnext grid-x grid-padding-x small-up-2 medium-up-2 large-up-3">
-  <div class="cell"><h2 class="upnext__header">UP NEXT ▶</h2></div>
-  <div class="cell"> 
+		<div class="upnext grid-x grid-padding-x align-stretch small-up-2 medium-up-2 large-up-3">
+  <div class="cell"><h2 class="upnext__header ">NEXT UP ▶</h2></div>
+  <div class="cell "> 
 		<% include LectureCardBig %>
 		<% include LectureDetails %>
-		<% include LecturePagination %>
+		
 		</div>
   <div class="cell"> <img src= "{$ThemeDir}/dist/images/cokie-roberts2.jpg" > </div>
   
@@ -38,24 +38,30 @@ $Header
 		<hr>
 
 <div class="grid-x">
-  <div class="cell">Previously Presented</div>
+  <div class="cell grid-padding-x grid-padding-y align-center-middle text-center">Previously Presented</div>
+</div>
+ 
+<div class="grid-container fluid">			
+<div class="grid-x grid-margin-x grid-margin-y align-center-middle text-center small-up-2 medium-up-3 large-up-4">
+<% loop paginatedPreviousLectures %>
+	  			
+  <div class="cell grid-padding-x "><% if $Picture %>
+			<%-- <img src="$Picture.FocusFill(500, 600).URL" alt="Photo representing $Title" /> --%>
+			<img src="{$ThemeDir}/dist/images/cokie-roberts2.jpg" />
+		<% else %>
+			<a href="$Link"><img src="{$ThemeDir}/dist/images/cokie-roberts2.jpg" /></a>
+		<% end_if %>
+			<% if $LectureTitle %>
+				<h1>$LectureTitle.LimitWordCount(10)</h1>
+			<% else %>
+				<h1>$Title.LimitWordCount(10)</h1>
+			<% else %> 
+			<a href="$Link">< $LectureTitle /></a>
+			<% end_if %></div> 
+ <% end_loop %>
 </div>
 
-<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-6">
-  <div class="cell">cell
-	<div class="cell">cell</div>
-  </div>
-  <div class="cell">cell
-  	<div class="cell">cell</div>
-  </div>
-  <div class="cell">cell
-  	<div class="cell">cell</div>
-  </div>
-  
 </div>
-
-
-			</div>
 
 
 
