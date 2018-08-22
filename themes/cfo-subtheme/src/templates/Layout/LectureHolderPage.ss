@@ -7,14 +7,14 @@ $Header
 	$Breadcrumbs
 	<% if not $BackgroundImage %>
 	<div class="column row">
-		<div class="main-content__header" style="padding-top: 20px">
+		<div class="main-content__header main-content__header--centered" style="padding-top: 20px">
 			<h1>$Title</h1>
 		</div>
 	</div>
 	<% end_if %>
 	$BeforeContent
 	<div>
-		$Content
+		
 		
 		<% include LectureCardBig %>
 		

@@ -7,10 +7,14 @@
 	color: #c1c1c1;
 }
 .main-content__header{
-	text-align: center;
+	// text-align: center;
 	border-top: none;
 	color: #fff;
-	margin-top: 0px;
+	// margin-top: 0px;
+
+	&--centered{
+		text-align: center;
+	}
 }
 .lecture-details li{
 	list-style-type: none;
@@ -33,4 +37,19 @@
 }
 .picture_cell{
 	padding-bottom:20px;
+}
+.sidenav{
+	
+	background-color:#262626;
+	border: none;
+}
+.sidenav__item{
+	border-bottom: none;
+}
+.sidenav__link{
+	color: #e5e5e5;
+	
+}
+.sidenav__link--hover{
+	color: #e2393e;
 }
