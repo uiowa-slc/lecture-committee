@@ -20,6 +20,6 @@
 	<hr />
 	<% end_if %> --%>
 			<% if $LectureTitle %>
-				<h1><a href="$Link">$LectureTitle</a></h1>
+				<h1 class="lecture-upcoming-holder__header"><a class="lecture-upcoming-holder__link" href="$Link">$LectureTitle</a></h1>
 			<% else %>
 			<% end_if %>

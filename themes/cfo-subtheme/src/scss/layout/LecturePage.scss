@@ -1,12 +1,36 @@
-body{
+
 .upnext__header{
-	font-size: 100 px;
+	font-size: 80px;
 	text-align: center;
+	border-top: 40px;
+	margin-top: 0px;
+	color: #c1c1c1;
 }
 .main-content__header{
 	text-align: center;
+	border-top: none;
+	color: #fff;
+	margin-top: 0px;
 }
 .lecture-details li{
 	list-style-type: none;
 }
+.lecture-holder-header{
+	margin-bottom: 20px;
+}
+.lecture-holder-title{
+	color: #fff;
+}
+.lecture-upcoming-holder__link{
+	color:#fff;
+	margin-top: 0px;
+}
+.lecture-card-big{
+	padding-bottom: 30px;
+}
+.lecture-upcoming-holder__header{
+	margin-top: 0px;
+}
+.picture_cell{
+	padding-bottom:20px;
 }
