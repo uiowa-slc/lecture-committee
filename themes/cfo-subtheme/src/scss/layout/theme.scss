@@ -1,6 +1,6 @@
 body{
 	background-size: cover;
-	background-color: $highlight;
+	background-color: #000;
 	background-position-y: 170px;
 	color:#fff;
 }
@@ -17,8 +17,14 @@ body{
 	color:#fff;
 
 }
+.body--dark-header .breadcrumb__anchor{
+	color: #F5F5F5;
+}
+..body--dark-header{
+	color: #303030;
+}
 .main-content__text p{
-	color:#fff;
+	color:#D3D3D3;
 }
 .breadcrumb__listitem{
 	color:#fff;
@@ -33,8 +39,12 @@ body{
 	text-transform: uppercase;
 	font-size: rem-calc(22);
 }
-
-
+.lecture-details{
+	color: #F5F5F5;
+}
+.main-content__text{
+	color: #F5F5F5;
+}
 #uiowa-bar #uiowa-search .links a{
 	color: white;
 }

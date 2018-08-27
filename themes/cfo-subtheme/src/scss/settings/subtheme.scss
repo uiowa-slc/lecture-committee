@@ -1,5 +1,7 @@
-$highlight: #e2393e;
+$highlight: #73C2FB;
 $offcanvas-background: #111;
 $offcanvas-push-zindex: 999;
-$body-background: #fff; 
+$body-background: #73C2FB; 
+$anchor-color: #73C2FB;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -1%);
 
