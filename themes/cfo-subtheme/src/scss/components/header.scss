@@ -87,6 +87,9 @@
 	}
 }
 
+.off-canvas-content{
+	background-color: #000;
+}
 .header {
 	position: relative;
 	transition: max-height 0.2s linear;
@@ -101,7 +104,7 @@
 		line-height: 1;
 		margin: auto;
 		margin-bottom: rem-calc(20);
-		margin-top: rem-calc(-20);
+		margin-top: rem-calc(20);
 		padding: 5px 0 25px;
 		text-align: center;
 		text-decoration: none;
@@ -133,6 +136,10 @@
 			margin-bottom: rem-calc(20);
 			padding: 5px 0 5px;
 		}
+	}
+
+	&__site-title--HomePage{
+		margin-top: rem-calc(-20);
 	}
 
 	&__site-title--dark-header {
