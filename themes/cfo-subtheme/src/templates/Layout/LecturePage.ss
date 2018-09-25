@@ -13,6 +13,14 @@ $Header
 		</div>
 	</div>
 	$BeforeContent
+
+	<div class="large-1 columns">1</div>
+	<div class="lecture-image large-9 large-offset-2 columns">
+		<% if $Picture %>
+		<img src="$Picture.FocusFill(600,700).URL" alt="Image for $Title" />
+		<% end_if %>
+	</div>
+
 	<div class="row">
 		<article role="main" class="main-content main-content--with-padding <% if $SiteConfig.ShowExitButton %>main-content--with-exit-button-padding<% end_if %> <% if $Children || $Menu(2) || $SidebarArea.Elements ||  $SidebarView.Widgets %>main-content--with-sidebar<% else %>main-content--full-width<% end_if %>">
 			$BeforeContentConstrained
@@ -24,11 +32,7 @@ $Header
 				$Content
 				
 			
-	<div class="lecture-image medium-4 large-5 columns">
-		<% if $Picture %>
-		<img src="$Picture.FocusFill(600,700).URL" alt="Image for $Title" />
-		<% end_if %>
-	</div>
+	
 
 			</div>
 			$AfterContentConstrained

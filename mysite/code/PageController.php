@@ -46,8 +46,8 @@ class PageController extends ContentController {
 	
 	public function PreviousLectures() {
 		$curDate = date("Y-m-d");
-		// $lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
-		$lectures = LecturePage::get();
+		 $lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
+		//$lectures = LecturePage::get();
 		return $lectures;
 	}
 
