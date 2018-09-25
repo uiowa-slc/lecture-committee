@@ -31,7 +31,7 @@ class LecturePage extends Page {
 		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main","Content");
 		$fields->removeByName("Metadata");
-		$datefield = new DateField('EventDate',DBDate::class);
+		$datefield = new DateField('EventDate','Date');
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
 		$fields->addFieldToTab("Root.Main", $datefield);
 

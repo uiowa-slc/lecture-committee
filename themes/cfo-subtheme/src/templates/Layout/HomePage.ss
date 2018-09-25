@@ -14,7 +14,7 @@ $Header
 	<% end_if %>
 	$BeforeContent
 	<div>
-		
+	<% if UpcomingLectures%>
 		
 		<% include LectureCardBig %>
 		
@@ -28,10 +28,14 @@ $Header
 				<% include LectureDetails %>
 				
 			</div>
-			<div class="cell" style="padding-bottom: 20px"> <a class ="lecture-card-big" href= "$Link"> <img src= "$Picture.FocusFill(500,600)" > </a> </div>
+			<div class="cell" style="padding-bottom: 20px"> <a class ="lecture-card-big" href= "$Link"> <img src= "{$ThemeDir}/dist/images/likerealizingstuff.jpg" > </a> </div>
 			
 		</div>
 		<% end_loop %>
+
+		<% else %>
+
+
 		<hr>
 		<div class="grid-x">
 			<div class="cell grid-padding-x grid-padding-y align-center-middle text-center">
@@ -46,9 +50,9 @@ $Header
 				<div class="cell grid-padding-x ">
 					<% if $Picture %>
 					<%-- <img src="$Picture.FocusFill(500, 600).URL" alt="Photo representing $Title" /> --%>
-					<img src= "$Picture.FocusFill(500,600).URL" />
+					<img src="{$ThemeDir}/dist/images/cokie-roberts2.jpg" />
 					<% else %>
-					<a href="$Link"><img src="{$ThemeDir}/dist/images/default.jpg" /></a>
+					<a href="$Link"><img src="{$ThemeDir}/dist/images/cokie-roberts2.jpg" /></a>
 					<% end_if %>
 					<% if $LectureTitle %>
 						<h1><a class="lecture-holder-title" href="$Link">$LectureTitle.LimitWordCount(10)</a></h1>
@@ -59,6 +63,8 @@ $Header
 				<% end_loop %>
 			</div>
 		</div>
+
+		<% end_if %>
 		$AfterContent
 	</main>
 	<%--
