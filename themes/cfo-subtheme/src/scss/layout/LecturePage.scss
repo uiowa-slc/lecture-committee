@@ -53,3 +53,11 @@
 .sidenav__link--hover{
 	color: #e2393e;
 }
+
+.lecture__image{
+	@include breakpoint(large);
+	position: -webkit-sticky;
+	top: 0;
+	margin-top: 80px;
+
+}
