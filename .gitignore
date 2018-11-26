@@ -60,3 +60,5 @@ nocaptcha/
 npm-debug.log
 division-analytics/
 uiowa-bar
+nocaptcha.yml
+smtp.yml
