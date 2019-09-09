@@ -4,12 +4,15 @@
     "description": "The SilverStripe Framework Installer",
     "require": {
         "php": ">=5.6.0",
-        "md/division-project": "dev-ss4.x"
+        "md/division-project": "dev-ss4.x",
+        "silverstripe/mathspamprotection": "dev-master",
+        "yooper/php-text-analysis": "^1.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
     },
     "extra": {
+        "resources-dir": "_resources",
         "branch-alias": {
             "4.x-dev": "4.2.x-dev",
             "dev-master": "5.x-dev"
@@ -38,60 +41,40 @@
             "themes/cfo-subtheme/css"
         ]
     },
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-project"
         },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-amp"
-        },
-        {
+        "1": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
         },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-blog"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr"
-        },
-        {
+        "2": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-maintenance-mode"
         },
-        {
+        "3": {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
+            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
         },
-        {
+        "4": {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/fbpagefeed"
+            "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
         },
-        {
+        "5": {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr"
+        },
+        "6": {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
+        },
+        "repo-name": {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/deploy-helper"
         }
-    ],
+    },
     "config": {
         "process-timeout": 600
     },

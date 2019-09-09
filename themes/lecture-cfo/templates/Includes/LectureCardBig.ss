@@ -1,4 +1,4 @@
-<% if $First %><h1 class="section-title">Next Up:</h1> <hr /><% end_if %>
+
 	<article class="lecture-card row">
 
 		<div class="lecture-details large-7 columns">

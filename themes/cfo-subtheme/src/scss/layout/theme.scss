@@ -1,37 +1,71 @@
 body{
 	background-size: cover;
-	background-color: #000;
+	background-color: #666;
 	background-position-y: 170px;
 	color:#fff;
 }
-.main-content__container{
-	background: #000000;
-	box-shadow: inset 0px 10px 13px -7px rgba(0,0,0,0.31);
-}
 
-.sidenav__section-title{
-	border-color: darken($highlight,10);
-}
-
-.main-content__header h1{
-	color:#fff;
-
-}
 .body--dark-header .breadcrumb__anchor{
 	color: #fff;
 }
 .body--dark-header{
 	color: #fff;
 }
-.main-content__text p{
-	color:#fff;
-}
-.breadcrumb__listitem{
-	color:#fff;
-}
+
 .nav__menu-icon--light-header{
 	color:#fff;
 }
+
+.breadcrumb__listitem{
+	color:#fff;
+}
+
+.main-content__container{
+	background: #222;
+	box-shadow: inset 0px 10px 13px -7px rgba(0,0,0,0.31);
+}
+
+.main-content__header{
+	border-color: $yellow;
+}
+
+.main-content__header h1{
+	color:#fff;
+
+}
+.main-content__text{
+	color: #F5F5F5;
+}
+
+.main-content__text p{
+	color:#fff;
+}
+
+.sidenav{
+	
+	background-color:#262626;
+	border: none;
+}
+.sidenav__menu>li{
+	border-color: #333;
+}
+.sidenav__item{
+	border-bottom: none;
+}
+.sidenav__link{
+	color: #e5e5e5;
+	
+}
+.sidenav__link--hover{
+	color: #e2393e;
+}
+
+.sidebar-sect-title{
+	border-color: $yellow;
+}
+
+
+
 .button, input.action {
 	color: #fff;
 	background: white;
@@ -39,12 +73,8 @@ body{
 	text-transform: uppercase;
 	font-size: rem-calc(22);
 }
-.lecture-details{
-	color: #F5F5F5;
-}
-.main-content__text{
-	color: #F5F5F5;
-}
+
+
 #uiowa-bar #uiowa-search .links a{
 	color: white;
 }

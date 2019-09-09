@@ -12,8 +12,12 @@ class LectureHolderPage extends Page {
 	private static $has_one = array(
 		'Picture' => Image::class
 	);
+
+	private static $allowed_children = array(
+		'LecturePage'
+	);
 	
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->renameField("Content", "Show the following content when there's no upcoming lectures:");
 		return $fields;

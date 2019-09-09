@@ -6,7 +6,7 @@ use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
-
+use SilverStripe\View\Parsers\URLSegmentFilter;
 
 class LecturePage extends Page {
 	
@@ -17,6 +17,7 @@ class LecturePage extends Page {
 		'Price' => 'Text',
 		'Details' => 'HTMLText',
 		"LectureTitle" => "Text",
+		"LecturerName" => "Text",
 		"FeatureOnHomePage" => "Boolean"
 	);
 	
@@ -28,11 +29,16 @@ class LecturePage extends Page {
 	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->renameField("Title", "Name of Lecturer");
+		$fields->removeByName("Title");
+		$fields->removeByName("MenuTitle");
+		$fields->removeByName("LayoutType");
+		$fields->removeByName("BackgroundImage");
 		$fields->removeFieldFromTab("Root.Main","Content");
 		$fields->removeByName("Metadata");
 		$datefield = new DateField('EventDate','Date');
-		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
+		$fields->addFieldToTab("Root.Main", new TextField('LecturerName', 'Lecturer\'s Full Name'), 'URLSegment');
+		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'), 'URLSegment');
+
 		$fields->addFieldToTab("Root.Main", $datefield);
 
 		$fields->addFieldToTab("Root.Main", new TextField('Time','Time'));
@@ -44,7 +50,22 @@ class LecturePage extends Page {
 
 		return $fields;
 	}
-	
+	public function onBeforeWrite(){
+		$filter = new URLSegmentFilter();
+
+
+		if($this->LectureTitle != ''){
+			$this->Title = $this->LecturerName.' - '.$this->LectureTitle;
+		}else{
+			$this->Title = $this->LecturerName;
+		}
+
+		$this->URLSegment = $filter->filter($this->Title);
+
+		// CAUTION: You are required to call the parent-function, otherwise
+        // SilverStripe will not execute the request.
+		parent::onBeforeWrite();
+	}	
 	public function isPast() {
 		if(empty($EventDate) || strtotime($EventDate) < time()){
 			return true;

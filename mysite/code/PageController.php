@@ -1,6 +1,7 @@
 <?php
 
 use SilverStripe\CMS\Controllers\ContentController;
+use SilverStripe\ORM\PaginatedList;
 class PageController extends ContentController {
 
 	/**
@@ -37,20 +38,29 @@ class PageController extends ContentController {
 	}
 		
 	public function UpcomingLectures() {
-		$curDate = date("MM/dd/yyyy", time() - 86400);
-		 //$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate ))->sort('EventDate ASC');
-		$lectures = LecturePage::get()->limit(2);
+		$curDate = date("Y-m-d", time());
+		//print_r($curDate);
+		 $lectures = LecturePage::get()->filter(array('EventDate:GreaterThanOrEqual' => $curDate ))->sort('EventDate ASC');
+		//$lectures = LecturePage::get()->limit(2);
 		//print_r($lectures->toArray());
 		return $lectures;
 	}
 	
 	public function PreviousLectures() {
-		$curDate = date("MM/dd/yyyy");
-		 //$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
-		$lectures = LecturePage::get();
+		$curDate = date("Y-m-d", time());
+	 	$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
+		// $lectures = LecturePage::get();
 		return $lectures;
 	}
+	public function paginatedPreviousLectures() {
+		$curDate = date("Y-m-d");
 
+		$previousLectures = $this->PreviousLectures();		
+		$paginatedItems = new PaginatedList($previousLectures, $this->request);
+		$paginatedItems->setPageLength(20);
+
+		return $paginatedItems;
+	}
     protected function init()
     {
         parent::init();
