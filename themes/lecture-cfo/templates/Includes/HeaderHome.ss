@@ -27,7 +27,7 @@
 								</li>
 							<% end_if %>
 						<% end_loop %>
-
+						<li><a href="other-lectures/"><h4 class="quicklinks-title quicklinks-title--big">Other Lectures on Campus</h4></a></li>
 					</ul>
 				<% end_if %>
 
