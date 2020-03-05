@@ -1,5 +1,13 @@
 <?php
 
+use SilverStripe\Assets\Image;
+use SilverStripe\ORM\FieldType\DBDate;
+use SilverStripe\Forms\DateField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use SilverStripe\AssetAdmin\Forms\UploadField;
+use PageController;
+
 class LecturePage extends Page {
 	
 	private static $db = array(
@@ -13,7 +21,7 @@ class LecturePage extends Page {
 	);
 	
 	private static $has_one = array(
-		'Picture' => 'Image'
+		'Picture' => Image::class
 	);
 	
 	private static $allowed_children = array();
@@ -23,7 +31,7 @@ class LecturePage extends Page {
 		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main","Content");
 		$fields->removeByName("Metadata");
-		$datefield = new DateField('EventDate','Date');
+		$datefield = new DateField('EventDate',DBDate::class);
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
 		$datefield->setConfig('showcalendar', true);
 		$fields->addFieldToTab("Root.Main", $datefield);
@@ -48,7 +56,7 @@ class LecturePage extends Page {
 	
 }
  
-class LecturePage_Controller extends Page_Controller {
+class LecturePage_Controller extends PageController {
 	
 	function init() {
 		parent::init();

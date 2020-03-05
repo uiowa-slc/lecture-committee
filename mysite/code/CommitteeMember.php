@@ -1,4 +1,8 @@
 <?php
+
+use SilverStripe\Forms\TextField;
+use SilverStripe\Assets\Image;
+
 class CommitteeMember extends Page {
 	
 	private static $db = array(
@@ -7,7 +11,7 @@ class CommitteeMember extends Page {
 	private static $has_one = array(
 		'LeaderImage' => 'LeaderImage'
 	);
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		//removed Content
 		$fields->removeFieldFromTab("Root.Main","Content");	
@@ -22,10 +26,3 @@ class LeaderImage extends Image {
 		return $gd->paddedResize(100,120);
 	}
 }
-
-class CommitteeMember_Controller extends Page_Controller {
-	function init() {
-		parent::init();
-	}
-}
-?>

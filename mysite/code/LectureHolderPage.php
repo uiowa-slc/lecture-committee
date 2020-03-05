@@ -1,12 +1,16 @@
 <?php
 
+use SilverStripe\Assets\Image;
+use SilverStripe\ORM\PaginatedList;
+use PageController;
+
 class LectureHolderPage extends Page {
 	
 	private static $db = array(
 	);
 	
 	private static $has_one = array(
-		'Picture' => 'Image'
+		'Picture' => Image::class
 	);
 	
 	function getCMSFields() {
@@ -17,7 +21,7 @@ class LectureHolderPage extends Page {
 	
 }
  
-class LectureHolderPage_Controller extends Page_Controller {
+class LectureHolderPage_Controller extends PageController {
 	
 	function init() {
 		parent::init();

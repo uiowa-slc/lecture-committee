@@ -1,5 +1,7 @@
 <?php
 
+use PageController;
+
 class PreviousPage extends Page {
 	
 	private static $db = array(
@@ -14,7 +16,7 @@ class PreviousPage extends Page {
 	}
 }
  
-class PreviousPage_Controller extends Page_Controller {
+class PreviousPage_Controller extends PageController {
 	
 	function init() {
 		parent::init();
