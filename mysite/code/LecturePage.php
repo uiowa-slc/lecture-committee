@@ -6,7 +6,7 @@ use SilverStripe\Forms\DateField;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
-use PageController;
+
 
 class LecturePage extends Page {
 	
@@ -23,17 +23,18 @@ class LecturePage extends Page {
 	private static $has_one = array(
 		'Picture' => Image::class
 	);
-	
+	private static $show_in_sitetree = false;
+
+	private static $default_sort = 'EventDate DESC';
 	private static $allowed_children = array();
 	
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main","Content");
 		$fields->removeByName("Metadata");
-		$datefield = new DateField('EventDate',DBDate::class);
+		$datefield = new DateField('EventDate','Date');
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
-		$datefield->setConfig('showcalendar', true);
 		$fields->addFieldToTab("Root.Main", $datefield);
 
 		$fields->addFieldToTab("Root.Main", new TextField('Time','Time'));
@@ -46,7 +47,7 @@ class LecturePage extends Page {
 		return $fields;
 	}
 	
-	function isPast() {
+	public function isPast() {
 		if(empty($EventDate) || strtotime($EventDate) < time()){
 			return true;
 		} else {
@@ -56,11 +57,4 @@ class LecturePage extends Page {
 	
 }
  
-class LecturePage_Controller extends PageController {
-	
-	function init() {
-		parent::init();
-	}
-	
-}
 ?>

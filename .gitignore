@@ -19,3 +19,4 @@ smtp.yml
 public/_resources/
 /.tmp
 /assets
+assets.zip

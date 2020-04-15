@@ -1,7 +1,7 @@
 <?php
 
 use SilverStripe\Forms\TextField;
-use SilverStripe\Assets\Image;
+
 
 class CommitteeMember extends Page {
 	
@@ -18,11 +18,5 @@ class CommitteeMember extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField('Position'));
 		$fields->addFieldToTab("Root.Image", new ImageField('LeaderImage'));
 		return $fields;
-	}
-}
-class LeaderImage extends Image {
-	function generateLeaderPicture($gd) {
-		$gd->setQuality(90);
-		return $gd->paddedResize(100,120);
 	}
 }

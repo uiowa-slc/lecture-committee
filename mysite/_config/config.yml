@@ -1,0 +1,14 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: mysite
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'cfo-subtheme'
+    - 'md/cfo-project'
+    - '$default'
+LectureHolderPage:
+  extensions:
+    - SilverStripe\Lumberjack\Model\Lumberjack
