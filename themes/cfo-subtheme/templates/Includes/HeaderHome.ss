@@ -31,7 +31,7 @@
 					</ul>
 				<% end_if %>
 
-				<% include fbpage %>
+				<% include FBPage %>
 			</div>
 		</div>
 		<div class="large-8 columns">
