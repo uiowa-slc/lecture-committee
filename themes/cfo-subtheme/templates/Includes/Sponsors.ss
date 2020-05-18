@@ -1,0 +1,1 @@
+<%-- intentionally left blank since sponsors are on a per-lecture basis and not sitewide --%>
