@@ -58,7 +58,7 @@
 								</a>
 							<div class="orbit-caption">
 		
-									<a href="$Link">{$Title}<% if $LectureTitle %>| $LectureTitle<% end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
+									<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %>In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
 							</div>
 						</li>
 					<% end_loop %>
@@ -78,7 +78,7 @@
 								</a>
 							<div class="orbit-caption">
 		
-									<a href="$Link">{$Title}| <% if $LectureTitle %>$LectureTitle<% end_if %> - $EventDate.Format("MMMM d, YYYY")</a>
+									<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %> | In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
 							</div>
 						</li>
 					<% end_loop %>

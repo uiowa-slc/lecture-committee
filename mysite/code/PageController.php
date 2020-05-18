@@ -36,6 +36,15 @@ class PageController extends ContentController {
 		else
 			return false;
 	}
+
+	public function AllDonors(){
+
+		return Donor::get();
+	}
+	public function AllSponsors(){
+
+		return Sponsor::get();
+	}
 		
 	public function UpcomingLectures() {
 	 // print_r(date("Y-m-d", time() - 86400));
@@ -50,7 +59,7 @@ class PageController extends ContentController {
 	
 	public function PreviousLectures() {
 		$curDate = date("Y-m-d");
-		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate ))->sort('EventDate DESC');
+		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate, 'Cancelled' => 0 ))->sort('EventDate DESC');
 		return $lectures;
 	}
 

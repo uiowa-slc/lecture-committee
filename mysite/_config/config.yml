@@ -12,3 +12,6 @@ SilverStripe\View\SSViewer:
 LectureHolderPage:
   extensions:
     - SilverStripe\Lumberjack\Model\Lumberjack
+Sponsor:
+  extensions:
+    - SponsorExtension

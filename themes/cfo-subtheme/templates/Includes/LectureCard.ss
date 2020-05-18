@@ -10,6 +10,9 @@
 			<% else %>
 				<h1>$Title.LimitWordCount(10)</h1>
 			<% end_if %>
+			<% if $Partnership %>
+				<p class="h3">In partnership with: $Partnership</p>
+			<% end_if %>
 			<% include LectureDetails %>
 			$Content.LimitWordCount(40) <strong>Continue Reading</strong>
 	</article>
