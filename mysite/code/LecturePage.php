@@ -20,7 +20,8 @@ class LecturePage extends Page {
 		'Details' => 'HTMLText',
 		"LectureTitle" => "Text",
 		"FeatureOnHomePage" => "Boolean",
-		'Cancelled' => 'Boolean'
+		'Cancelled' => 'Boolean',
+		"WebsiteLink" => "Text"
 	);
 
 	private static $many_many = array(
@@ -70,11 +71,12 @@ class LecturePage extends Page {
 
 		$fields->addFieldToTab("Root.Main", new TextField('Location','Location'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price','Cost of lecture'));
+		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink','Lecturer website or more info link')->setDescription('Please include https:// in this link'));
 		$fields->addFieldToTab("Root.Main", $donorField);
 		$fields->addFieldToTab("Root.Main", $sponsorField);
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content','Description')->addExtraClass('stacked'));
 		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
-		$fields->addFieldToTab('Root.Main', new CheckboxField('Cancelled', 'This lecture is cancelled or postponed'));
+		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'));
 
 		return $fields;
 	}
