@@ -13,18 +13,20 @@
 			<% if $WebsiteLink %>
 				<p><a href="$WebsiteLink" class="button">More information</a></p>
 			<% end_if %>
-			<% if $Sponsors %>
-			<h2>Support provided by:</h2>
-			<% loop $Sponsors %>
-				{$Title}<% if not $Last %>, <% end_if %>
-			<% end_loop %>
-			<% end_if %>
+			
 			<% if $Donors %>
 			<h2>Donations provided by:</h2>
 			<% loop $Donors %>
 				{$Title}<% if not $Last %>, <% end_if %>
 			<% end_loop %>
 			<% end_if %>
+			<% if $Sponsors %>
+			<h2>Support provided by:</h2>
+			<% loop $Sponsors %>
+				{$Title}<% if not $Last %>, <% end_if %>
+			<% end_loop %>
+			<% end_if %>
+
 		
 		</div>
 		<div class="lecture-image medium-4 large-5 columns">
