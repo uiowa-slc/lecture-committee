@@ -62,7 +62,7 @@ $body-font-weight: $font-weight-normal;
 $primary-color: #000000;
 $bijoublue: #435979;
 $yellow: #ffce39;
- $secondary-color: $bijoublue;
+ $secondary-color: #00558C;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -186,7 +186,7 @@ $xxlarge-range: (120.063em, 99999999em);
 // We use these to style anchors
 // $anchor-text-decoration: none;
 $anchor-text-decoration-hover: underline;
-// $anchor-font-color: $primary-color;
+$anchor-font-color: $secondary-color;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
