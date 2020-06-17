@@ -40,7 +40,7 @@
 				<li>
 					<% if $Photo %>
 						<a href="$Link" class="staff-link">
-							<img src="$Photo.CroppedImage(230,230).URL" alt="$FirstName $LastName" class="staff-img">
+							<img src="$Photo.FocusFill(230,230).URL" alt="$FirstName $LastName" class="staff-img">
 						</a>
 					<% else %>
 						<a href="$Link" class="staff-link">
