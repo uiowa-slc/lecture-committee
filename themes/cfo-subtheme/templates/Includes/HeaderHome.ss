@@ -36,54 +36,61 @@
 		</div>
 		<div class="large-8 columns">
 			<% include Nav %>
-
+			<div class="row">
+				<div class="large-8 large-offset-2" style="margin-top:20px;">
 			<% if UpcomingLectures %>
 			
-			<div class="slider <% if $UpcomingLectures.Count < 2 %>single<% end_if %>">
-			<ul class="home-orbit" data-orbit data-options="
-				animation:slide;
-				animation_speed:1000;
-				pause_on_hover:true;
-				navigation_arrows:true;
-				bullets:false;
-				timer:false;">
-					<% loop UpcomingLectures.Limit(3) %>
-						<li>
-						<a href="$Link">
-							<% if $Picture %>
-								<img src="$Picture.FocusFill(544,650).URL" alt="$Title">
-							<% else %>
-								<img src="{$ThemeDir}/dist/images/lecture-placeholder.jpg" alt="$Title">
-							<% end_if %>
-								</a>
-							<div class="orbit-caption">
-		
-									<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %>In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
-							</div>
-						</li>
-					<% end_loop %>
-				<% else %>
-				<div class="slider <% if $PreviousLectures.Count < 2 %>single<% end_if %>">
-					<ul class="home-orbit" data-orbit data-options="
-						animation:slide;
-						animation_speed:1000;
-						pause_on_hover:true;
-						navigation_arrows:true;
-						bullets:false;
-						timer:false;">
-					<% loop PreviousLectures.Limit(3) %>
-						<li>
-						<a href="$Link">
-									<img src="$Picture.FocusFill(544,650).URL" alt="$Title">
-								</a>
-							<div class="orbit-caption">
-		
-									<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %> | In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
-							</div>
-						</li>
-					<% end_loop %>
-				<% end_if %>
+
+						<div class="slider <% if $UpcomingLectures.Count < 2 %>single<% end_if %>">
+						<ul class="home-orbit" data-orbit data-options="
+							animation:slide;
+							animation_speed:1000;
+							pause_on_hover:true;
+							navigation_arrows:true;
+							bullets:false;
+							timer:false;">
+								<% loop UpcomingLectures.Limit(3) %>
+									<li>
+									<a href="$Link">
+										<% if $Picture %>
+											<img src="$Picture.Pad(544,800,222222).URL" alt="$Title">
+										<% else %>
+											<img src="{$ThemeDir}/dist/images/lecture-placeholder.jpg" alt="$Title">
+										<% end_if %>
+											</a>
+										<div class="orbit-caption">
+					
+												<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %>In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
+										</div>
+									</li>
+								<% end_loop %>
+							</ul>
+					</div>
+
+			<% else %>
+			<div class="slider <% if $PreviousLectures.Count < 2 %>single<% end_if %>">
+				<ul class="home-orbit" data-orbit data-options="
+					animation:slide;
+					animation_speed:1000;
+					pause_on_hover:true;
+					navigation_arrows:true;
+					bullets:false;
+					timer:false;">
+				<% loop PreviousLectures.Limit(3) %>
+					<li>
+					<a href="$Link">
+								<img src="$Picture.Pad(544,650,222222).URL" alt="$Title">
+							</a>
+						<div class="orbit-caption">
+	
+								<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %> | In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
+						</div>
+					</li>
+				<% end_loop %>
 			</ul>
+			</div>
+			<% end_if %>
+				</div>
 			</div>
 		</div>
 	</div>

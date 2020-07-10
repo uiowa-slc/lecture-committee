@@ -1,6 +1,6 @@
 <div class="<% if $Children || $Parent %>large-9 columns content-left<% else %>large-12<% end_if %> columns">
 	<article>
-		<h1>$Title</h1>
+		<h1 class="page-header">$Title</h1>
 		$Content
 			<% if $AllDonors %>
 			<h2>Additional support for the University Lecture Committee provided by:</h2>

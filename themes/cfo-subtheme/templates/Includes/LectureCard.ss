@@ -1,7 +1,7 @@
 <a href="$Link" class="lecture-card-link">
 	<article class="lecture-card">
 		<% if $Picture %>
-			<img src="$Picture.FocusFill(500, 600).URL" alt="Photo representing $Title" />
+			<img src="$Picture.Pad(500, 600, 222222).URL" alt="Photo representing $Title" />
 		<% else %>
 			<img src="{$ThemeDir}/dist/images/lecture-placeholder.jpg" alt="Placeholder photo representing $Title" />
 		<% end_if %>

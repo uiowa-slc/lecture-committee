@@ -257,9 +257,6 @@ ul.lecture-details {
     max-width: 1600px;
     margin: auto;
 
-    .no-upcoming-content {
-        text-align: center;
-    }
 
     article.lecture-card {
         padding: 0;
@@ -289,6 +286,16 @@ ul.lecture-details {
         }
     }
 }
+
+.no-upcoming-content {
+    text-align: center;
+
+    a{
+        color: white;
+        text-decoration: underline;
+    }
+}
+
 
 /* Single Lecture Page */
 
@@ -337,4 +344,23 @@ ul.lecture-details {
     .facebook-container {
         background-color: #e4e4e4;
     }
+}
+
+.donor-slideshow{
+    float: right;
+    width: 500px;
+    padding: 30px;
+}
+
+button.slick-prev:hover{
+    background: none;
+}
+button.slick-next:hover{
+    background: none;
+}
+
+.page-header{
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
 }

@@ -15,3 +15,6 @@ LectureHolderPage:
 Sponsor:
   extensions:
     - SponsorExtension
+SilverStripe\Assets\Image:
+  belongs_many_many:
+    DonorPages: DonorPage.Images

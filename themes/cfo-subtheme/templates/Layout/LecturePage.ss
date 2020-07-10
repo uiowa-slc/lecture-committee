@@ -2,9 +2,9 @@
 	<article class="row">
 		<div class="lecture-details medium-8 large-7 columns">
 			<% if $LectureTitle %>
-				<h1>$LectureTitle</h1>
+				<h1 class="page-header">$LectureTitle</h1>
 			<% else %>
-				<h1>$Title</h1>
+				<h1 class="page-header">$Title</h1>
 			<% end_if %>
 
 			<% include LectureDetails %>
