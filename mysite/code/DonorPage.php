@@ -21,6 +21,10 @@ class DonorPage extends Page {
     private static $many_many_extraFields = [
         'Images' => ['SortOrder' => 'Int']
     ];
+
+    private static $owns = array(
+    	'Images'
+    );
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
             $fields->addFieldToTab('Root.Main', SortableUploadField::create(
