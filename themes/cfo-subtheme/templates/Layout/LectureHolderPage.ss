@@ -1,6 +1,7 @@
 
 <div class="large-12 columns">
 	<section id="upcoming-lectures" class="row">
+		<h1 class="text-center">Upcoming:</h1>
 		<% if $UpcomingLectures %>
 		<% loop UpcomingLectures %>
 			<% include LectureCardBig %>
@@ -8,7 +9,7 @@
 		<% end_if %>
 		<% if not $UpcomingLectures %>
 		<div class="no-upcoming-content" style="color: white;">
-			<h1>Upcoming:</h1>
+			
 			$Content
 		</div>
 	<% end_if %>

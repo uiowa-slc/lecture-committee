@@ -37,7 +37,7 @@
 		<div class="large-8 columns">
 			<% include Nav %>
 			<div class="row">
-				<div class="large-8 large-offset-2" style="margin-top:20px;">
+				<div class="large-10 large-offset-2" style="margin-top:20px;">
 			<% if UpcomingLectures %>
 			
 

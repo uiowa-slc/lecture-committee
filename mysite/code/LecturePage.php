@@ -32,6 +32,10 @@ class LecturePage extends Page {
 	private static $has_one = array(
 		'Picture' => Image::class
 	);
+
+	private static $owns = array(
+		'Picture'
+	);
 	private static $show_in_sitetree = false;
 
 	private static $default_sort = 'EventDate DESC';
@@ -76,7 +80,7 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", $sponsorField);
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content','Description')->addExtraClass('stacked'));
 		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
-		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'));
+		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
 
 		return $fields;
 	}

@@ -192,6 +192,12 @@ ul.lecture-details {
 }
 
 #upcoming-lectures {
+
+
+    .h4{
+        color: white;
+    }
+
     @media #{$large-up} {
         padding-bottom: 10px;
         margin-top: $column-gutter / 2;
