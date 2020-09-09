@@ -14,6 +14,7 @@ class LecturePage extends Page {
 	private static $db = array(
 		'EventDate' => 'Date',
 		'Partnership' => 'Text',
+		'Donations' => 'Text',
 		'Location' => 'Text',
 		'Time' => 'Text',
 		'Price' => 'Text',
@@ -51,6 +52,7 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
 		$fields->addFieldToTab("Root.Main", $datefield);
 		$fields->addFieldToTab("Root.Main", new TextField('Partnership','In partnership with:'));
+		$fields->addFieldToTab("Root.Main", new TextField('Donations','Support provided by:'));
 		$fields->addFieldToTab("Root.Main", new TextField('Time','Time'));
 
 		$donorField = TagField::create(
@@ -76,8 +78,8 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField('Location','Location'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price','Cost of lecture'));
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink','Lecturer website or more info link')->setDescription('Please include https:// in this link'));
-		$fields->addFieldToTab("Root.Main", $donorField);
-		$fields->addFieldToTab("Root.Main", $sponsorField);
+		// $fields->addFieldToTab("Root.Main", $donorField);
+		// $fields->addFieldToTab("Root.Main", $sponsorField);
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content','Description')->addExtraClass('stacked'));
 		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
 		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');

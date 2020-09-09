@@ -10,10 +10,14 @@
 			<% else %>
 				<h1>$Title.LimitWordCount(10)</h1>
 			<% end_if %>
-			<% if $Partnership %>
-				<p class="h3">In partnership with: $Partnership</p>
-			<% end_if %>
-			<% include LectureDetails %>
+				<% if $Partnership %>
+					<p style="font-size: 16px; color: #666; margin-bottom: 10px; font-weight: bold;">In partnership with: <span style="color: #000; font-weight: normal;">$Partnership</span></p>
+				<% end_if %>
+				<% if $Donations %>
+					<p style="font-size: 16px; color: #666; margin-bottom: 10px; font-weight: bold;">Support provided by: <span style="color: #000; font-weight: normal;">$Donations</span></p>
+				<% end_if %>
+
+			
 			$Content.LimitWordCount(40) <strong>Continue Reading</strong>
 	</article>
 </a>

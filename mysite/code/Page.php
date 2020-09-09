@@ -26,10 +26,10 @@ class Page extends SiteTree {
     // This is required to publish deletions as well,
     // as this will not happen by default!
     private static $cascade_deletes = [
-        'Images'
+        'SlideshowImages'
     ];
     private static $owns = array(
-    	'Images'
+    	'SlideshowImages'
     );
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();

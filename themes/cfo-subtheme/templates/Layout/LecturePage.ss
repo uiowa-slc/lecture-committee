@@ -14,7 +14,7 @@
 				<p><a href="$WebsiteLink" class="button">More information</a></p>
 			<% end_if %>
 			
-			<% if $Donors %>
+<%-- 			<% if $Donors %>
 			<h2>Donations provided by:</h2>
 			<% loop $Donors %>
 				{$Title}<% if not $Last %>, <% end_if %>
@@ -25,7 +25,7 @@
 			<% loop $Sponsors %>
 				{$Title}<% if not $Last %>, <% end_if %>
 			<% end_loop %>
-			<% end_if %>
+			<% end_if %> --%>
 
 		
 		</div>

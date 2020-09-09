@@ -6,7 +6,19 @@
 			<% else %>
 				<h1><a href="$Link">$Title</a></h1>
 			<% end_if %>
-			<% include LectureDetails %>
+			<ul class="lecture-details" style="margin-bottom: 10px">
+				<% if $LectureTitle %><li class="h2">$Title</li><% end_if %>
+
+				<li><strong>Date:</strong> $EventDate.Format("MMMM d, YYYY") $Time</li>
+				<li><strong>Location:</strong> $Location</li>
+				<li><strong>Cost:</strong> $Price</li>
+				<% if $Partnership %>
+					<li style="font-size: 16px; color: #939393; margin-bottom: 10px; font-weight: bold;">In partnership with: <span style="color: #eee">$Partnership</span></li>
+				<% end_if %>
+				<% if $Donations %>
+					<li style="font-size: 16px; color: #939393; margin-bottom: 10px; font-weight: bold;">Support provided by: <span style="color: #eee">$Donations</span></li>
+				<% end_if %>
+			</ul>
 			<p>$Content.Summary(75) <a href="$Link">Continue Reading</a></p>
 		</div>
 		<div class="lecture-image large-5 columns">
