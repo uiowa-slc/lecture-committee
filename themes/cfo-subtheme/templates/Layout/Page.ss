@@ -2,6 +2,7 @@
 <div class="<% if $Children || $Parent ||$InSection("sponsorships") || $InSection("contact") || $InSection("about") %>large-9 columns content-left<% else %>large-12<% end_if %> columns">
 	<article class="article">
 		<h1 class="page-header">$Title</h1>
+		<% include Slideshow %>
 		$Content
 		$Form
 	</article>

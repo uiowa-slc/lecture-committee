@@ -17,4 +17,4 @@ Sponsor:
     - SponsorExtension
 SilverStripe\Assets\Image:
   belongs_many_many:
-    DonorPages: DonorPage.Images
+    Pages: Page.Images

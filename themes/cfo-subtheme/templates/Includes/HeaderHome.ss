@@ -58,9 +58,10 @@
 											<img src="{$ThemeDir}/dist/images/lecture-placeholder.jpg" alt="$Title">
 										<% end_if %>
 											</a>
-										<div class="orbit-caption">
-					
-												<a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %><% if Partnership %>In Partnership With: $Partnership<%end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
+										<div class="orbit-caption slider-lecture-caption">
+											<h2><a href="$Link">{$Title} <% if $LectureTitle %>| $LectureTitle<% end_if %></a>
+											</h2>
+												<% if Partnership %>In Partnership With: $Partnership<% end_if %><% if $EventDate %> - $EventDate.Format("MMMM d, YYYY")<% end_if %></a>
 										</div>
 									</li>
 								<% end_loop %>
