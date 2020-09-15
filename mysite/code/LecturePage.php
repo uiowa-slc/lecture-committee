@@ -22,7 +22,8 @@ class LecturePage extends Page {
 		"LectureTitle" => "Text",
 		"FeatureOnHomePage" => "Boolean",
 		'Cancelled' => 'Boolean',
-		"WebsiteLink" => "Text"
+		"WebsiteLink" => "Text",
+		'StreamingLink' => "Text"
 	);
 
 	private static $many_many = array(
@@ -76,6 +77,7 @@ class LecturePage extends Page {
 
 
 		$fields->addFieldToTab("Root.Main", new TextField('Location','Location'));
+		$fields->addFieldToTab("Root.Main", new TextField('StreamingLink','Streaming Link'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price','Cost of lecture'));
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink','Lecturer website or more info link')->setDescription('Please include https:// in this link'));
 		// $fields->addFieldToTab("Root.Main", $donorField);
@@ -87,15 +89,39 @@ class LecturePage extends Page {
 		return $fields;
 	}
 
+	public function isFuture() {
+		//echo strtotime($this->EventDate).' '.time();
 
+		if(!$this->EventDate){
+			return false;
+		}
 
-	public function isPast() {
-		if(empty($EventDate) || strtotime($EventDate) < time()){
+		$midnight = new \DateTime();
+		$midnight->setTimestamp(strtotime($this->EventDate))->modify('tomorrow')->setTime(0, 0);
+
+		if($midnight->getTimestamp() > time()){
 			return true;
 		} else {
 			return false;
 		}
 	}
+
+	public function isPast() {
+
+		if(!$this->EventDate){
+			return false;
+		}
+
+		$midnight = new \DateTime();
+		$midnight->setTimestamp(strtotime($this->EventDate))->modify('tomorrow')->setTime(0, 0);
+
+		if($midnight->getTimestamp() < time()){
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	
 }
  
