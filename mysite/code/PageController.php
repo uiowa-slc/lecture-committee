@@ -19,47 +19,47 @@ class PageController extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
 
-
-	public function FirstAboutParagraph(){
+	public function FirstAboutParagraph() {
 		$about = AboutPage::get();
 
 	}
 
-	public function NextLecture(){
+	public function NextLecture() {
 		$lecture = $this->UpcomingLectures()->First;
-		
-		if($lecture)
+
+		if ($lecture) {
 			return true;
-		else
+		} else {
 			return false;
+		}
+
 	}
 
-	public function AllDonors(){
+	public function AllDonors() {
 
 		return Donor::get();
 	}
-	public function AllSponsors(){
+	public function AllSponsors() {
 
 		return Sponsor::get();
 	}
-		
-	public function UpcomingLectures() {
-	 // print_r(date("Y-m-d", time() - 86400));
 
+	public function UpcomingLectures() {
+		// print_r(date("Y-m-d", time() - 86400));
 
 		$curDate = date("Y-m-d", time() - 86400);
-		$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate ));
+		$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate))->sort('EventDate ASC');
 		//print_r($lectures->dataQuery()->sql());
 		//print_r($lectures->toArray());
 		return $lectures;
 	}
-	
+
 	public function PreviousLectures() {
 		$curDate = date("Y-m-d");
-		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate, 'Cancelled' => 0 ))->sort('EventDate DESC');
+		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate, 'Cancelled' => 0))->sort('EventDate DESC');
 		return $lectures;
 	}
 
@@ -74,6 +74,6 @@ class PageController extends ContentController {
 		// Requirements::block('event_calendar/javascript/calendar_widget.js');
 		// Requirements::block('event_calendar/javascript/lang/calendar_en.js');
 		// Requirements::block('event_calendar/javascript/calendar_widget_init.js');
-	
- 	}
+
+	}
 }
