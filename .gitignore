@@ -20,3 +20,4 @@ public/_resources/
 /.tmp
 /assets
 assets.zip
+/public/cache

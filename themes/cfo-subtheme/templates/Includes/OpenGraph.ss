@@ -14,14 +14,6 @@
 		<meta property="og:image" content="$Image.Pad(1200,630,222222).AbsoluteURL" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-	<% else_if $Photo %>
-		<meta property="og:image" content="$Photo.Pad(1200,630,222222).AbsoluteURL" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
-	<% else_if $Picture %>
-		<meta property="og:image" content="$Picture.Pad(1200,630,222222).AbsoluteURL" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image:height" content="630" />
 	<% else %>
 		<meta property="og:image" content="{$BaseHref}cfo-project/images/og-dsl.png" />
 		<meta property="og:image:width" content="1200" />
