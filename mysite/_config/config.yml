@@ -18,3 +18,8 @@ Sponsor:
 SilverStripe\Assets\Image:
   belongs_many_many:
     Pages: Page.Images
+SilverStripe\Assets\InterventionBackend:
+  flush_enabled: false
+SiteTree:
+  extensions:
+    - SilverStripe\StaticPublishQueue\Extension\Publishable\PublishableSiteTree
