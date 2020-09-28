@@ -1,7 +1,11 @@
 <a href="$Link" class="lecture-card-link">
 	<article class="lecture-card">
 		<% if $Picture %>
-			<img src="$Picture.Pad(500, 600, 222222).URL" alt="Photo representing $Title" />
+			<% if $Picture.Orientation == "0" %>
+				<img src="$Picture.Pad(544,544,222222).URL" alt="$Title">
+			<% else %>
+				<img src="$Picture.Pad(500,600,222222).URL" alt="Image for $Title" />
+			<% end_if %>
 		<% else %>
 			<img src="{$ThemeDir}/dist/images/lecture-placeholder.jpg" alt="Placeholder photo representing $Title" />
 		<% end_if %>

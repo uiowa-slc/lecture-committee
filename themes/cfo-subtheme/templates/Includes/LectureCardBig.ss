@@ -27,8 +27,10 @@
 			<p>$Content.Summary(75) <a href="$Link">Continue Reading</a></p>
 		</div>
 		<div class="lecture-image large-5 columns">
-			<% if $Picture %>
-				<a href="$Link"><img src="$Picture.Pad(600,700,222222).URL" alt="Image for $Title" /></a>
+			<% if $Picture.Orientation == "0" %>
+				<img src="$Picture.Pad(544,544,222222).URL" alt="$Title">
+			<% else %>
+				<img src="$Picture.Pad(600,700,222222).URL" alt="Image for $Title" />
 			<% end_if %>
 		</div>
 	</article>
