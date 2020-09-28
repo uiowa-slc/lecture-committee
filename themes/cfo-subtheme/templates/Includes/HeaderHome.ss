@@ -54,7 +54,12 @@
 									<li>
 									<a href="$Link">
 										<% if $Picture %>
-											<img src="$Picture.Pad(544,800,222222).URL" alt="$Title">
+											<% if $Picture.Orientation == "0" %>
+												<img src="$Picture.Pad(544,544,222222).URL" alt="$Title">
+											<% else %>
+												<img src="$Picture.Pad(544,800,222222).URL" alt="$Title">
+											<% end_if %>
+											
 										<% else %>
 											<img src="{$ThemeDir}/dist/images/lecture-placeholder.jpg" alt="$Title">
 										<% end_if %>
