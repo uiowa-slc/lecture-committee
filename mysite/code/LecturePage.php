@@ -1,16 +1,15 @@
 <?php
 
-use SilverStripe\Assets\Image;
-use SilverStripe\ORM\FieldType\DBDate;
-use SilverStripe\Forms\DateField;
-use SilverStripe\Forms\TextField;
-use SilverStripe\Forms\CheckboxField;
-use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\CheckboxField;
+use SilverStripe\Forms\DateField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use SilverStripe\Forms\TextField;
 use SilverStripe\TagField\TagField;
 
 class LecturePage extends Page {
-	
+
 	private static $db = array(
 		'EventDate' => 'Date',
 		'Partnership' => 'Text',
@@ -23,38 +22,38 @@ class LecturePage extends Page {
 		"FeatureOnHomePage" => "Boolean",
 		'Cancelled' => 'Boolean',
 		"WebsiteLink" => "Text",
-		'StreamingLink' => "Text"
+		'StreamingLink' => "Text",
 	);
 
 	private static $many_many = array(
 		'Sponsors' => 'Sponsor',
-		'Donors' => 'Donor'
+		'Donors' => 'Donor',
 	);
-	
+
 	private static $has_one = array(
-		'Picture' => Image::class
+		'Picture' => Image::class,
 	);
 
 	private static $owns = array(
-		'Picture'
+		'Picture',
 	);
 	private static $show_in_sitetree = false;
 
 	private static $default_sort = 'EventDate DESC';
 	private static $allowed_children = array();
-	
+
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
 		$fields->renameField("Title", "Name of Lecturer");
-		$fields->removeFieldFromTab("Root.Main","Content");
+		$fields->removeFieldFromTab("Root.Main", "Content");
 		$fields->removeByName("Metadata");
-		$datefield = new DateField('EventDate','Date');
-		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle','Title of Lecture (optional)'));
+		$datefield = new DateField('EventDate', 'Date');
+		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle', 'Title of Lecture (optional)'));
 		$fields->addFieldToTab("Root.Main", $datefield);
-		$fields->addFieldToTab("Root.Main", new TextField('Partnership','In partnership with:'));
-		$fields->addFieldToTab("Root.Main", new TextField('Donations','Support provided by:'));
-		$fields->addFieldToTab("Root.Main", new TextField('Time','Time'));
+		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
+		$fields->addFieldToTab("Root.Main", new TextField('Donations', 'Support provided by:'));
+		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
 
 		$donorField = TagField::create(
 			'Donors',
@@ -63,8 +62,7 @@ class LecturePage extends Page {
 			$this->Donors()
 		)
 			->setShouldLazyLoad(false) // tags should be lazy loaded
-			->setCanCreate(true);     // new tag DataObjects can be created
-
+			->setCanCreate(true); // new tag DataObjects can be created
 
 		$sponsorField = TagField::create(
 			'Sponsors',
@@ -73,16 +71,15 @@ class LecturePage extends Page {
 			$this->Sponsors()
 		)
 			->setShouldLazyLoad(false) // tags should be lazy loaded
-			->setCanCreate(true);     // new tag DataObjects can be created
+			->setCanCreate(true); // new tag DataObjects can be created
 
-
-		$fields->addFieldToTab("Root.Main", new TextField('Location','Location'));
-		$fields->addFieldToTab("Root.Main", new TextField('StreamingLink','Streaming Link'));
-		$fields->addFieldToTab("Root.Main", new TextField('Price','Cost of lecture'));
-		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink','Lecturer website or more info link')->setDescription('Please include https:// in this link'));
+		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
+		$fields->addFieldToTab("Root.Main", TextField::create('StreamingLink', 'Streaming Link')->setDescription('Usually this is "https://lectures.uiowa.edu/live" ("https://" required)'));
+		$fields->addFieldToTab("Root.Main", new TextField('Price', 'Cost of lecture'));
+		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
 		// $fields->addFieldToTab("Root.Main", $donorField);
 		// $fields->addFieldToTab("Root.Main", $sponsorField);
-		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content','Description')->addExtraClass('stacked'));
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content', 'Description')->addExtraClass('stacked'));
 		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
 		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
 
@@ -92,14 +89,14 @@ class LecturePage extends Page {
 	public function isFuture() {
 		//echo strtotime($this->EventDate).' '.time();
 
-		if(!$this->EventDate){
+		if (!$this->EventDate) {
 			return false;
 		}
 
 		$midnight = new \DateTime();
 		$midnight->setTimestamp(strtotime($this->EventDate))->modify('tomorrow')->setTime(0, 0);
 
-		if($midnight->getTimestamp() > time()){
+		if ($midnight->getTimestamp() > time()) {
 			return true;
 		} else {
 			return false;
@@ -108,21 +105,20 @@ class LecturePage extends Page {
 
 	public function isPast() {
 
-		if(!$this->EventDate){
+		if (!$this->EventDate) {
 			return false;
 		}
 
 		$midnight = new \DateTime();
 		$midnight->setTimestamp(strtotime($this->EventDate))->modify('tomorrow')->setTime(0, 0);
 
-		if($midnight->getTimestamp() < time()){
+		if ($midnight->getTimestamp() < time()) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	
 }
- 
+
 ?>
