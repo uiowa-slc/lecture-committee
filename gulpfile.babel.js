@@ -113,6 +113,7 @@ function scripts(){
 
       './vendor/md/cfo-project/src/lib/foundation/js/foundation.js',
       //'bower_components/FlexSlider/jquery.flexslider.js',
+      './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
       './vendor/md/cfo-project/src/lib/responsive-nav/responsive-nav.js',
       './vendor/md/cfo-project/src/lib/slick-carousel/slick/slick.js',
       './vendor/md/cfo-project/src/lib/jquery-unveil/jquery.unveil.js',
