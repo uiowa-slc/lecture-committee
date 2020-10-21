@@ -1460,12 +1460,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics.git",
-                "reference": "3321e2110e19631a1e198ed68224b934a977872f"
+                "reference": "9b599929e427f9df3a5ec38dc9b494ab657fc989"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-analytics/zipball/3321e2110e19631a1e198ed68224b934a977872f",
-                "reference": "3321e2110e19631a1e198ed68224b934a977872f",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-analytics/zipball/9b599929e427f9df3a5ec38dc9b494ab657fc989",
+                "reference": "9b599929e427f9df3a5ec38dc9b494ab657fc989",
                 "shasum": ""
             },
             "require": {
@@ -1479,7 +1479,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/tree/1.2.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/issues"
             },
-            "time": "2020-10-20T18:03:03+00:00"
+            "time": "2020-10-21T22:16:16+00:00"
         },
         {
             "name": "md/saml",
@@ -2543,12 +2543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "89f2e9028adfe655f6dab41de07d630a96814fa4"
+                "reference": "f4edd35989357cbb642ba83d59491018887efb84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/89f2e9028adfe655f6dab41de07d630a96814fa4",
-                "reference": "89f2e9028adfe655f6dab41de07d630a96814fa4",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/f4edd35989357cbb642ba83d59491018887efb84",
+                "reference": "f4edd35989357cbb642ba83d59491018887efb84",
                 "shasum": ""
             },
             "require": {
@@ -2597,7 +2597,7 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2020-10-13T08:53:30+00:00"
+            "time": "2020-10-21T21:50:44+00:00"
         },
         {
             "name": "silverstripe/config",
