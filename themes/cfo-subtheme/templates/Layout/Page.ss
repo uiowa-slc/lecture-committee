@@ -23,6 +23,6 @@
   <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
 </svg></a></p>
 </div>
-  		<p style="margin: 0;"><a href="#" class="check-in-modal__dismiss">No thanks</a></p>
+  		<p style="margin: 0;"><a href="live/" class="check-in-modal__dismiss">No thanks</a></p>
 	</div>
 <% end_if %>
