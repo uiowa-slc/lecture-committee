@@ -6,8 +6,7 @@ SilverStripe\Core\Manifest\ModuleManifest:
 SilverStripe\View\SSViewer:
   themes:
     - '$public'
-    - 'cfo-subtheme'
-    - 'md/cfo-project'
+    - 'bootstrap'
     - '$default'
 LectureHolderPage:
   extensions:
