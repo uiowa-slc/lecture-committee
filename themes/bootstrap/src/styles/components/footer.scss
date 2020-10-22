@@ -3,8 +3,15 @@
 -------------------------------------------*/
 .footer {
 
+
     &__md {
         max-width: 36px;
     }
 
+}
+
+.footer__links {
+    a {
+        text-decoration: none !important;
+    }
 }

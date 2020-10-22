@@ -38,7 +38,7 @@ $light: $gray-100;
 $dark: $gray-900;
 
 $link-color: lighten($primary, 60);
-
+$link-decoration: underline;
 $theme-colors: ();
 $theme-colors: map-merge(("gold": $gold, "blue": $blue), $theme-colors);
 
@@ -136,20 +136,20 @@ $list-group-border-color: #222;
 
 $pagination-color: $link-color;
 $pagination-bg: $black;
-$pagination-border-width: $border-width;
-$pagination-border-color: $white;
+// $pagination-border-width: $border-width;
+$pagination-border-color: #333;
 
-$pagination-focus-box-shadow: $input-btn-focus-box-shadow;
+// $pagination-focus-box-shadow: $input-btn-focus-box-shadow;
 $pagination-focus-outline: 0;
 
-$pagination-hover-color: $link-hover-color;
+// $pagination-hover-color: $link-hover-color;
 $pagination-hover-bg: #222;
 $pagination-hover-border-color: #222;
 
-$pagination-active-color: $component-active-color;
-$pagination-active-bg: $component-active-bg;
-$pagination-active-border-color: $pagination-active-bg;
+// $pagination-active-color: $component-active-color;
+$pagination-active-bg: #222;
+$pagination-active-border-color: #222;
 
 $pagination-disabled-color: $gray-300;
-$pagination-disabled-bg: $white;
-$pagination-disabled-border-color: $gray-200;
+$pagination-disabled-bg: #333;
+$pagination-disabled-border-color: #222;

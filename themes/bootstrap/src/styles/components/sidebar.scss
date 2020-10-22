@@ -5,11 +5,11 @@ Subnavigation
     padding: 1rem;
     background: #222;
     position: relative;
-    border-left: 5px solid $highlight;
+    border-left: 5px solid $secondary;
 
     &__title {
         font-size: 12px;
-        background: $highlight;
+        background: $secondary;
         display: inline-block;
         color: $white;
         margin: 0;

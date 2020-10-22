@@ -8,7 +8,7 @@
                     <h1 class="display-4">$LectureTitle</h1>
                     <% if $Lecturer %><p class="h2">$Lecturer</p><% end_if %>
                 <% else %>
-                    <h1 class="display-4">$Title</h1>
+                    <h1 class="display-4">$Lecturer</h1>
                 <% end_if %>
                 <hr>
             </div>
@@ -29,7 +29,7 @@
                 <% end_if %>
                 <% if $StreamingLink && $isFuture %>
                     <li class="lecture-details__item">
-                        <strong>Stream:</strong> <% include StreamButton %>
+                        <% include StreamButton %>
                     </li>
                 <% end_if %>
                 <% if $Cost %>
@@ -65,23 +65,23 @@
                 <% end_if %>
             <% end_if %>
 
-            <% if $Picture.Orientation == 1 %>
+           
                 <p>$Content</p>
-            <% end_if %>
+      
        
         </div>
         <div class="col-md-5 pt-5 order-1 order-md-12">
 
                 <% if $Picture %>
-                <img src="$Picture.ScaleMaxWidth(400).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
+                <img src="$Picture.Pad(800,800,333).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
                 <% end_if %>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-9">
-                <% if $Picture.Orientation != 1 %>
-                <p>$Content</p>
-                <% end_if %>
+              
+
+             
 
                 <hr />
                 <p class="small">Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Lecture Committee in advance at <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
@@ -89,4 +89,4 @@
         </div>
     </div>
 </main>
-<% include InstaFeed %>
+<% include TwitterFeature %>

@@ -17,6 +17,7 @@
 		<% end_if %>
 	</div>
 </main>
+<% include TwitterFeature %>
 
 <% if $URLSegment == "live" %>
 	<div id="check-in-modal" class="check-in-modal mfp-hide text-center">

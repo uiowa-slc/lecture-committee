@@ -62,7 +62,4 @@
     </div>
 </section>
 
-
-
-
-<% include InstaFeed %>
+<% include TwitterFeature %>

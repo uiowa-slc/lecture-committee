@@ -1,4 +1,4 @@
-<div class="my-5" id="content">
+<div class="my-5 show-card show-card--big" id="content">
     <div class="row d-flex align-items-center">
         <div class="col-md-5 order-12 order-md-1">
             <!-- Date -->
@@ -52,7 +52,7 @@
         <div class="col-md-7 order-1 order-md-12">
             <% if $Picture %>
                 <a href="$Link" class="d-block">
-                    <img data-ratio="1" data-src="$Picture.Pad(800,800, f8f9fa).URL" class="lazyload d-block w-100" alt="Poster for {$Title}" />
+                    <img data-ratio="1" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(800,800, 333).URL" class="lazyload d-block w-100" alt="Poster for {$Title}" />
                 </a>
             <% end_if %>
         </div>

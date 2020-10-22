@@ -1,4 +1,4 @@
-<article class="post-summary p-4 p-lg-5 mb-3 border rounded overflow-auto bg-white" aria-label="$Title">
+<article class="post-summary p-4 p-lg-5 mb-3 border rounded overflow-auto bg-dark" aria-label="$Title">
     <% if $FeaturedImage %>
         <div class="post-summary__media ml-md-5 mb-3 mb-lg-0 ml-sm-3 ">
             <a href="$Link">

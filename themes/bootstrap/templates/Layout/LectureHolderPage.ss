@@ -27,9 +27,7 @@
 
         <div class="col-md-9">
 			<% loop $paginatedPreviousLectures %>
-				<div class="previous-shows">
-					<% include ShowCard %>
-				</div>
+				<% include ShowCard %>
 			<% end_loop %>
 
 			<% with $paginatedPreviousLectures %>
@@ -45,4 +43,5 @@
         </div>
 	</div>
 </main>
+<% include TwitterFeature %>
 

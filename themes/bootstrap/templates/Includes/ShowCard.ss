@@ -1,4 +1,4 @@
-<div class="my-5">
+<div class="my-5 show-card">
 	<div class="row no-gutters">
 
 		<div class="col-md-8 order-12 order-md-1">
@@ -50,7 +50,7 @@
 		<% if $Picture %>
 		<div class="col-md-4 order-1 order-md-12">
 			<a href="$Link" class="d-block pl-3">
-				<img data-ratio="1" class="lazyload d-block w-100" data-src="$Picture.Pad(400,400,000).URL" class="card-img" alt="$Title" loading="lazy">
+				<img data-ratio="1" class="lazyload d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,333).URL" class="card-img" alt="$Title" loading="lazy">
 			</a>
 		</div>
 		<% end_if %>
