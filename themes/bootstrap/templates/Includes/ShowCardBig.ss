@@ -1,6 +1,6 @@
 <div class="my-5" id="content">
     <div class="row d-flex align-items-center">
-        <div class="col-lg-5">
+        <div class="col-md-5 order-12 order-md-1">
             <!-- Date -->
             <% if $isFuture %>
             <div class="text-uppercase mt-2 mt-md-0">$EventDate.Format("MMMM d, Y") $Time</div>
@@ -15,7 +15,7 @@
                     </a>
                 </h1>
                 <% if $Lecturer %>
-                    <p class="display-5">$Lecturer</p>
+                    <p class="h2">$Lecturer</p>
                 <% end_if %>
             <% else %>
                 <h1 class="display-4 show-title">
@@ -49,10 +49,10 @@
                 <% end_if %>
             <% end_if %> 
         </div>
-        <div class="col-lg-7">
+        <div class="col-md-7 order-1 order-md-12">
             <% if $Picture %>
                 <a href="$Link" class="d-block">
-                    <img src="$Picture.Pad(800,800, f8f9fa).URL" class="w-100" alt="Poster for {$Title}" />
+                    <img data-ratio="1" data-src="$Picture.Pad(800,800, f8f9fa).URL" class="lazyload d-block w-100" alt="Poster for {$Title}" />
                 </a>
             <% end_if %>
         </div>

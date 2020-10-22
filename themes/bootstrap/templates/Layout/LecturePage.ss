@@ -1,14 +1,14 @@
 <% include Header %>
 <main class="container-xl mb-5" id="content">
     <div class="row">
-        <div class="col-lg-7">
+        <div class="col-md-7 order-12 order-md-1">
             <div class="pt-4">
                 $Breadcrumbs
                 <% if $LectureTitle %>
-                    <h1 class="display-3 pb-4">$LectureTitle</h1>
+                    <h1 class="display-4">$LectureTitle</h1>
                     <% if $Lecturer %><p class="h2">$Lecturer</p><% end_if %>
                 <% else %>
-                    <h1 class="display-3 pb-4">$Title</h1>
+                    <h1 class="display-4">$Title</h1>
                 <% end_if %>
                 <hr>
             </div>
@@ -70,7 +70,7 @@
             <% end_if %>
        
         </div>
-        <div class="col-lg-5 pt-5">
+        <div class="col-md-5 pt-5 order-1 order-md-12">
 
                 <% if $Picture %>
                 <img src="$Picture.ScaleMaxWidth(400).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />

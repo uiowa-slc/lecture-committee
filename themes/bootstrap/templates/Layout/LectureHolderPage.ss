@@ -2,12 +2,11 @@
 
 <main class="container-xl my-5" id="content">
 	<%--only show upcoming shows on index page (not archival "year/xxx" urls etc) --%>
-	<% if $Action == "index" %>
+	<% if $Action == "index" && not $paginatedPreviousLectures.NotFirstPage %>
 	<div class="row">
 		<div class="col-lg-12">
 			<% if $UpcomingLectures %>
-				<h1>Upcoming:</h1>
-                <br>
+				<h1 class="text-center">Upcoming:</h1>
 				<div class="upcoming-shows">
 					<% loop $UpcomingLectures %>
 						<% include ShowCardBig %>
@@ -25,13 +24,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
-            <nav class="nav nav-pills flex-column sticky-top">
-            	<% loop $Years.Sort('Year DESC') %>
-            		<a class="nav-item nav-link <% if $Active %>active<% end_if %>" href="$Link">$Year</a>
-            	<% end_loop %>
-            </nav>
-        </div>
+
         <div class="col-md-9">
 			<% loop $paginatedPreviousLectures %>
 				<div class="previous-shows">
@@ -43,6 +36,13 @@
 				<% include Pagination %>
 			<% end_with %>
 		</div>
+        <div class="col-md-3">
+            <nav class="nav nav-pills flex-column sticky-top">
+            	<% loop $Years.Sort('Year DESC') %>
+            		<a class="nav-item nav-link <% if $Active %>active<% end_if %>" href="$Link">$Year</a>
+            	<% end_loop %>
+            </nav>
+        </div>
 	</div>
 </main>
 

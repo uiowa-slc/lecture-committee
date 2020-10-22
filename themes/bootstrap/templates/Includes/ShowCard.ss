@@ -1,59 +1,18 @@
-<%-- <div class="row d-flex align-items-center">
-                            <div class="col-lg-5">
-                                <!-- Date -->
-                                <div class="text-uppercase mt-2 mt-md-0">October 8, 2020 7:00 p.m.</div>
-
-                                <!-- Title -->
-                                
-                                    <h1 class="display-4 show-title">
-                                        <a href="/lecture-committee/lectures/eric-deggens-and-venise-berry/" class="text-light text-decoration-none">
-                                            <span class="link-highlight">Race And The Media:  How The Media Shapes Race Issues And Influences Our Beliefs</span>
-                                        </a>
-                                    </h1>
-                                    
-                                        <p class="display-5">Eric Deggens &amp; Venise Berry</p>
-                                    
-                                
-  
-
-                                <!-- Content -->
-                                <p class="lead"></p>
-
-                                
-                                        <p><a class="btn btn-primary btn-stream-other" href="TBD " target="_blank">View Stream <i class="fas fa-video"></i></a></p>
-                                
-                                <a href="/lecture-committee/lectures/eric-deggens-and-venise-berry/" class="btn  btn-primary mb-3">View Details</a>
-
-                                <!-- Ticket buttons -->
-                                
-                                    
-                                    
-                                 
-                            </div>
-                            <div class="col-lg-7">
-                                
-                                    <img src="/lecture-committee/assets/Uploads/berry-deggens-alt2-square__PadWzgwMCw4MDAsImY4ZjlmYSIsMF0.jpg" class="w-100" alt="Poster for Eric Deggens &amp; Venise Berry">
-                                
-                            </div>
-                        </div> --%>
-
-
-
 <div class="my-5">
 	<div class="row no-gutters">
 
-		<div class="col-md-8">
-			<div>
+		<div class="col-md-8 order-12 order-md-1">
+			
 				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMM. d, Y")  $Time</div>
 				<h3 class="card-title show-title my-2">
 					<% if $LectureTitle %>
 						<a href="$Link">$LectureTitle</a>
 					<% else %>
-						<a href="$Link">$Title</a>
+						<a href="$Link">$Lecturer</a>
 					<% end_if %>
 				</h3>
-				<% if LectureTitle %>
-				<p class="h4">$Title</p>
+				<% if Lecturer %>
+				<p class="h4">$Lecturer</p>
 				<% end_if %>               
 
                 <!-- Date/Time -->
@@ -65,7 +24,7 @@
 				<% if $isFuture && $StreamingLink %>
                 	<p><a class="btn btn-primary btn-stream-other" href="{$StreamingLink} " target="_blank">View Stream <i class="fas fa-video"></i></a></p>
                 <% end_if %>
-				<br />
+				<p>$Content.FirstSentence</p>
                 
                 <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">See Details</a>
                 
@@ -86,12 +45,12 @@
                     <% end_if %>
 				<% end_if %>
 				
-			</div>
+			
 		</div>
 		<% if $Picture %>
-		<div class="col-md-4">
-			<a href="$Link">
-				<img src="$Picture.Pad(400,400,000).URL" class="card-img" alt="$Title" loading="lazy">
+		<div class="col-md-4 order-1 order-md-12">
+			<a href="$Link" class="d-block pl-3">
+				<img data-ratio="1" class="lazyload d-block w-100" data-src="$Picture.Pad(400,400,000).URL" class="card-img" alt="$Title" loading="lazy">
 			</a>
 		</div>
 		<% end_if %>

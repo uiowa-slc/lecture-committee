@@ -68,6 +68,7 @@
 @import "components/header";
 @import "components/sidebar";
 @import "components/buttons";
+
 @import "components/check-in-modal";
 @import "components/text-divider";
 @import "components/link-highlight";
@@ -75,6 +76,7 @@
 /* Layout
 -------------------------------------------*/
 @import "layouts/homepage";
+@import "layouts/page";
 @import "layouts/shows";
 @import "layouts/staff";
 @import "layouts/blog";
