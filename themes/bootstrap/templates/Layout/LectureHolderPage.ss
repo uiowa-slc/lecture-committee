@@ -10,7 +10,7 @@
                 <br>
 				<div class="upcoming-shows">
 					<% loop $UpcomingLectures %>
-						<% include ShowCard %>
+						<% include ShowCardBig %>
 					<% end_loop %>
 				</div>
 				<br />

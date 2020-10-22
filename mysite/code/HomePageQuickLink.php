@@ -25,7 +25,7 @@ class HomePageQuicklink extends DataObject {
 
 	private static $default_sort = "SortOrder";
 
-	function getCMSFields() {
+	public function getCMSFields() {
 		$fields = new FieldList();
 
 		$fields->push(new TextField('Title', 'Link Title'));
@@ -37,6 +37,15 @@ class HomePageQuicklink extends DataObject {
 		// $fields->push( new HTMLEditorField( 'Content', 'Content' ));
 
 		return $fields;
+	}
+
+	public function Link() {
+		if ($this->AssociatedPage()) {
+			return $this->AssociatedPage()->Link();
+		} else {
+			return $this->ExternalLink;
+		}
+
 	}
 
 }

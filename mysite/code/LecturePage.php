@@ -110,8 +110,16 @@ class LecturePage extends Page {
 
 	}
 
+	public function isToday() {
+		if (!$this->EventDate) {
+			return false;
+		}
+		return $this->obj('EventDate')->isToday();
+
+	}
+
 	public function isFuture() {
-		//echo strtotime($this->EventDate).' '.time();
+		//If the event is "in the future" aka it's not over (still returns true until the day following event)
 
 		if (!$this->EventDate) {
 			return false;
@@ -128,6 +136,8 @@ class LecturePage extends Page {
 	}
 
 	public function isPast() {
+
+		//Event is conclusively over (ends next day)
 
 		if (!$this->EventDate) {
 			return false;

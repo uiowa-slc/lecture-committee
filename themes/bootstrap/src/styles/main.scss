@@ -43,6 +43,7 @@
 /* Plugins
 -------------------------------------------*/
 @import "flickity/css/flickity";
+@import "magnific-popup/src/css/main";
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 @import "@fortawesome/fontawesome-free/scss/brands";
 @import "@fortawesome/fontawesome-free/scss/solid";
@@ -67,6 +68,7 @@
 @import "components/header";
 @import "components/sidebar";
 @import "components/buttons";
+@import "components/check-in-modal";
 @import "components/text-divider";
 @import "components/link-highlight";
 @import "components/lecture-details";
