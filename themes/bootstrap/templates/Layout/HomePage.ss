@@ -53,14 +53,14 @@
 <% include TwitterFeature %>
 <section class="py-5">
     <div class="container-xl">
-        <h2 class="text-center display-3 mb-5">Meet Our Staff</h2>
+        <h2 class="text-center display-3 mb-5">Meet Our Members</h2>
         <div class="stafflist">
             <ul class="stafflist__list list-unstyled">
                 <% loop RandomStaffMembers(8) %>
                     <% include StaffPageListItem %>
                 <% end_loop %>
             </ul>
-            <p class="text-center"><a href="about/" class="text-center btn btn-primary">View all staff</a></p>
+            <p class="text-center"><a href="about/" class="text-center btn btn-primary">View all members</a></p>
             
         </div>
     </div>
