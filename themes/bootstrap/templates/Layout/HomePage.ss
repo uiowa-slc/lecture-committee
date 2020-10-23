@@ -56,7 +56,7 @@
                     <% include StaffPageListItem %>
                 <% end_loop %>
             </ul>
-            <p class="text-center"><a href="{$baseUrl}staff/" class="text-center btn btn-primary">View all staff</a></p>
+            <p class="text-center"><a href="about/" class="text-center btn btn-primary">View all staff</a></p>
             
         </div>
     </div>
