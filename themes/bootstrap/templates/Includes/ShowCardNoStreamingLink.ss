@@ -22,7 +22,7 @@
 					<% end_if %>
 				</ul>
 
-				<p>$Content.FirstSentence</p>
+				<p>$Content.LimitCharacters(150)</p>
                 
                 <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">Details</a>
                 
