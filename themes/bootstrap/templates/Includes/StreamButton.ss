@@ -1,6 +1,9 @@
 <% if isToday %>
-<a class="btn btn-blue"href="$StreamingLink" target="_blank">$StreamButtonText <i class="fas fa-play"></i></a>
+<a class="btn btn-blue d-block d-sm-inline-block mb-2 mb-sm-0"href="$StreamingLink" target="_blank">$StreamButtonText <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-broadcast" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 0 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707z"/>
+  <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+</svg></a>
 <% else %>
 
-<a class="btn btn-light"href="$StreamingLink" target="_blank">Streaming Link <i class="fas fa-video"></i></a>
+<a class="btn btn-light d-block d-sm-inline-block mb-2 mb-sm-0"href="$StreamingLink" target="_blank">Streaming Link <i class="fas fa-video"></i></a>
 <% end_if %>

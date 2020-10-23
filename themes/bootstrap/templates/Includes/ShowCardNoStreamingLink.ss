@@ -24,7 +24,7 @@
 
 				<p>$Content.FirstSentence</p>
                 
-                <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">See Details</a>
+                <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">Details</a>
                 
                 <!-- Ticket Links -->
                 <% if $SoldOut %>

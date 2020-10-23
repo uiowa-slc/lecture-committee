@@ -17,16 +17,16 @@
 				<hr />
                 <!-- Date/Time -->
 				<ul class="lecture-details ">
-					<% if not $StreamingLink %>
-						<li class="lecture-details__item"><strong>Location:</strong> $Location</li>
-					<% end_if %>
+					
+					<li class="lecture-details__item"><strong>Location:</strong> $Location</li>
+					
 				</ul>
 				<% if $isFuture && $StreamingLink %>
                 	<p><% include StreamButton %></p>
                 <% end_if %>
 				<p>$Content.FirstSentence</p>
                 
-                <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">See Details</a>
+                <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">Details</a>
                 
                 <!-- Ticket Links -->
                 <% if $SoldOut %>
@@ -41,7 +41,6 @@
                         <% if $BuyTicketsInPersonLink %>
                             <a href="$BuyTicketsInPersonLink" class="btn btn-outline-primary" target="_blank">Buy Tickets In Person</a>
                         <% end_if %>
-                        <%-- <a href="$Link" class="btn btn-primary" aria-label="See details about $Title">See Details</a> --%>
                     <% end_if %>
 				<% end_if %>
 				
