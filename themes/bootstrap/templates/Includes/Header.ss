@@ -15,6 +15,9 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
                         <ul class="navbar-nav">
                             <% loop $Menu(1) %>
+                                <% if $URLSegment == "home" %>
+
+                                <% else %>
                                 <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %><% if Children && ClassName != 'LectureHolderPage' && ClassName != "StaffHolderPage" %> dropdown<% end_if %>">
                                     <a class="nav-link<% if Children && ClassName != 'LectureHolderPage' && ClassName != "StaffHolderPage" %> dropdown-toggle<% end_if %>" href="$Link"  <% if Children && ClassName != 'LectureHolderPage'  && ClassName != "StaffHolderPage" %> id="navbarDropdown$Pos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %> >$MenuTitle.XML</a>
 
@@ -26,7 +29,7 @@
                                             <% end_loop %>
                                         </div>
                                     <% end_if %>
-
+                                <% end_if %>
                                 </li>
                             <% end_loop %>
                         </ul>

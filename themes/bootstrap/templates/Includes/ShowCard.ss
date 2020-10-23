@@ -1,4 +1,4 @@
-<div class="my-5 show-card">
+<div class="my-6 show-card">
 	<div class="row no-gutters">
 
 		<div class="col-md-8 order-12 order-md-1">
