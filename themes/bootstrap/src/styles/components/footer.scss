@@ -1,0 +1,23 @@
+/*-------------------------------------------
+    Media Queries
+-------------------------------------------*/
+.footer {
+
+
+    &__md {
+        max-width: 36px;
+    }
+
+}
+
+.footer__links {
+    a {
+        text-decoration: none !important;
+    }
+}
+
+.footer__copyright {
+    a {
+        color: black !important;
+    }
+}

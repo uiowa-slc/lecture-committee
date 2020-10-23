@@ -86,8 +86,40 @@ class LecturePage extends Page {
 		return $fields;
 	}
 
+	public function getLecturer() {
+
+		$title = $this->getField('Title');
+		if ($title) {
+			return ucwords($title);
+		}
+
+		return null;
+
+	}
+
+	public function getLectureTitle() {
+
+		$title = $this->getField('LectureTitle');
+		return ucwords($title);
+	}
+
+	public function getTitle() {
+
+		$title = $this->getField('Title');
+		return ucwords($title);
+
+	}
+
+	public function isToday() {
+		if (!$this->EventDate) {
+			return false;
+		}
+		return $this->obj('EventDate')->isToday();
+
+	}
+
 	public function isFuture() {
-		//echo strtotime($this->EventDate).' '.time();
+		//If the event is "in the future" aka it's not over (still returns true until the day following event)
 
 		if (!$this->EventDate) {
 			return false;
@@ -105,6 +137,8 @@ class LecturePage extends Page {
 
 	public function isPast() {
 
+		//Event is conclusively over (ends next day)
+
 		if (!$this->EventDate) {
 			return false;
 		}
@@ -118,7 +152,42 @@ class LecturePage extends Page {
 			return false;
 		}
 	}
+	public function StreamButtonText() {
+		$text = 'View Stream';
 
+		if ($this->StreamType() == 'Twitch') {
+			$text = "View on Twitch";
+		}
+
+		return $text;
+
+	}
+	public function StreamType() {
+		$url = $this->StreamLink;
+		$locationType = 'Other';
+		if ($url) {
+			$domain = $this->parseDomain($url);
+
+			if ($domain) {
+
+				if (strpos($domain, 'twitch.tv') !== FALSE) {
+
+					$locationType = 'Twitch';
+				}
+
+			}
+		}
+
+		return $locationType;
+	}
+
+	private function parseDomain($url) {
+		$parsedUrl = parse_url($url);
+		if (isset($parsedUrl["host"])) {
+			$host = $parsedUrl["host"];
+			return $host;
+		}
+	}
 }
 
 ?>
