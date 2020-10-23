@@ -42,6 +42,7 @@ $link-decoration: underline;
 $theme-colors: ();
 $theme-colors: map-merge(("gold": $gold, "blue": $blue), $theme-colors);
 
+$hr-border-color: #333;
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,

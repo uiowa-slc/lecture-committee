@@ -74,7 +74,7 @@ class LecturePage extends Page {
 			->setCanCreate(true); // new tag DataObjects can be created
 
 		$fields->addFieldToTab("Root.Main", new TextField('Location', 'Location'));
-		$fields->addFieldToTab("Root.Main", new TextField('StreamingLink', 'Streaming Link'));
+		$fields->addFieldToTab("Root.Main", TextField::create('StreamingLink', 'Streaming Link')->setDescription('Usually this is "https://lectures.uiowa.edu/live" ("https://" required)'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price', 'Cost of lecture'));
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
 		// $fields->addFieldToTab("Root.Main", $donorField);

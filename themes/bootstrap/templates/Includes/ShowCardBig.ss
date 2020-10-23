@@ -26,7 +26,7 @@
 
             <% end_if %>
 
-
+            <hr />
             <!-- Content -->
             <p class="lead">$Content.FirstParagraph.LimitCharacters(180)</p>
 

@@ -14,7 +14,7 @@
 						<a href="$Link">$Lecturer</a>
 					</h3>
 				<% end_if %>           
-
+				<hr />
                 <!-- Date/Time -->
 				<ul class="lecture-details ">
 					<% if not $StreamingLink %>

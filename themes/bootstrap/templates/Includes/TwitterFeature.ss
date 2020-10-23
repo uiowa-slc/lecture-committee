@@ -4,9 +4,11 @@
             <div class="col-sm-8 col-md-7">
                 <h2>University Lecture Committee on Social Media</h2>
 
-                  <p><i class="fab fa-facebook"></i> Find us on Facebook <a href="$SiteConfig.TwitterLink">@uilectures</a></p>
-                <p><i class="fab fa-twitter"></i> Follow us on Twitter <a href="$SiteConfig.FacebookLink">@iowa.ulc</a></p>
-      
+                <div class="my-5">
+                    <p class="my-2"><i class="fab fa-facebook"></i> Find us on Facebook <a href="$SiteConfig.TwitterLink">@uilectures</a><br />
+                    </p>
+                    <p class="my-2"><i class="fab fa-twitter"></i> Follow us on Twitter <a href="$SiteConfig.FacebookLink">@iowa.ulc</a></p>
+                </div>
 
             </div>
             

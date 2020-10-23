@@ -17,11 +17,10 @@
                 <li class="lecture-details__item">
                     <strong>Date:</strong> $EventDate.Format("MMMM d, Y")
                 </li>
-                <% if $Date.isFuture || $Date.isToday %>
-                    <li class="lecture-details__item">
-                        <strong>Time:</strong> $Time
-                    </li>
-                <% end_if %>
+          
+                <li class="lecture-details__item">
+                     <strong>Time:</strong> $Time
+                 </li>
                 <% if $Location %>
                     <li class="lecture-details__item">
                         <strong>Location:</strong> $Location
