@@ -15,28 +15,26 @@
 
 
 <div class="stream-wrap">
-	<div class="container-xl">
+	
 
 		<% if $StreamingLectureToday %>
-
-
-
-
-<%-- https://content.jwplatform.com/players/LxNvlC58-7EaCFiXK.js --%>
-			<div class="row mb-3">
-				<div class="col-12">
+			<div class="row no-gutters mb-3 justify-content-center">
+				<div class="col-xl-10">
 					<div class="embed-responsive embed-responsive-16by9">
-<%-- 					<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe> --%>
-						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe>
+					<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe>
+						<%-- example video that seems to work when not ULC isnt streaming --%>
+<%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
 					</div>
 				</div>
 			</div>
+			<div class="container-fluid">
 			<div class="row justify-content-center pb-3">
 				<div class="col-12 text-center">
 					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="https://bit.ly/33vzmqE" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu">lecture-commitee@uiowa.edu</a>.</p>
 
 				</div>
 			</div>
+		</div>
 		<% end_if %>
 
 
