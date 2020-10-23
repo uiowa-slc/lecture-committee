@@ -1,35 +1,21 @@
 <% include Header %>
-<%--
-<% if $StreamingLectureToday %>
-<div class="container-xl my-2">
-	<div class="row">
-		<div class="col-12 text-center">
-			<% with $StreamingLectureToday %>
-			<p class="m-0">Up next: $Lecturer on $EventDate.Nice at $Time</p>
-			<% end_with %>
-		</div>
-	</div>
-</div>
-<% end_if %>
---%>
 
 
-<div class="stream-wrap">
-	
 
-		<% if $StreamingLectureToday %>
-			<div class="row no-gutters mb-3 justify-content-center">
-				<div class="col-xl-10">
-					<div class="embed-responsive embed-responsive-16by9">
+	<% if $StreamingLectureToday %>
+	<div class="stream-wrap">
+		<div class="row no-gutters mb-3 justify-content-center">
+			<div class="col-xl-10">
+				<div class="embed-responsive embed-responsive-16by9">
 
-						
-					<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe>
-						<%-- example video that seems to work when not ULC isnt streaming --%>
-<%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
-					</div>
+
+				<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe>
+					<%-- example video that seems to work when not ULC isnt streaming --%>
+	<%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
 				</div>
 			</div>
-			<div class="container-fluid">
+		</div>
+		<div class="container-fluid">
 			<div class="row justify-content-center pb-3">
 				<div class="col-12 text-center">
 					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="https://bit.ly/33vzmqE" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu">lecture-commitee@uiowa.edu</a>.</p>
@@ -37,36 +23,49 @@
 				</div>
 			</div>
 		</div>
-		<% end_if %>
-
-
-
 	</div>
-</div>
-	<main class="container-xl my-3">
-	<div class="row my-5">
-		<div class="<% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-md-10 offset-md-1<% end_if %>">
-            <%-- $Breadcrumbs --%>
-			<article id="content">
-				<h1>$Title</h1>
-                $Content
-			</article>
-			$Form
-			$PageComments
 
-			<% if $UpcomingStreamingLectures %>
-				<hr />
-				<h2>Upcoming Streaming Events:</h2>
-				<% loop $UpcomingStreamingLectures %>
-					<% include ShowCardNoStreamingLink %>
-				<% end_loop %>
-			<% end_if %>
-
+	<% else %>
+		<div class="stream-wrap stream-wrap--empty">
+			<div class="container-fluid">
+				<div class="row mb-3 justify-content-center" style="height: 40vh;">
+					<div class="col-lg-8 text-center align-self-center">
+						<p>No event currently streaming.</p>
+						<% if $UpcomingStreamingLectures %>
+						<h2 class="h5">Next Live Event:</h2>
+							<p><% with $UpcomingStreamingLectures.First %><a href="$Link">$Lecturer <br />{$EventDate.Format("MMMM d, Y")}, $Time</a><% end_with %></p>
+						<% end_if %>
+						<%-- <div class="stream-wrap__placeholder">
+							
+						</div> --%>
+					</div>
+				</div>
+			</div>
 		</div>
-		<% if $Menu(2) %>
-            <% include SideBar %>
-		<% end_if %>
-	</div>
+	<% end_if %>
+	
+	<main class="container-xl my-3">
+		<div class="row my-5">
+			<div class="<% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-md-10 offset-md-1<% end_if %>">
+	            <%-- $Breadcrumbs --%>
+				<article id="content">
+					<h1>$Title</h1>
+	                $Content
+				</article>
+				$Form
+				$PageComments
+				<% if $UpcomingStreamingLectures %>
+					<hr />
+					<h2>Upcoming Streaming Events:</h2>
+					<% loop $UpcomingStreamingLectures %>
+						<% include ShowCardNoStreamingLink %>
+					<% end_loop %>
+				<% end_if %>
+			</div>
+			<% if $Menu(2) %>
+	            <% include SideBar %>
+			<% end_if %>
+		</div>
 </main>
 <% include TwitterFeature %>
 
