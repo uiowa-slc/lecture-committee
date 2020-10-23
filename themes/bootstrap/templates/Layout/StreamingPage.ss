@@ -5,7 +5,7 @@
 	<% if $StreamingLectureToday %>
 	<div class="stream-wrap">
 		<div class="row no-gutters mb-3 justify-content-center">
-			<div class="col-xl-10">
+			<div class="col-xl-8">
 				<div class="embed-responsive embed-responsive-16by9">
 
 
