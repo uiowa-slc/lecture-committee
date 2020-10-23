@@ -32,7 +32,8 @@
 // @import "bootstrap/scss/progress";
 @import "bootstrap/scss/media";
 @import "bootstrap/scss/list-group";
-// @import "bootstrap/scss/close";
+@import "bootstrap/scss/close";
+
 // @import "bootstrap/scss/modal";
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
@@ -74,6 +75,7 @@
 @import "components/text-divider";
 @import "components/link-highlight";
 @import "components/lecture-details";
+
 /* Layout
 -------------------------------------------*/
 @import "layouts/homepage";
@@ -81,3 +83,5 @@
 @import "layouts/shows";
 @import "layouts/staff";
 @import "layouts/blog";
+
+@import "layouts/streaming";

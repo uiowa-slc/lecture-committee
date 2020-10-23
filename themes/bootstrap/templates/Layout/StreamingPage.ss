@@ -14,25 +14,36 @@
 --%>
 
 
+<div class="stream-wrap">
+	<div class="container-xl">
 
-<main class="container-xl my-3">
+		<% if $StreamingLectureToday %>
 
-	<% if $StreamingLectureToday %>
 
-		<div class="row justify-content-center">
-			<div class="col-12 text-center">
-                <p class="small">Please help us understand who is attending our educational programs by <a href="https://bit.ly/33vzmqE" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu">lecture-commitee@uiowa.edu</a>.</p>
+
+
+<%-- https://content.jwplatform.com/players/LxNvlC58-7EaCFiXK.js --%>
+			<div class="row mb-3">
+				<div class="col-12">
+					<div class="embed-responsive embed-responsive-16by9">
+<%-- 					<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe> --%>
+						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
-		</div>
+			<div class="row justify-content-center pb-3">
+				<div class="col-12 text-center">
+					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="https://bit.ly/33vzmqE" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu">lecture-commitee@uiowa.edu</a>.</p>
 
-
-
-		<div class="row mb-3">
-			<div class="col-12">
-				<div style="position: relative; overflow: hidden; padding-bottom: 56.25%;"><iframe style="position: absolute;" title="UI live ch1" src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" width="100%" height="100%" frameborder="0" scrolling="auto"></iframe></div>
+				</div>
 			</div>
-		</div>
-	<% end_if %>
+		<% end_if %>
+
+
+
+	</div>
+</div>
+	<main class="container-xl my-3">
 	<div class="row my-5">
 		<div class="<% if $Menu(2) %>col-lg-8 col-xl-9 <% else %>col-md-10 offset-md-1<% end_if %>">
             <%-- $Breadcrumbs --%>
