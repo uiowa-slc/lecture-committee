@@ -1,13 +1,14 @@
 {
-    "name": "md/mental-health",
+    "name": "md/lecture-committee",
     "type": "silverstripe-recipe",
-    "description": "Student Spaces Website",
+    "description": "Lecture Committee Website",
     "require":
     {
         "php": ">=7.2.0",
         "md/bootstrap-project": "dev-main",
         "silverstripe/staticpublishqueue": "*",
-        "silverstripe/userforms": "^5.7"
+        "silverstripe/userforms": "^5.7",
+        "undefinedoffset/silverstripe-nocaptcha": "^2.0"
     },
     "require-dev":
     {
