@@ -21,6 +21,8 @@
 			<div class="row no-gutters mb-3 justify-content-center">
 				<div class="col-xl-10">
 					<div class="embed-responsive embed-responsive-16by9">
+
+						
 					<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe>
 						<%-- example video that seems to work when not ULC isnt streaming --%>
 <%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
