@@ -3,17 +3,17 @@
 
 		<div class="col-md-8 order-12 order-md-1">
 			
-				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMM. d, Y")  $Time</div>
-				<h3 class="card-title show-title my-2">
-					<% if $LectureTitle %>
+				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMMM d, Y")</div>
+				<% if $LectureTitle %>
+					<h3 class="card-title show-title my-2">
 						<a href="$Link">$LectureTitle</a>
-					<% else %>
+					</h3>
+					<p class="h4">$Lecturer</p>
+				<% else %>
+					<h3 class="card-title show-title my-2">
 						<a href="$Link">$Lecturer</a>
-					<% end_if %>
-				</h3>
-				<% if Lecturer %>
-				<p class="h4">$Lecturer</p>
-				<% end_if %>               
+					</h3>
+				<% end_if %>           
 
                 <!-- Date/Time -->
 				<ul class="lecture-details ">
@@ -50,7 +50,7 @@
 		<% if $Picture %>
 		<div class="col-md-4 order-1 order-md-12">
 			<a href="$Link" class="d-block pl-3">
-				<img data-ratio="1" class="lazyload d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,111).URL" class="card-img" alt="$Title" loading="lazy">
+				<img data-ratio="1" class="lazyload d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,222).URL" class="card-img" alt="$Title" loading="lazy">
 			</a>
 		</div>
 		<% end_if %>

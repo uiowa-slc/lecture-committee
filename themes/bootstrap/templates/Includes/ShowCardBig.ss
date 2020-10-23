@@ -3,7 +3,7 @@
         <div class="col-md-5 order-12 order-md-1">
             <!-- Date -->
             <% if $isFuture %>
-            <div class="text-uppercase mt-2 mt-md-0">$EventDate.Format("MMMM d, Y") $Time</div>
+            <div class="text-uppercase mt-2 mt-md-0">$EventDate.Format("MMMM d, Y"), $Time</div>
             <% else %>
             <div class="text-uppercase mt-2 mt-md-0">Presented on $EventDate.Format("MMMM d, Y") $Time</div>
             <% end_if %>
@@ -47,12 +47,27 @@
                 <% if $BuyTicketsInPersonLink %>
                     <a href="$BuyTicketsInPersonLink" class="btn btn-outline-primary mb-3" target="_blank" rel="noopener noreferrer">Buy Tickets In Person</a>
                 <% end_if %>
-            <% end_if %> 
+            <% end_if %>
+                <% if $Cost %>
+                    <p class="lecture-details__item">
+                        <strong>Cost:</strong> $Cost
+                    </p>
+                <% end_if %>
+                <% if $Partnership %>
+                    <p class="lecture-details__item">
+                        <strong>In partnership with:</strong> $Partnership
+                    </p>
+                <% end_if %>
+                <% if $Donations %>
+                    <p class="lecture-details__item">
+                        <strong>Support provided by:</strong> $Donations
+                    </p>
+                <% end_if %>
         </div>
         <div class="col-md-7 order-1 order-md-12">
             <% if $Picture %>
                 <a href="$Link" class="d-block">
-                    <img data-ratio="1" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(800,800, 000).URL" class="lazyload d-block w-100" alt="Poster for {$Title}" />
+                    <img data-ratio="1" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(800,800, 222).URL" class="lazyload d-block w-100" alt="Poster for {$Title}" />
                 </a>
             <% end_if %>
         </div>
