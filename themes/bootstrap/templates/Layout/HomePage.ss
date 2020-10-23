@@ -23,9 +23,9 @@
             </div>
             
                 <div class="col-sm-4 offset-md-1">
-                <ul class="list-group list-group-flush quick-links">
+                <ul class="list-group list-group-flush quick-links text-center">
                     <% loop HomePageQuicklinks %>
-                  <li class="list-group-item"><a href="$Link">$Title <i class="fas fa-chevron-right"></i></a></li>
+                  <li class="list-group-item"><a href="$Link">$Title</a></li>
                   <% end_loop %>
                 </ul>
                 </div>

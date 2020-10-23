@@ -43,10 +43,8 @@ class HomePage extends Page {
 		}
 
 		$homePageQuicklink = new GridField("HomePageQuicklink", "Home Page Quick Links", HomePageQuicklink::get(), $gridFieldConfig);
-		// $carouselImageGridField = new GridField("CarouselImages", "Home Page Carousel Images", CarouselImage::get(), $gridFieldConfig2);
 
 		$f->addFieldToTab("Root.Main", $homePageQuicklink);
-		// $f->addFieldToTab("Root.Main", $carouselImageGridField);
 
 		return $f;
 	}
