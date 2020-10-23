@@ -45,7 +45,7 @@
 
 			<% if $UpcomingStreamingLectures %>
 				<hr />
-				<h2 class="text-center">Up Next:</h2>
+				<h2>Upcoming Streaming Events:</h2>
 				<% loop $UpcomingStreamingLectures %>
 					<% include ShowCardNoStreamingLink %>
 				<% end_loop %>
