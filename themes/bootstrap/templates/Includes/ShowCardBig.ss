@@ -27,14 +27,21 @@
             <% end_if %>
 
             <hr />
+                <ul class="lecture-details ">
+                    
+                    <li class="lecture-details__item"><strong>Location:</strong> $Location</li>
+                    
+                </ul>
             <!-- Content -->
             <p class="lead">$Content.FirstParagraph.LimitCharacters(180)</p>
 
-            <a href="$Link" class="btn  btn-primary mb-3">View Details</a>
+            <p>
+                <a href="$Link" class="btn  btn-primary">View Details</a>
 
-            <% if $StreamingLink && $isToday %>
-                <p><% include StreamButton %></p>
-            <% end_if %>
+                <% if $StreamingLink %>
+                    <% include StreamButton %>
+                <% end_if %>
+            </p>
             <!-- Ticket buttons -->
             <% if $SoldOut %>
                 <div class="alert alert-warning mb-0" role="alert">

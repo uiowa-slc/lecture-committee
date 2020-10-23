@@ -25,7 +25,7 @@ class HomePage extends Page {
 		$f = parent::getCMSFields();
 		$contentField = $f->dataFieldByName('Content');
 		$contentField->setRows(2);
-		// $f->removeByName("Content");
+		$f->removeByName("Content");
 		$f->removeByName("BackgroundImage");
 		$f->removeByName("InheritSidebarItems");
 		$f->removeByName("SidebarLabel");

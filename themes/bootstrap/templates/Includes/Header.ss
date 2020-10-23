@@ -15,24 +15,24 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
                         <ul class="navbar-nav">
                             <% loop $Menu(1) %>
-                                <% if $URLSegment == "home" %>
+                                <% if $URLSegment != "home" %>
+                                <li class="nav-item">
+                                    <% if $URLSegment == "live" %>
+                                        <% if $Top.StreamingLectureToday %>
+                                            <a class="btn btn-blue" href="$Link">$MenuTitle <i class="fas fa-play"></i></a>
+                                        <% else %>
+                                            <a class="nav-link" href="$Link">$MenuTitle</a>
+                                        <% end_if %>
 
-                                <% else %>
-                                <li class="nav-item $LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %><% if Children && ClassName != 'LectureHolderPage' && ClassName != "StaffHolderPage" %> dropdown<% end_if %>">
-                                    <a class="nav-link<% if Children && ClassName != 'LectureHolderPage' && ClassName != "StaffHolderPage" %> dropdown-toggle<% end_if %>" href="$Link"  <% if Children && ClassName != 'LectureHolderPage'  && ClassName != "StaffHolderPage" %> id="navbarDropdown$Pos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"<% end_if %> >$MenuTitle.XML</a>
-
-                                    <% if Children && ClassName != 'LectureHolderPage' && ClassName != "StaffHolderPage" %>
-                                        <div class="dropdown-menu shadow-sm" aria-labelledby="navbarDropdown$Pos">
-                                            <a class="dropdown-item" href="$Link">$MenuTitle</a>
-                                            <% loop Children %>
-                                                <a class="dropdown-item" href="$Link">$MenuTitle</a>
-                                            <% end_loop %>
-                                        </div>
+                                    <% else %>
+                                         <a class="nav-link" href="$Link">$MenuTitle</a>
                                     <% end_if %>
-                                <% end_if %>
+                                   
                                 </li>
+                                <% end_if %>
                             <% end_loop %>
                         </ul>
+
                         <% if $SiteConfig.TicketsLink %>
                             <div class="navbar-text">
                                 &nbsp;<a href="$SiteConfig.TicketsLink" class="btn btn-sm btn-primary">Get Tickets</a>

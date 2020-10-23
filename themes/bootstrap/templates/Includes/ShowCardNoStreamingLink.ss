@@ -1,9 +1,9 @@
-<div class="my-6 show-card">
+<div class="my-4 show-card">
 	<div class="row no-gutters">
 
 		<div class="col-md-8 order-12 order-md-1">
 			
-				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMMM d, Y")</div>
+				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMMM d, Y") $Time</div>
 				<% if $LectureTitle %>
 					<h3 class="card-title show-title my-2">
 						<a href="$Link">$LectureTitle</a>
@@ -21,9 +21,7 @@
 						<li class="lecture-details__item"><strong>Location:</strong> $Location</li>
 					<% end_if %>
 				</ul>
-				<% if $isFuture && $StreamingLink %>
-                	<p><% include StreamButton %></p>
-                <% end_if %>
+
 				<p>$Content.FirstSentence</p>
                 
                 <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">See Details</a>
