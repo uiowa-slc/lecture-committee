@@ -46,7 +46,7 @@
         </div>
     </div>
 </section>
-
+<% include TwitterFeature %>
 <section class="py-5">
     <div class="container-xl">
         <h2 class="text-center display-3 mb-5">Meet Our Staff</h2>
@@ -56,10 +56,10 @@
                     <% include StaffPageListItem %>
                 <% end_loop %>
             </ul>
-            <a href="{$baseUrl}staff/" class="text-center d-block">View all staff</a>
-            <br>
+            <p class="text-center"><a href="{$baseUrl}staff/" class="text-center btn btn-primary">View all staff</a></p>
+            
         </div>
     </div>
 </section>
 
-<% include TwitterFeature %>
+
