@@ -9,7 +9,7 @@
             <% end_if %>
             <!-- Title -->
             <% if $LectureTitle %>
-                <h1 class="display-4 show-title">
+                <h1 class="display-5 show-title">
                     <a href="$Link" class="text-light text-decoration-none">
                         <span class="link-highlight">$LectureTitle</span>
                     </a>
@@ -18,7 +18,7 @@
                     <p class="h2">$Lecturer</p>
                 <% end_if %>
             <% else %>
-                <h1 class="display-4 show-title">
+                <h1 class="display-5 show-title">
                     <a href="$Link" class="text-light text-decoration-none">
                         <span class="link-highlight">$Lecturer</span>
                     </a>
