@@ -1089,12 +1089,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics.git",
-                "reference": "9b599929e427f9df3a5ec38dc9b494ab657fc989"
+                "reference": "b9cc34e302c1b9bc06bba3610e03a96775149f47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-analytics/zipball/9b599929e427f9df3a5ec38dc9b494ab657fc989",
-                "reference": "9b599929e427f9df3a5ec38dc9b494ab657fc989",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-analytics/zipball/b9cc34e302c1b9bc06bba3610e03a96775149f47",
+                "reference": "b9cc34e302c1b9bc06bba3610e03a96775149f47",
                 "shasum": ""
             },
             "require": {
@@ -1108,7 +1108,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/tree/1.2.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-analytics/issues"
             },
-            "time": "2020-10-21T22:16:16+00:00"
+            "time": "2020-10-23T15:43:35+00:00"
         },
         {
             "name": "md/saml",
