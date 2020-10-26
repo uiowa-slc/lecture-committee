@@ -1,6 +1,6 @@
 <div class="my-6 show-card show-card--big" id="content">
     <div class="row d-flex">
-        <div class="col-md-7 col-lg-5 order-12 order-md-1">
+        <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <!-- Date -->
             <% if $isFuture %>
             <div class="text-uppercase mt-2 mt-md-0">$EventDate.Format("MMMM d, Y"), $Time</div>
@@ -72,7 +72,7 @@
                     </p>
                 <% end_if %>
         </div>
-        <div class="col-md-5 col-lg-7 order-1 order-md-12">
+        <div class="col-md-5 col-lg-6 order-1 order-md-12">
             <% if $Picture %>
                 <a href="$Link" class="d-block">
                     <img data-ratio="1" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(800,800, 222).URL" class="lazyload d-block w-100" alt="Poster for {$Title}" />

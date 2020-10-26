@@ -1,7 +1,7 @@
 <% include Header %>
 <main class="container-xl mb-5" id="content">
     <div class="row">
-        <div class="col-md-7 order-12 order-md-1">
+        <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <div class="pt-4">
                 $Breadcrumbs
                 <% if $LectureTitle %>
@@ -69,7 +69,7 @@
       
        
         </div>
-        <div class="col-md-5 pt-5 order-1 order-md-12">
+        <div class="col-md-5 col-lg-6 pt-5 order-1 order-md-12">
 
                 <% if $Picture %>
                 <img src="$Picture.Pad(800,800,111).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
