@@ -12,6 +12,11 @@
         color: black;
     }
 
+    &__today {
+        color: #222;
+        text-transform: uppercase;
+    }
+
     &__content {
         padding: 20px;
     }
