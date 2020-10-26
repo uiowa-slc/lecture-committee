@@ -113,7 +113,8 @@ $border-color: #222;
 $navbar-padding-y: $spacer / 1;
 $navbar-padding-x: $spacer;
 $navbar-nav-link-padding-x: .6rem;
-
+$navbar-dark-color: rgba($white, .75);
+$navbar-dark-hover-color: $white;
 // Dropdown
 $dropdown-font-size: $font-size-sm;
 
