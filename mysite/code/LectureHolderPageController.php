@@ -15,6 +15,16 @@ class LectureHolderPageController extends PageController {
 		parent::init();
 	}
 
+	public function FilterHeader() {
+
+		$year = $this->request->param('year');
+
+		if (!$year) {
+			return "Previously Presented:";
+		}
+
+	}
+
 	public function paginatedPreviousLectures() {
 		$curDate = date("Y-m-d");
 
@@ -34,14 +44,20 @@ class LectureHolderPageController extends PageController {
 
 		//Todo something better than partial match, probably greater than/equal 1-1-$year and less than or equal to 12-31-$year
 
-		$shows = LecturePage::get()->filter(array('EventDate:PartialMatch' => $year))->sort('EventDate DESC');
+		$shows = $this->PreviousLectures()->filter(array('EventDate:PartialMatch' => $year))->sort('EventDate DESC');
 
-		$data = new ArrayData(array(
+		if ($shows->First()) {
 
-			'paginatedPreviousLectures' => $shows,
-		));
+			$data = new ArrayData(array(
+				'FilterHeader' => 'Archive: ' . $year,
+				'paginatedPreviousLectures' => $shows,
+			));
 
-		return $this->customise($data)->renderWith(array('LectureHolderPage', 'Page'));
+			return $this->customise($data)->renderWith(array('LectureHolderPage', 'Page'));
+
+		}
+
+		return $this->httpError('404');
 
 	}
 }

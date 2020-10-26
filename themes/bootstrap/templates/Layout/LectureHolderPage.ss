@@ -23,7 +23,7 @@
         	<% if not $UpcomingLectures %>
         		$Content
         	<% end_if %>
-            <h1 class="my-3 my-md-4">Previously Presented:</h1>
+            <h1 class="my-3 my-md-4">$FilterHeader</h1>
         </div>
     </div>
     <div class="row">
