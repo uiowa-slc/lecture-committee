@@ -56,7 +56,7 @@
 				$PageComments
 				<% if $UpcomingStreamingLectures %>
 					<hr />
-					<h2>Upcoming Streaming Events:</h2>
+					<h2>Upcoming Livestream Events:</h2>
 					<% loop $UpcomingStreamingLectures %>
 						<% include ShowCardNoStreamingLink %>
 					<% end_loop %>
