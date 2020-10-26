@@ -36,11 +36,11 @@
             <p class="lead">$Content.FirstParagraph.LimitCharacters(180)</p>
 
             <p>
+
+                <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">Details</a>
                 <% if $StreamingLink && not $isPast%>
                     <% include StreamButton %>
                 <% end_if %>
-                <a href="$Link" class="btn btn-primary d-block d-sm-inline-block mb-2 mb-sm-0">Details</a>
-
 
             </p>
             <!-- Ticket buttons -->
