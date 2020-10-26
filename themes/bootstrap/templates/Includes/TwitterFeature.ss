@@ -2,12 +2,12 @@
     <div class="container-xl">
         <div class="row d-flex align-items-center">
             <div class="col-sm-8 col-md-7">
-                <h2>University Lecture Committee on Social Media</h2>
+                <h2 class="h1">University Lecture Committee on Social Media</h2>
 
                 <div class="my-5">
-                    <p class="my-2"><i class="fab fa-facebook"></i> Find us on Facebook <a href="$SiteConfig.TwitterLink">@uilectures</a><br />
+                    <p class="h3 my-2"><i class="fab fa-facebook"></i> Find us on Facebook: <a href="$SiteConfig.FacebookLink">@uilectures</a><br />
                     </p>
-                    <p class="my-2"><i class="fab fa-twitter"></i> Follow us on Twitter <a href="$SiteConfig.FacebookLink">@iowa.ulc</a></p>
+                    <p class="h3 my-2"><i class="fab fa-twitter"></i> Follow us on Twitter: <a href="$SiteConfig.TwitterLink">@iowa.ulc</a></p>
                 </div>
 
             </div>

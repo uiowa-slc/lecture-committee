@@ -5,10 +5,10 @@
             <div class="pt-4">
                 $Breadcrumbs
                 <% if $LectureTitle %>
-                    <h1 class="display-4">$LectureTitle</h1>
+                    <h1>$LectureTitle</h1>
                     <% if $Lecturer %><p class="h2">$Lecturer</p><% end_if %>
                 <% else %>
-                    <h1 class="display-4">$Lecturer</h1>
+                    <h1>$Lecturer</h1>
                 <% end_if %>
                 <hr>
             </div>
