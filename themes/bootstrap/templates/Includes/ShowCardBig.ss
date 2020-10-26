@@ -1,11 +1,11 @@
-<div class="my-6 show-card show-card--big" id="content">
+<div class="mt-3 mb-6 show-card show-card--big" id="content">
     <div class="row d-flex">
         <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <!-- Date -->
             <% if $isFuture %>
-            <div class="text-uppercase mt-2 mt-md-0">$EventDate.Format("MMMM d, Y"), $Time</div>
+            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">$EventDate.Format("MMMM d, Y"), $Time</div>
             <% else %>
-            <div class="text-uppercase mt-2 mt-md-0">Presented on $EventDate.Format("MMMM d, Y") $Time</div>
+            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">Presented on $EventDate.Format("MMMM d, Y") $Time</div>
             <% end_if %>
             <!-- Title -->
             <% if $LectureTitle %>

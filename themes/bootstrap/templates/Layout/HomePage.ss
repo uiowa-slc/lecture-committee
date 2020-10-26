@@ -1,6 +1,6 @@
 <% include Header %>
 <div class="container-xl">
-<main id="content" class="my-3 mb-5 my-lg-6">
+<main id="content" class="mt-2 mb-5 mb-lg-6">
     <% if $UpcomingLectures %>
         <% loop $UpcomingLectures %>  
             <% include ShowCardBig %>

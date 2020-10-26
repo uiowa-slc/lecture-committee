@@ -5,5 +5,5 @@
 </svg></a>
 <% else %>
 
-<a class="btn btn-light d-block d-sm-inline-block mb-2 mb-sm-0"href="$StreamingLink" target="_blank">Streaming Link <i class="fas fa-video"></i></a>
+<a class="btn btn-light d-block d-sm-inline-block mb-2 mb-sm-0"href="$StreamingLink" target="_blank">Livestream Link <i class="fas fa-video"></i></a>
 <% end_if %>

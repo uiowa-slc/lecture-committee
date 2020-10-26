@@ -153,7 +153,7 @@ class LecturePage extends Page {
 		}
 	}
 	public function StreamButtonText() {
-		$text = 'View Stream';
+		$text = 'View Livestream';
 
 		if ($this->StreamType() == 'Twitch') {
 			$text = "View on Twitch";

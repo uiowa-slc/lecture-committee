@@ -30,9 +30,9 @@
 			<div class="container-fluid">
 				<div class="row mb-3 justify-content-center" style="height: 40vh;">
 					<div class="col-lg-8 text-center align-self-center">
-						<p>No event currently streaming.</p>
+						<p>No event currently livestreaming.</p>
 						<% if $UpcomingStreamingLectures %>
-						<h2 class="h5">Next Live Event:</h2>
+						<h2 class="h5">Next Livestream Event:</h2>
 							<p><% with $UpcomingStreamingLectures.First %><a href="$Link">$Lecturer <br />{$EventDate.Format("MMMM d, Y")}, $Time</a><% end_with %></p>
 						<% end_if %>
 						<%-- <div class="stream-wrap__placeholder">
