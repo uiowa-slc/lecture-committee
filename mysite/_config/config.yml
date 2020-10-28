@@ -22,3 +22,5 @@ SilverStripe\Assets\InterventionBackend:
 SiteTree:
   extensions:
     - SilverStripe\StaticPublishQueue\Extension\Publishable\PublishableSiteTree
+SilverStripe\View\SSViewer:
+  rewrite_hash_links: false
