@@ -1,8 +1,8 @@
 $(document).ready(function() {
         //12 hrs
-        //var timeout = 12 * 60 * 60 * 1000;
+        var timeout = 12 * 60 * 60 * 1000;
         //10 min 
-        var timeout = 10 * 60 * 1000;
+        // var timeout = 10 * 60 * 1000;
         //1 min (for debugging)
         // var timeout = 60 * 1000;
 
