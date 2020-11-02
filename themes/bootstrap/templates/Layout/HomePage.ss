@@ -6,9 +6,12 @@
             <% include ShowCardBig %>
         <% end_loop %>
     <% else_if $PreviousLectures %>
+    <div class="my-4">
         <% with $Page("lectures") %>
         $Content
         <% end_with %>
+    </div>
+        <hr />
         <% loop $PreviousLectures.Limit(1) %>
             <% include ShowCardBig %>
         <% end_loop %>
