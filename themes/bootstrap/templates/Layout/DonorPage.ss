@@ -6,8 +6,9 @@
 		<div class="col-lg-9">
             <%-- $Breadcrumbs --%>
             <a href="{$BaseHref}"><img src="{$ThemeDir}/dist/images/logo-light-bg.png" alt="University of Iowa Lecture Committee" class="donor-ulc-logo" /></a>
-            <h1 class="my-2 text-center h3 text-uppercase">Notable Donor</h1>
+            
 			<article id="content" class="text-center py-5">
+				<h1 class="text-center h5 text-uppercase">Notable Donor</h1>
 				<h2 class="donor-title h1">$Title</h2>
                 <div class="donor-content">$Content</div>
 			</article>
