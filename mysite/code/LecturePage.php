@@ -58,11 +58,11 @@ class LecturePage extends Page {
 		$donorField = TagField::create(
 			'Donors',
 			'Donor(s)',
-			Donor::get(),
+			DonorPage::get(),
 			$this->Donors()
 		)
 			->setShouldLazyLoad(false) // tags should be lazy loaded
-			->setCanCreate(true); // new tag DataObjects can be created
+			->setCanCreate(false); // new tag DataObjects can be created
 
 		$sponsorField = TagField::create(
 			'Sponsors',
