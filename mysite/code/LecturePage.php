@@ -27,7 +27,7 @@ class LecturePage extends Page {
 
 	private static $many_many = array(
 		'Sponsors' => 'Sponsor',
-		'Donors' => 'Donor',
+		'Donors' => 'DonorPage',
 	);
 
 	private static $has_one = array(

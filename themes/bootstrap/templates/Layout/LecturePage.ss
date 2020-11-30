@@ -72,7 +72,7 @@
         <div class="col-md-5 col-lg-6 pt-5 order-1 order-md-12">
 
                 <% if $Picture %>
-                <img src="$Picture.Pad(800,800,111).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
+                <img src="$Picture.Pad(800,800,000).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
                 <% end_if %>
         </div>
     </div>
