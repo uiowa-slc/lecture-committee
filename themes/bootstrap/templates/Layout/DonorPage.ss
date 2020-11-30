@@ -18,7 +18,7 @@
 						<% if $Picture %>
 
 						<a href="$Link" class="donor-lecture-image-link d-block">
-							<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,222).URL" class="card-img" alt="$Title" loading="lazy">
+							<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
 						</a>
 						<% end_if %>
 						<h3 class="card-title donor-lecture-title mt-2 mb-0 text-center">
