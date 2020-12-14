@@ -32,10 +32,12 @@ class LecturePage extends Page {
 
 	private static $has_one = array(
 		'Picture' => Image::class,
+		'Poster' => Image::class,
 	);
 
 	private static $owns = array(
 		'Picture',
+		'Poster',
 	);
 	private static $show_in_sitetree = false;
 
@@ -77,12 +79,13 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", TextField::create('StreamingLink', 'Streaming Link')->setDescription('Usually this is "https://lectures.uiowa.edu/live" ("https://" required)'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price', 'Cost of lecture'));
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
-		// $fields->addFieldToTab("Root.Main", $donorField);
+
 		// $fields->addFieldToTab("Root.Main", $sponsorField);
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content', 'Description')->addExtraClass('stacked'));
 		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
 		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
-
+		$fields->addFieldToTab("Root.DonorInfo", $donorField);
+		$fields->addFieldToTab("Root.DonorInfo", UploadField::create('Poster', 'Poster for this event')->setDescription('This only shows up on special donor pages, and is not meant to show on the main page.'));
 		return $fields;
 	}
 

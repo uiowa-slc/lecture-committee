@@ -48,3 +48,12 @@ $(document).on('click', '.check-in-modal__button', function (e) {
  
   $.magnificPopup.close();
 });  
+
+$('.poster-gallery').magnificPopup({
+  delegate: 'a.donor-lecture-image-link', // child items selector, by clicking on it popup will open
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+  // other options
+});
