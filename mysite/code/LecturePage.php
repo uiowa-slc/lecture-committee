@@ -50,12 +50,13 @@ class LecturePage extends Page {
 		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main", "Content");
 		$fields->removeByName("Metadata");
-		$datefield = new DateField('EventDate', 'Date');
+		
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle', 'Title of Lecture (optional)'));
-		$fields->addFieldToTab("Root.Main", $datefield);
+		$fields->addFieldToTab("Root.Main", new DateField('EventDate', 'Date'););
+		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
+
 		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
 		$fields->addFieldToTab("Root.Main", new TextField('Donations', 'Support provided by:'));
-		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
 
 		$donorField = TagField::create(
 			'Donors',
