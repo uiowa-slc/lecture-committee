@@ -49,8 +49,17 @@ $(document).on('click', '.check-in-modal__button', function (e) {
   $.magnificPopup.close();
 });  
 
-$('.poster-gallery').magnificPopup({
-  delegate: 'a.donor-lecture-image-link', // child items selector, by clicking on it popup will open
+$('.donor-gallery').magnificPopup({
+  delegate: 'a.donor-gallery-link', // child items selector, by clicking on it popup will open
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+  // other options
+});
+
+$('.donor-gallery-sm').magnificPopup({
+  delegate: 'a.donor-gallery-link', // child items selector, by clicking on it popup will open
   type: 'image',
   gallery: {
     enabled: true

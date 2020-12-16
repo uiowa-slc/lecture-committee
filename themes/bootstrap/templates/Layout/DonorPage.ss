@@ -32,30 +32,15 @@
 		</div> --%>
 
 		<div class="row justify-content-center">
-			<div class="col-lg-2 order-2 order-lg-1 py-5">
+			<div class="d-none d-lg-block col-lg-2 order-2 order-lg-1 py-5">
 					<% loop $Lectures.Sort("EventDate ASC").Limit(5) %>
-						<div class="poster-gallery">
-							<% if $Poster %>
-
-							<a href="$Poster.URL" class="donor-lecture-image-link d-block">
-								<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
-							</a>
-							<% else_if $Picture %>
-								<a href="$Picture.URL" class="donor-lecture-image-link d-block">
-									<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
-								</a>
-
-							<% end_if %>
-							<h3 class="card-title donor-lecture-title mt-2 mb-0 text-center">
-								<a href="$Link">$Lecturer</a>
-							</h3>
-
-							<div class="mt-2 mt-md-0 mb-2 text-center"><span class="donor-lecture-date">$EventDate.Format("MMMM d, Y")</span></div>
+						<div class="donor-gallery">
+							<% include PosterGallery %>
 						</div>
 					<% end_loop %>
 
 			</div>
-			<div class="col-lg-6 order-1 order-lg-2 offset-lg-1 px-lg-0">
+			<div class=" col-lg-6 order-1 order-lg-2 offset-lg-1 px-lg-0">
 				<article id="content" class="py-5">
 					<h1 class="h5 text-uppercase">Notable Donor</h1>
 					<img class="float-right d-inline-block d-lg-block m-3" src="{$ThemeDir}/dist/images/cassandra-foens.jpg" width="40%" />
@@ -84,29 +69,38 @@
 				$PageComments
 
 			</div>
-			<div class="col-lg-2 order-3 order-lg-3 offset-lg-1 py-5">
-					<% loop $Lectures.Sort("EventDate ASC").Limit(4) %>
-						<div class="poster-gallery">
-							<% if $Poster %>
-
-							<a href="$Poster.URL" class="donor-lecture-image-link d-block">
-								<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
-							</a>
-							<% else_if $Picture %>
-								<a href="$Picture.URL" class="donor-lecture-image-link d-block">
-									<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
-								</a>
-
-							<% end_if %>
-							<h3 class="card-title donor-lecture-title mt-2 mb-0 text-center">
-								<a href="$Link">$Lecturer</a>
-							</h3>
-
-							<div class="mt-2 mt-md-0 mb-2 text-center"><span class="donor-lecture-date">$EventDate.Format("MMMM d, Y")</span></div>
+			<div class="d-none d-lg-block col-lg-2 order-3 order-lg-3 offset-lg-1 py-5">
+					<% loop $Lectures.Sort("EventDate ASC").Limit(999,5) %>
+						<div class="donor-gallery">
+							<% include PosterGallery %>
 						</div>
 					<% end_loop %>
 
 			</div>
+		</div>
+		<div class="container d-lg-none">
+			<div class="row justify-content-center">
+				<% loop $Lectures %>
+					<div class="col-4">
+						<div class="donor-gallery-sm">
+							<% include PosterGallery %>
+						</div>
+					</div>
+				<% end_loop %>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center donor-gallery">
+				<% if $SlideshowImages %>
+					<% loop $SlideshowImages %>
+						<div class="col-6 col-lg-3">
+							<a class="d-block donor-gallery-link" href="$Image.ScaleWidth(600).URL"><img src="$Image.ScaleWidth(600).URL" alt="$Title" class="d-block w-100" /></a>
+							<p class="text-center small">Example caption</p>
+						</div>
+						<% end_loop %>
+				<% end_if %>
+			</div>
+
 		</div>
 		<div class="container-xl">
 		<div class="row justify-content-center">

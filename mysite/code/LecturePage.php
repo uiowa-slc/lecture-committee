@@ -46,7 +46,8 @@ class LecturePage extends Page {
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-
+		$titleField = $fields->FieldByName('Title');
+		$titleField->setDescription('(Or event name, for example if this event is a conference)');
 		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main", "Content");
 		$fields->removeByName("Metadata");
@@ -54,7 +55,7 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle', 'Title of Lecture (optional)'));
 		$fields->addFieldToTab("Root.Main", new DateField('EventDate', 'Date'));
 		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
-
+		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
 		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
 		$fields->addFieldToTab("Root.Main", new TextField('Donations', 'Support provided by:'));
 
@@ -76,7 +77,6 @@ class LecturePage extends Page {
 			->setShouldLazyLoad(false) // tags should be lazy loaded
 			->setCanCreate(true); // new tag DataObjects can be created
 
-		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
 		$fields->addFieldToTab("Root.Main", TextField::create('StreamingLink', 'Streaming Link')->setDescription('Usually this is "https://lectures.uiowa.edu/live" ("https://" required)'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price', 'Cost of lecture'));
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
