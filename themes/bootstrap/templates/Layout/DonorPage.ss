@@ -90,7 +90,9 @@
 			</div>
 		</div>
 		<div class="container">
+			<h2 class="text-center my-4">Photos</h2>
 			<div class="row justify-content-center donor-gallery">
+
 				<% if $SlideshowImages %>
 					<% loop $SlideshowImages %>
 						<div class="col-6 col-lg-3">
