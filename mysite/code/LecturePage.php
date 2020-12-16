@@ -46,8 +46,8 @@ class LecturePage extends Page {
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$titleField = $fields->FieldByName('Title');
-		$titleField->setDescription('(Or event name, for example if this event is a conference)');
+		// $titleField = $fields->FieldByName('Title');
+		// $titleField->setDescription('(Or event name, for example if this event is a conference)');
 		$fields->renameField("Title", "Name of Lecturer");
 		$fields->removeFieldFromTab("Root.Main", "Content");
 		$fields->removeByName("Metadata");
