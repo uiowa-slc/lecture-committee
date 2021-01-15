@@ -69,7 +69,7 @@ Sarah Tortora (18PHR), who served as the chair for the University Lecture Commit
 					<% loop $SlideshowImages %>
 						<div class="col-6 col-lg-3">
 							<a class="d-block donor-gallery-link" href="$Image.ScaleWidth(600).URL"><img src="$Image.ScaleWidth(600).URL" alt="$Title" class="d-block w-100" /></a>
-							<p class="text-center small">Example caption</p>
+							<% if $Caption %><p class="text-center small">$Caption</p><% end_if %>
 						</div>
 						<% end_loop %>
 				<% end_if %>
