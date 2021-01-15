@@ -6,16 +6,28 @@
             <% include ShowCardBig %>
         <% end_loop %>
     <% else_if $PreviousLectures %>
-    <div class="my-4">
-        <% with $Page("lectures") %>
-        $Content
-        <% end_with %>
-    </div>
+        <div class="my-4">
+            <% with $Page("lectures") %>
+            $Content
+            <% end_with %>
+        </div>
         <hr />
-        <% loop $PreviousLectures.Limit(1) %>
-            <% include ShowCardBig %>
-        <% end_loop %>
+        <div class="row justify-content-center">
 
+            <div class="col-md-9">
+                <h2 class="text-center">Previously Presented:</h2>
+                <% loop PreviousLectures.Limit(5) %>
+                    <% include ShowCard %>
+                <% end_loop %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center"><a href="lectures/" class="btn btn-outline-light">View the lecture archive</a></p>
+
+            </div>
+
+        </div>
     <% end_if %>
 </main>
 </div>

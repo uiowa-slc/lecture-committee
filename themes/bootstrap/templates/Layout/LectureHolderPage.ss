@@ -37,7 +37,7 @@
 				<% include Pagination %>
 			<% end_with %>
 		</div>
-        <div class="col-md-3">
+        <div class="col-md-2 offset-md-1">
             <nav class="nav nav-pills flex-column sticky-top">
             	<% loop $Years.Sort('Year DESC') %>
             		<a class="nav-item nav-link <% if $Active %>active<% end_if %>" href="$Link">$Year</a>

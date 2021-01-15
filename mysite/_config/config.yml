@@ -8,6 +8,7 @@ SilverStripe\View\SSViewer:
     - '$public'
     - 'bootstrap'
     - '$default'
+  rewrite_hash_links: false
 LectureHolderPage:
   extensions:
     - SilverStripe\Lumberjack\Model\Lumberjack
@@ -22,5 +23,3 @@ SilverStripe\Assets\InterventionBackend:
 SiteTree:
   extensions:
     - SilverStripe\StaticPublishQueue\Extension\Publishable\PublishableSiteTree
-SilverStripe\View\SSViewer:
-  rewrite_hash_links: false
