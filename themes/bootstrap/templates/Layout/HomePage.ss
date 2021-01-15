@@ -12,10 +12,16 @@
             <% end_with %>
         </div>
         <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">Previously presented by the University Lecture Committee:</h2>
+            </div>
+
+        </div>
         <div class="row justify-content-center">
 
             <div class="col-md-9">
-                <h2 class="text-center">Previously Presented By the University Lecture Committee:</h2>
+                
                 <% loop PreviousLectures.Limit(5) %>
                     <% include ShowCard %>
                 <% end_loop %>
@@ -36,7 +42,7 @@
     <div class="container-xl">
         <div class="row d-flex align-items-center">
             <div class="col-sm-8 col-md-7">
-                <h2 class="h1">About the Lecture Committee</h2>
+                <h2 class="h1">About the University Lecture Committee</h2>
                 <p class="lead">For more than 30 years, The University of Iowa Lecture Committee has brought some of the world's great thinkers to the University of Iowa campus. Speakers have included an impressive roster of national and international figures in science, politics, business, human rights, law, and the arts. Each year the University hosts from 6 to 10 thought-provoking lectures. These events help enrich Iowa's academic environment and enhance its reputation as a prestigious Big Ten university.</p>
                 <p><a href="about/" class="btn btn-light btn-large">Learn more about the Lecture Committee</a></p>
             </div>
