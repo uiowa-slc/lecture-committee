@@ -15,7 +15,7 @@
         <div class="row justify-content-center">
 
             <div class="col-md-9">
-                <h2 class="text-center">Previously Presented:</h2>
+                <h2 class="text-center">Previously Presented By the University Lecture Committee:</h2>
                 <% loop PreviousLectures.Limit(5) %>
                     <% include ShowCard %>
                 <% end_loop %>
