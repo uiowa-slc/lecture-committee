@@ -66,7 +66,11 @@
 
            
                 <p>$Content</p>
-      
+
+                <% if $Donors %>
+                <hr />
+                    <p class="h4">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
+                <% end_if %>
        
         </div>
         <div class="col-md-5 col-lg-6 pt-5 order-1 order-md-12">
@@ -74,9 +78,7 @@
                 <% if $Picture %>
                 <img src="$Picture.Pad(800,800,000).URL" class="d-block w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
                 <% end_if %>
-                <% if $Donors %>
-                    <p class="h4">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
-                <% end_if %>
+
             </div>
         </div>
     </div>
