@@ -28,7 +28,7 @@
 
             <hr />
             <ul class="lecture-details ">
-                <li class="lecture-details_item"><strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time<</li>
+                <li class="lecture-details_item"><strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time</li>
                 <li class="lecture-details__item"><strong>Location:</strong> $Location</li>
             </ul>
             <!-- Content -->
