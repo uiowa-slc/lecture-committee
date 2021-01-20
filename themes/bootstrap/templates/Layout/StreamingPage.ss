@@ -18,7 +18,7 @@
 		<div class="container-fluid">
 			<div class="row justify-content-center pb-3">
 				<div class="col-12 text-center">
-					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="https://bit.ly/33vzmqE" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu">lecture-commitee@uiowa.edu</a>.</p>
+					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="$CheckinLink" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu">lecture-commitee@uiowa.edu</a>.</p>
 
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 			<p class="h6 check-in-modal__today">Today:</p>
 		<h2 class="h4 check-in-modal__heading"><% with $StreamingLectureToday %>$Lecturer <br />{$EventDate.Format("MMMM d, Y")}, $Time<% end_with %></h2>
   		<p>Please help the University of Iowa Lecture Committee understand who is attending our educational programs by checking in below:</p>
-  		<p><a href="https://bit.ly/33vzmqE" target="_blank" rel="noopener" class="btn check-in-modal__button btn-large">Check In <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  		<p><a href="$CheckinLink" target="_blank" rel="noopener" class="btn check-in-modal__button btn-large">Check In <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
   <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
 </svg></a><br /><span class="small">(Opens in a new tab)</span></p>
