@@ -3,9 +3,9 @@
         <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <!-- Date -->
             <% if $isFuture %>
-            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">$EventDate.Format("MMMM d, Y"), $Time</div>
+            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">$EventDate.Format("MMMM d, Y")</div>
             <% else %>
-            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">Presented on $EventDate.Format("MMMM d, Y") $Time</div>
+            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">Presented on $EventDate.Format("MMMM d, Y")</div>
             <% end_if %>
             <!-- Title -->
             <% if $LectureTitle %>
