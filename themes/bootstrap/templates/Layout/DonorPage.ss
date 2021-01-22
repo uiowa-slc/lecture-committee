@@ -4,32 +4,10 @@
 	<main class="container-fluid py-5">
 		<div class="row justify-content-center">
 			<div class="col-lg-7">
-	            <%-- $Breadcrumbs --%>
+
 	            <a href="{$BaseHref}"><img src="{$ThemeDir}/dist/images/logo-light-bg.png" alt="University of Iowa Lecture Committee" class="donor-ulc-logo" /></a>
 	        </div>
 	    </div>
-<%-- 		<div class="row justify-content-center">
-
-			<div class="col-lg-8">
-				<div class="row">
-					<% loop $Lectures.Sort("EventDate ASC").Limit(3) %>
-						<div class="col-6 col-sm-4 mb-4">
-							<% if $Picture %>
-
-							<a href="$Link" class="donor-lecture-image-link d-block">
-								<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
-							</a>
-							<% end_if %>
-							<h3 class="card-title donor-lecture-title mt-2 mb-0 text-center">
-								<a href="$Link">$Lecturer</a>
-							</h3>
-
-							<div class="mt-2 mt-md-0 text-center"><span class="donor-lecture-date">$EventDate.Format("MMMM d, Y")</span></div>
-						</div>
-					<% end_loop %>
-				</div>
-			</div>
-		</div> --%>
 
 		<div class="row justify-content-center">
 			<div class="d-none d-lg-block col-lg-2 order-2 order-lg-1 py-5">
@@ -75,7 +53,7 @@
 	                	<span class="h2 d-block my-3">More Than 10 Years of Bringing the World's Greatest Thinkers to the&nbsp;University&nbsp;of&nbsp;Iowa</span>
 <p><strong>Cassandra S. Foens</strong>, 83BS, 87MD, is a highly regarded radiation oncologist and champion of educational causes whose personal contributions have allowed others to follow in her footsteps.</p>
 
-<p>In a career spanning more than two decades, Foens has established herself as a successful physician in her hometown of Waterloo, Iowa—and in 2006, she became both the first woman and the first radiation oncologist from Iowa to be elected to the American College of Radiology board of chancellors.</p>
+<p>In a career spanning more than two decades, Foens has established herself as a successful physician in her hometown of Waterloo, Iowa—and in 2006, she became both the first woman and the first radiation oncologist from Iowa to be elected to the American College of Radiology Board of Chancellors.</p>
 
 <p>Foens received a bachelor's degree in 1983, earned a Doctor of Medicine in 1987, and completed a residency in radiation oncology in 1992—all at the University of Iowa. Following her UI training, Foens joined the Edward W. Sparrow Hospital in Lansing, Michigan, as a radiation oncologist. In 1994, she accepted a position with Clinical Radiologists at the Covenant Cancer Treatment Center in Waterloo, where she still works today.</p>
 
@@ -119,34 +97,9 @@
 				<% end_loop %>
 			</div>
 		</div>
-		<div class="container">
 
 
-		</div>
-		<div class="container-xl">
-		
-	</div>
-<%-- 		<div class="row justify-content-center">
-			<div class="col-lg-8">
-				<div class="row">
-					<% loop $Lectures.Sort("EventDate ASC").Limit(4) %>
-						<div class="col-6 col-sm-4 mb-4">
-							<% if $Picture %>
 
-							<a href="$Link" class="donor-lecture-image-link d-block">
-								<img data-ratio="1" class="lazyload donor-lecture-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
-							</a>
-							<% end_if %>
-							<h3 class="card-title donor-lecture-title mt-2 mb-0 text-center">
-								<a href="$Link">$Lecturer</a>
-							</h3>
-
-							<div class="mt-2 mt-md-0 text-center"><span class="donor-lecture-date">$EventDate.Format("MMMM d, Y")</span></div>
-						</div>
-					<% end_loop %>
-				</div>
-			</div>
-		</div> --%>
 	</main>
 </div>
 <% include TwitterFeature %>
