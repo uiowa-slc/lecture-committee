@@ -40,7 +40,7 @@ class HomePageQuicklink extends DataObject {
 	}
 
 	public function Link() {
-		if ($this->AssociatedPage()) {
+		if ($this->AssociatedPageID != 0) {
 			return $this->AssociatedPage()->Link();
 		} else {
 			return $this->ExternalLink;

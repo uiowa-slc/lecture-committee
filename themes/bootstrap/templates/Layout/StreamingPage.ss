@@ -10,7 +10,7 @@
 
 
 				<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe>
-					<%-- example video that seems to work when not ULC isnt streaming --%>
+					<%-- example video that seems to work when ULC isnt streaming --%>
 	<%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 		<div class="check-in-modal__content">
 			<p class="h6 check-in-modal__today">Today:</p>
 		<h2 class="h4 check-in-modal__heading"><% with $StreamingLectureToday %>$Lecturer <br />{$EventDate.Format("MMMM d, Y")}, $Time<% end_with %></h2>
-  		<p>Please help the University of Iowa Lecture Committee understand who is attending our educational programs by checking in below:</p>
+  		<p>Welcome! Please help the University of Iowa Lecture Committee understand who is attending our educational programs by checking in below:</p>
   		<p><a href="$CheckinLink" target="_blank" rel="noopener" class="btn check-in-modal__button btn-large">Check In <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
   <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
@@ -84,5 +84,7 @@
 
 </div>
   		<p style="margin: 0;"><a href="live/" class="check-in-modal__dismiss">No, thank you.</a></p>
+  		<hr />
+  		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu" style="color: #222;">lecture-commitee@uiowa.edu</a>.</small></p>
 	</div>
 <% end_if %>
