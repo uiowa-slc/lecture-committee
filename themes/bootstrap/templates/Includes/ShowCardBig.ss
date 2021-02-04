@@ -11,7 +11,7 @@
             <% if $LectureTitle %>
                 <h1 class="display-5 show-title">
                     <a href="$Link" class="text-light text-decoration-none">
-                        <span class="link-highlight">$LectureTitle</span>
+                        <span class="link-highlight">$LectureTitle.RAW</span>
                     </a>
                 </h1>
                 <% if $Lecturer %>

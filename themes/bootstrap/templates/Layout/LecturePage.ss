@@ -5,7 +5,7 @@
             <div class="pt-4">
                 $Breadcrumbs
                 <% if $LectureTitle %>
-                    <h1>$LectureTitle</h1>
+                    <h1>$LectureTitle.RAW</h1>
                     <% if $Lecturer %><p class="h2">$Lecturer</p><% end_if %>
                 <% else %>
                     <h1>$Lecturer</h1>

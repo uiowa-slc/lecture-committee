@@ -6,7 +6,7 @@
 				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMMM d, Y") $Time</div>
 				<% if $LectureTitle %>
 					<h3 class="card-title show-title my-2">
-						<a href="$Link">$LectureTitle</a>
+						<a href="$Link">$LectureTitle.RAW</a>
 					</h3>
 					<p class="h4">$Lecturer</p>
 				<% else %>
