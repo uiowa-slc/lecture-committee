@@ -4,6 +4,9 @@
 		<div class="col-md-8 order-12 order-md-1">
 			
 				<div class="text-uppercase mt-2 mt-md-0"><span class"show-card__time-label">$EventDate.Format("MMMM d, Y")</span></div>
+				<% if $DonorByline %>
+                    <p class="h5">$DonorByline</p>
+                <% end_if %>
 				<% if $LectureTitle %>
 					<h3 class="card-title show-title my-2">
 						<a href="$Link">$LectureTitle.RAW</a>

@@ -23,6 +23,7 @@ class LecturePage extends Page {
 		'Cancelled' => 'Boolean',
 		"WebsiteLink" => "Text",
 		'StreamingLink' => "Text",
+		"DonorByline" => 'Text',
 	);
 
 	private static $many_many = array(
@@ -86,6 +87,7 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
 		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
 		$fields->addFieldToTab("Root.DonorInfo", $donorField);
+		$fields->addFieldToTab("Root.DonorInfo", TextField::create('DonorByline', 'Donor Byline')->setDescription('Shows up above the lecture/lecture title, example "Cassandra S. Foens M.D. FACR 2021 Lecture"'));
 		$fields->addFieldToTab("Root.DonorInfo", UploadField::create('Poster', 'Poster for this event')->setDescription('This only shows up on special donor pages, and is not meant to show on the main page.'));
 		return $fields;
 	}

@@ -4,6 +4,9 @@
         <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <div class="pt-4">
                 $Breadcrumbs
+                <% if $DonorByline %>
+                    <p class="h4">$DonorByline</p>
+                <% end_if %>
                 <% if $LectureTitle %>
                     <h1>$LectureTitle.RAW</h1>
                     <% if $Lecturer %><p class="h2">$Lecturer</p><% end_if %>

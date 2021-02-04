@@ -7,6 +7,9 @@
             <% else %>
             <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">Presented on $EventDate.Format("MMMM d, Y")</div>
             <% end_if %>
+            <% if $DonorByline %>
+                <p class="h4">$DonorByline</p>
+            <% end_if %>
             <!-- Title -->
             <% if $LectureTitle %>
                 <h1 class="display-5 show-title">
