@@ -74,7 +74,7 @@
                     </p>
                 <% end_if %>
             <% if $Donors %>
-                 <p class="h4">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
+                 <p class="h5">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
             <% end_if %>
         </div>
         <div class="col-md-5 col-lg-6 order-1 order-md-12">

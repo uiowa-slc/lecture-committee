@@ -67,8 +67,8 @@
                 <p>$Content</p>
 
                 <% if $Donors %>
-                <hr />
-                    <p class="h4">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
+          
+                    <p class="h5">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
                 <% end_if %>
        
         </div>
