@@ -22,7 +22,7 @@
 				</a>
 			<% end_if %>
 		<% end_if %>
-		<div class="stafflist__text card-body">
+		<div class="stafflist__text card-body bg-dark ">
 			<h5 class="stafflist__name card-title">
 				<a href="$Link">$FirstName $LastName</a>
 			</h5>
