@@ -5,7 +5,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-7">
 
-	            <a href="{$BaseHref}"><img src="{$ThemeDir}/dist/images/logo-light-bg.png" alt="University of Iowa Lecture Committee" class="donor-ulc-logo" /></a>
+	            <a href="{$BaseHref}"><img src="{$ThemeDir}/dist/images/logo-light-bg.png" alt="University of Iowa Lecture Committee" class="donor-ulc-logo d-block w-100" /></a>
 	        </div>
 	    </div>
 
