@@ -22,7 +22,7 @@
 
             <div class="col-md-9">
                 
-                <% loop PreviousLectures.Limit(5) %>
+                <% loop PreviousLectures.Limit(3) %>
                     <% include ShowCard %>
                 <% end_loop %>
             </div>
@@ -38,7 +38,7 @@
 </main>
 </div>
 
-<section class="bg-primary text-white py-3 py-sm-6">
+<section class="bg-primary text-white py-5">
     <div class="container-xl">
         <div class="row d-flex align-items-center">
             <div class="col-sm-8 col-md-7">
@@ -63,7 +63,7 @@
     </div>
 </section>
 
-<section class="py-3 py-sm-6 my-5">
+<section class="py-4 my-5">
     <div class="container-xl">
         <div class="row">
             <div class="col-sm-6">
@@ -77,7 +77,7 @@
 </section>
 <% include DonorFeature %>
 <% include TwitterFeature %>
-<section class="py-5">
+<section class="py-4">
     <div class="container-xl">
         <h2 class="h1 text-center display-3 mb-5">Meet Our Members</h2>
         <div class="stafflist">

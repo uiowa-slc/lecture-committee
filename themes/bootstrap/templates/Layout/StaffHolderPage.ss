@@ -38,4 +38,5 @@
 		<% end_if %>
 	</div>
 </main>
+<% include DonorFeature %>
 <% include TwitterFeature %>
