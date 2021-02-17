@@ -3,7 +3,7 @@
     <div class="container-xl">
         <div class="row">
             <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark px-0" aria-label="Site Navigation">
+                <nav class="navbar navbar-main navbar-expand-lg navbar-dark px-0" aria-label="Site Navigation">
                     <a class="navbar-brand" href="{$BaseUrl}" aria-label="{$SiteConfig.Title}">
                         <span class="sr-only">$SiteConfig.Title</span>
                         <img src="{$ThemeDir}/dist/images/logo-3.png" alt="University of Iowa Lecture Committee" class="navbar-brand__logo" />

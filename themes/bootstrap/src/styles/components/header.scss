@@ -52,6 +52,28 @@
     font-family: $headings-font-family;
 }
 
+.navbar-main .nav-link {
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 18px;
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    @include media-breakpoint-up(lg) {
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+    }
+}
+
 h1,
 .h1 {
     font-family: "Zilla Slab", sans;
