@@ -97,6 +97,6 @@
 </div>
   		<p style="margin: 0;"><a href="live/" class="check-in-modal__dismiss">No, thank you.</a></p>
   		<hr />
-  		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-commitee@uiowa.edu" style="color: #222;">lecture-commitee@uiowa.edu</a>.</small></p>
+  		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu" style="color: #222;">lecture-committee@uiowa.edu</a>.</small></p>
 	</div>
 <% end_if %>
