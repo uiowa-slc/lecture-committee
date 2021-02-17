@@ -93,6 +93,11 @@
                 <p class="small">Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Lecture Committee in advance at <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
             </div>
         </div>
+
     </div>
+
 </main>
+        <% if Donors %>
+            <% include DonorFeature %>
+        <% end_if %>
 <% include TwitterFeature %>
