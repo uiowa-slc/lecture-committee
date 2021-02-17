@@ -45,9 +45,6 @@
                 <h2 class="h1">About the University Lecture Committee</h2>
                 <p class="lead">For more than 30 years, The University of Iowa Lecture Committee has brought some of the world's great thinkers to the University of Iowa campus. Speakers have included an impressive roster of national and international figures in science, politics, business, human rights, law, and the arts. Each year the University hosts from 6 to 10 thought-provoking lectures. These events help enrich Iowa's academic environment and enhance its reputation as a prestigious Big Ten university.</p>
                 <p><a href="about/" class="btn btn-light btn-large">Learn more about the Lecture Committee</a></p>
-
-
-
             </div>
             
                 <div class="col-sm-4 offset-md-1">
@@ -62,7 +59,7 @@
 
     </div>
 </section>
-
+<% include DonorFeature %>
 <section class="py-4 my-5">
     <div class="container-xl">
         <div class="row">
@@ -75,7 +72,7 @@
         </div>
     </div>
 </section>
-<% include DonorFeature %>
+
 <% include TwitterFeature %>
 <section class="py-4">
     <div class="container-xl">
