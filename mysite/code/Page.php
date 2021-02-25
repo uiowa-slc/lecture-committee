@@ -33,9 +33,7 @@ class Page extends SiteTree implements StaticallyPublishable {
 			$currentYear = date("Y");
 			$lectureYear = $this->obj('EventDate')->Format('y');
 
-			if ($lectureYear < $currentYear) {
-
-			} else {
+			if ($currentYear > $lectureYear) {
 				$urls[Director::absoluteURL($this->getOwner()->Link())] = 0;
 			}
 		}
