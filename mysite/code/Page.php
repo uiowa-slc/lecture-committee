@@ -26,23 +26,23 @@ class Page extends SiteTree implements StaticallyPublishable {
 			'SilverStripe\UserForms\Model\UserDefinedForm',
 		);
 
-		$urls = array();
-
 		//Only cache this year's previous lectures so the caching process doesn't go through the entire archive, while also invalidating recent events that featured the event being "live" the day before with the livestream links, etc
 		if ($this->ClassName == 'LecturePage') {
-			$currentYear = strftime('%Y');
+			$currentYear = date("Y");
 			$lectureYear = $this->obj('EventDate')->Format('y');
 
-			if (!($lectureYear < $currentYear)) {
-				$urls[Director::absoluteURL($this->getOwner()->Link())] = 0;
+			if ($lectureYear < $currentYear) {
+				return [];
+			} else {
+				return [Director::absoluteURL($this->getOwner()->Link()) => 0];
 			}
 		}
 
 		if (!array_search($this->ClassName, $disallowedClasses)) {
-			$urls[Director::absoluteURL($this->getOwner()->Link())] = 0;
+			return [Director::absoluteURL($this->getOwner()->Link()) => 0];
+		} else {
+			return [];
 		}
-
-		return $urls;
 
 	}
 	// /**
