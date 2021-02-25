@@ -4,12 +4,14 @@ use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\Security\Permission;
 use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 
 class HomePage extends Page {
 
 	private static $db = array(
+		'Announcement' => 'HTMLText',
 
 	);
 
@@ -41,6 +43,8 @@ class HomePage extends Page {
 			$gridFieldConfig->removeComponentsByType(GridFieldAddNewButton::class);
 			$gridFieldConfig->removeComponentsByType(GridFieldDeleteAction::class);
 		}
+
+		$f->addFieldToTab("Root.Main", new HTMLEditorField('Announcement'));
 
 		$homePageQuicklink = new GridField("HomePageQuicklink", "Home Page Quick Links", HomePageQuicklink::get(), $gridFieldConfig);
 

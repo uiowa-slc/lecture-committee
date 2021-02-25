@@ -1,4 +1,26 @@
 <% include Header %>
+
+<% if $Announcement %>
+
+
+<div class="event-alert-container bg-dark">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-12">
+              
+                    <div class=" my-3">
+                        $Announcement
+
+                    </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<% end_if %>
+
 <div class="container-xl">
 <main id="content" class="mt-2 mb-5 mb-lg-6">
     <% if $UpcomingLectures %>
