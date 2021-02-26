@@ -37,12 +37,12 @@ class Page extends SiteTree implements StaticallyPublishable {
 				return [Director::absoluteURL($this->getOwner()->Link()) => 0];
 			}
 		}
-		print_r($this->ClassName . '<br />');
+
 		if (array_search($this->ClassName, $disallowedClasses) === false) {
-			echo 'YES<br />';
+
 			return [Director::absoluteURL($this->getOwner()->Link()) => 0];
 		} else {
-			echo 'NO<br />';
+
 			return [];
 		}
 
