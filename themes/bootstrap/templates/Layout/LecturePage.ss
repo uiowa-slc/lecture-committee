@@ -17,6 +17,11 @@
             </div>
 
             <ul class="lecture-details">
+                <% if $HostedBy %>
+                <li class="lecture-details__item">
+                    <strong>Hosted by:</strong> $HostedBy
+                </li>
+                <% end_if %>
                 <li class="lecture-details__item">
                     <strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time
                 </li>
