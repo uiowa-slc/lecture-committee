@@ -45,7 +45,6 @@ class LecturePage extends Page {
 	private static $show_in_sitetree = false;
 
 	private static $default_sort = 'EventDate DESC';
-	private static $allowed_children = array();
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
