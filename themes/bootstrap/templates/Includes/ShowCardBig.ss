@@ -28,7 +28,9 @@
                 </h1>
 
             <% end_if %>
-
+                <% if $Featuring %>
+                    <p class="featuring-header">$Featuring</p>
+                <% end_if %>
             <hr />
             <ul class="lecture-details ">
                 <% if $HostedBy %>
@@ -40,7 +42,7 @@
                 <li class="lecture-details__item"><strong>Location:</strong> $Location</li>
             </ul>
             <!-- Content -->
-            <p class="lead">$Content.FirstParagraph.LimitCharacters(180)</p>
+            <p>$Content.FirstParagraph.LimitCharacters(180)</p>
 
             <p>
 

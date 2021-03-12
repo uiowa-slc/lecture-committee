@@ -16,7 +16,10 @@
 					<h3 class="card-title show-title my-2">
 						<a href="$Link">$Lecturer</a>
 					</h3>
-				<% end_if %>           
+				<% end_if %>
+				<% if $Featuring %>
+                    <p class="featuring-header">$Featuring</p>
+                <% end_if %>        
 				<hr />
                 <!-- Date/Time -->
 				<ul class="lecture-details ">

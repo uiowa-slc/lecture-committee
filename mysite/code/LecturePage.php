@@ -25,6 +25,7 @@ class LecturePage extends Page {
 		'StreamingLink' => "Text",
 		"DonorByline" => 'Text',
 		'HostedBy' => 'Text',
+		'Featuring' => 'Text',
 	);
 
 	private static $many_many = array(
@@ -56,6 +57,7 @@ class LecturePage extends Page {
 
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle', 'Title of Lecture (optional)'));
 		$fields->addFieldToTab("Root.Main", new DateField('EventDate', 'Date'));
+		$fields->addFieldToTab("Root.Main", TextField::create('Featuring', 'Featuring')->setDescription('Optional, if multiple lecturers/speakers need to have their names in smaller type. Example: "Featuring: Person B'));
 		$fields->addFieldToTab("Root.Main", new TextField('HostedBy', 'Hosted by:'));
 		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
 		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
