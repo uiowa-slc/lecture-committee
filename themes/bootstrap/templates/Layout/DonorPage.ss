@@ -39,12 +39,12 @@
 	
 	</blockquote>
 
-			<div class="row justify-content-center donor-gallery">
+			<div class="row no-gutters justify-content-center donor-gallery">
 
 				<% if $SlideshowImages %>
 					<% loop $SlideshowImages %>
 						<div class="col-6 col-lg-4">
-							<a class="d-block donor-gallery-link" href="$Image.ScaleWidth(600).URL"><img src="$Image.ScaleWidth(600).URL" alt="$Title" class="d-block w-100 mb-3" /></a>
+							<a class="d-block donor-gallery-link" href="$Image.ScaleWidth(600).URL"><img src="$Image.ScaleWidth(600).URL" alt="$Title" class="d-block w-100 p-1" /></a>
 							<% if $Caption %><p class="text-center small">$Caption</p><% end_if %>
 						</div>
 						<% end_loop %>
