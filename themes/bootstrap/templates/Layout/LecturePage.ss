@@ -53,6 +53,11 @@
                         <strong>Support provided by:</strong> $Donations
                     </li>
                 <% end_if %>
+                 <% if $SponsoredBy %>
+                    <p class="lecture-details__item">
+                        <strong>Sponsored by:</strong> $SponsoredBy
+                    </p>
+                <% end_if %> 
             </ul>
             <% if $SoldOut %>
                 <div class="alert alert-warning mb-0 rounded-0" role="alert">

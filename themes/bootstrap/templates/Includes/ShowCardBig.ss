@@ -80,6 +80,11 @@
                         <strong>Support provided by:</strong> $Donations
                     </p>
                 <% end_if %>
+                 <% if $SponsoredBy %>
+                    <p class="lecture-details__item">
+                        <strong>Sponsored by:</strong> $SponsoredBy
+                    </p>
+                <% end_if %>       
             <% if $Donors %>
                  <p class="h5">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
             <% end_if %>

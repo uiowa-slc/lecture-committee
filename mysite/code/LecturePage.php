@@ -26,6 +26,7 @@ class LecturePage extends Page {
 		"DonorByline" => 'Text',
 		'HostedBy' => 'Text',
 		'Featuring' => 'Text',
+		'SponsoredBy' => 'Text',
 	);
 
 	private static $many_many = array(
@@ -62,6 +63,8 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
 		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
 		$fields->addFieldToTab("Root.Main", new TextField('Donations', 'Support provided by:'));
+
+		$fields->addFieldToTab("Root.Main", new TextField('SponsoredBy', 'Sponsored by:'));
 
 		$donorField = TagField::create(
 			'Donors',
