@@ -39,7 +39,7 @@
                     </li>
                 <% end_if %>
                 <li class="lecture-details_item"><strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time</li>
-                <li class="lecture-details__item"><strong>Location:</strong> $Location</li>
+                <% if $Location %><li class="lecture-details__item"><strong>Location:</strong> $Location</li><% end_if %>
             </ul>
             <!-- Content -->
             <p>$Content.FirstParagraph.LimitCharacters(180)</p>
@@ -66,24 +66,24 @@
                 <% end_if %>
             <% end_if %>
                 <% if $Cost %>
-                    <p class="lecture-details__item">
+                    <div class="lecture-details__item">
                         <strong>Cost:</strong> $Cost
-                    </p>
+                    </div>
                 <% end_if %>
                 <% if $Partnership %>
-                    <p class="lecture-details__item">
+                    <div class="lecture-details__item">
                         <strong>In partnership with:</strong> $Partnership
-                    </p>
+                    </div>
                 <% end_if %>
                 <% if $Donations %>
-                    <p class="lecture-details__item">
+                    <div class="lecture-details__item">
                         <strong>Support provided by:</strong> $Donations
-                    </p>
+                    </div>
                 <% end_if %>
                  <% if $SponsoredBy %>
-                    <p class="lecture-details__item">
+                    <div class="lecture-details__item">
                         <strong>Sponsored by:</strong> $SponsoredBy
-                    </p>
+                    </div>
                 <% end_if %>       
             <% if $Donors %>
                  <p class="h5">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>

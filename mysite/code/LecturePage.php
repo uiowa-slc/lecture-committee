@@ -13,7 +13,7 @@ class LecturePage extends Page {
 	private static $db = array(
 		'EventDate' => 'Date',
 		'Partnership' => 'Text',
-		'Donations' => 'Text',
+		'Donations' => 'HTMLText',
 		'Location' => 'Text',
 		'Time' => 'Text',
 		'Price' => 'Text',
@@ -26,7 +26,7 @@ class LecturePage extends Page {
 		"DonorByline" => 'Text',
 		'HostedBy' => 'Text',
 		'Featuring' => 'Text',
-		'SponsoredBy' => 'Text',
+		'SponsoredBy' => 'HTMLText',
 	);
 
 	private static $many_many = array(
@@ -57,14 +57,17 @@ class LecturePage extends Page {
 
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle', 'Title of Lecture (optional)'));
 		$fields->addFieldToTab("Root.Main", new DateField('EventDate', 'Date'));
+		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
+
+		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
+		$fields->addFieldToTab("Root.Main", TextField::create('StreamingLink', 'Streaming Link')->setDescription('Usually this is "https://lectures.uiowa.edu/live" ("https://" required)'));
 		$fields->addFieldToTab("Root.Main", TextField::create('Featuring', 'Featuring')->setDescription('Optional, if multiple lecturers/speakers need to have their names in smaller type. Example: "Featuring: Person B'));
 		$fields->addFieldToTab("Root.Main", new TextField('HostedBy', 'Hosted by:'));
-		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
-		$fields->addFieldToTab("Root.Main", TextField::create('Location', 'Location')->setDescription('If the lecture is online, please put "Online" here'));
-		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
-		$fields->addFieldToTab("Root.Main", new TextField('Donations', 'Support provided by:'));
 
-		$fields->addFieldToTab("Root.Main", new TextField('SponsoredBy', 'Sponsored by:'));
+		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Donations', 'Support provided by:')->setRows(3));
+
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('SponsoredBy', 'Sponsored by:')->setRows(3));
 
 		$donorField = TagField::create(
 			'Donors',
@@ -84,7 +87,6 @@ class LecturePage extends Page {
 			->setShouldLazyLoad(false) // tags should be lazy loaded
 			->setCanCreate(true); // new tag DataObjects can be created
 
-		$fields->addFieldToTab("Root.Main", TextField::create('StreamingLink', 'Streaming Link')->setDescription('Usually this is "https://lectures.uiowa.edu/live" ("https://" required)'));
 		$fields->addFieldToTab("Root.Main", new TextField('Price', 'Cost of lecture'));
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
 

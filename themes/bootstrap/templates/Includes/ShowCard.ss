@@ -28,7 +28,9 @@
 		                    <strong>Hosted by:</strong> $HostedBy
 		                </li>
 	                <% end_if %>
-					<li class="lecture-details__item"><strong>Location:</strong> $Location</li>
+	                <% if $Location %>
+						<li class="lecture-details__item"><strong>Location:</strong> $Location</li>
+					<% end_if %>
 					
 				</ul>
 				<% if $isFuture && $StreamingLink %>
