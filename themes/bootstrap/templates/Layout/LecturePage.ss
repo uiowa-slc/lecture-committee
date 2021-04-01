@@ -54,9 +54,9 @@
                     </li>
                 <% end_if %>
                  <% if $SponsoredBy %>
-                    <p class="lecture-details__item">
+                    <li class="lecture-details__item">
                         <strong>Sponsored by:</strong> $SponsoredBy
-                    </p>
+                    </li>
                 <% end_if %> 
             </ul>
             <% if $SoldOut %>
