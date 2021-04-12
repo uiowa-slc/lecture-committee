@@ -9,7 +9,7 @@
 				<div class="embed-responsive embed-responsive-16by9">
 
 
-				<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/z2z9XSYM-7EaCFiXK.html" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/rnc4y91g-7EaCFiXK.html" allowfullscreen></iframe>
 					<%-- example video that seems to work when ULC isnt streaming --%>
 	<%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
 				</div>
