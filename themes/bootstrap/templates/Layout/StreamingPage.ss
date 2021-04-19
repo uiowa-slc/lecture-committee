@@ -95,7 +95,7 @@
 </svg></a><br /><span class="small">(Opens in a new tab)</span></p>
 
 </div>
-  		<p style="margin: 0;"><a href="live/" class="check-in-modal__dismiss">No, thank you.</a></p>
+  		<p style="margin: 0;"><a href="live/" class="check-in-modal__dismiss">No, thank you.<br /><span class="small">(Close this message)</span></a></p>
   		<hr />
   		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu" style="color: #222;">lecture-committee@uiowa.edu</a>.</small></p>
 	</div>
