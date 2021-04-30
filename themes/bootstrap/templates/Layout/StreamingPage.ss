@@ -18,7 +18,7 @@
 		<div class="container-fluid">
 			<div class="row justify-content-center pb-3">
 				<div class="col-12 text-center">
-					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="$CheckinLink" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <br /><a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
+					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="$CheckinLink" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
 
 				</div>
 			</div>
@@ -97,6 +97,6 @@
 </div>
   		<p style="margin: 0;"><a href="live/" class="check-in-modal__dismiss">No, thank you.<br /><span class="small">(Close this message)</span></a></p>
   		<hr />
-  		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu" style="color: #222;">lecture-committee@uiowa.edu</a>.</small></p>
+  		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu" style="color: #222;"><br />lecture-committee@uiowa.edu</a>.</small></p>
 	</div>
 <% end_if %>
