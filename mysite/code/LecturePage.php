@@ -104,7 +104,8 @@ class LecturePage extends Page {
 
 		$title = $this->getField('Title');
 		if ($title) {
-			return ucwords($title);
+			// return ucwords($title);
+			return $title;
 		}
 
 		return null;
@@ -114,13 +115,15 @@ class LecturePage extends Page {
 	public function getLectureTitle() {
 
 		$title = $this->getField('LectureTitle');
-		return ucwords($title);
+		return $title;
+		// return ucwords($title);
 	}
 
 	public function getTitle() {
 
 		$title = $this->getField('Title');
-		return ucwords($title);
+		return $title;
+		//return ucwords($title);
 
 	}
 
