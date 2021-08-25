@@ -38,11 +38,7 @@
                         <% include StreamButton %>
                     </li>
                 <% end_if %>
-                <% if $Cost %>
-                    <li class="lecture-details__item">
-                        <strong>Cost:</strong> $Cost
-                    </li>
-                <% end_if %>
+
                 <% if $Partnership %>
                     <li class="lecture-details__item">
                         <strong>In partnership with:</strong> $Partnership
@@ -59,28 +55,16 @@
                     </li>
                 <% end_if %> 
             </ul>
-            <% if $SoldOut %>
-                <div class="alert alert-warning mb-0 rounded-0" role="alert">
-                    This show is sold out!
-                </div>
-            <% else %>
-                <% if $Date.inFuture || $Date.isToday %>
-                    <div class="card-body text-center">
-                        <% if $BuyTicketsOnlineLink %>
-                        <a href="$BuyTicketsOnlineLink" class="btn btn-primary card-link mb-2" target="_blank" rel="noopener noreferrer"> Buy Tickets Online</a>
-                        <% end_if %>
-                        <% if $BuyTicketsInPersonLink %>
-                        <a href="$BuyTicketsInPersonLink" class="btn btn-primary card-link mb-2" target="_blank" rel="noopener noreferrer"> Buy Tickets In Person</a>
-                        <% end_if %>
-                    </div>
-                <% end_if %>
+
+            <% if $TicketingInfo && $isFuture %>
+                $TicketingInfo
             <% end_if %>
+
 
            
                 <p>$Content</p>
 
                 <% if $Donors %>
-          
                     <p class="h5">This lecture made possible by <% loop $Donors %><a href="$Link">$Title</a><% if not $Last %>, <% end_if %><% end_loop %>.</p>
                 <% end_if %>
        
@@ -98,19 +82,13 @@
     </div>
     <div class="row">
         <div class="col-lg-9">
-              
-
-             
-
                 <hr />
                 <p class="small">Individuals with disabilities are encouraged to attend all University of Iowa - sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact the Lecture Committee in advance at <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
             </div>
         </div>
-
     </div>
-
 </main>
-        <% if Donors %>
-            <% include DonorFeature %>
-        <% end_if %>
+<% if Donors %>
+    <% include DonorFeature %>
+<% end_if %>
 <% include TwitterFeature %>

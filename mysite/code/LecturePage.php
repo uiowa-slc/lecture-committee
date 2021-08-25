@@ -17,6 +17,7 @@ class LecturePage extends Page {
 		'Location' => 'Text',
 		'Time' => 'Text',
 		'Price' => 'Text',
+		'TicketingInfo' => 'HTMLText',
 		'Details' => 'HTMLText',
 		"LectureTitle" => "Text",
 		"FeatureOnHomePage" => "Boolean",
@@ -56,6 +57,7 @@ class LecturePage extends Page {
 		$fields->removeByName("Metadata");
 
 		$fields->addFieldToTab("Root.Main", new TextField('LectureTitle', 'Title of Lecture (optional)'));
+			$fields->addFieldToTab("Root.Main", new UploadField('Picture'));
 		$fields->addFieldToTab("Root.Main", new DateField('EventDate', 'Date'));
 		$fields->addFieldToTab("Root.Main", new TextField('Time', 'Time'));
 
@@ -65,9 +67,20 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", new TextField('HostedBy', 'Hosted by:'));
 
 		$fields->addFieldToTab("Root.Main", new TextField('Partnership', 'In partnership with:'));
-		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Donations', 'Support provided by:')->setRows(3));
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Donations', 'Support provided by:')->setRows(3)->addExtraClass('stacked'));
 
-		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('SponsoredBy', 'Sponsored by:')->setRows(3));
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('SponsoredBy', 'Sponsored by:')->setRows(3)->addExtraClass('stacked'));
+
+
+
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('TicketingInfo', 'Ticketing Information')->setRows(3)->addExtraClass('stacked'));
+
+		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
+
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content', 'Description')->addExtraClass('stacked'));
+	
+		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
+
 
 		$donorField = TagField::create(
 			'Donors',
@@ -76,24 +89,7 @@ class LecturePage extends Page {
 			$this->Donors()
 		)
 			->setShouldLazyLoad(false) // tags should be lazy loaded
-			->setCanCreate(false); // new tag DataObjects can be created
-
-		$sponsorField = TagField::create(
-			'Sponsors',
-			'Sponsor(s)',
-			Sponsor::get(),
-			$this->Sponsors()
-		)
-			->setShouldLazyLoad(false) // tags should be lazy loaded
-			->setCanCreate(true); // new tag DataObjects can be created
-
-		$fields->addFieldToTab("Root.Main", new TextField('Price', 'Cost of lecture'));
-		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
-
-		// $fields->addFieldToTab("Root.Main", $sponsorField);
-		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content', 'Description')->addExtraClass('stacked'));
-		$fields->addFieldToTab("Root.Main", new UploadField('Picture'), "Content");
-		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
+			->setCanCreate(false); // new tag DataObjects can be created		
 		$fields->addFieldToTab("Root.DonorInfo", $donorField);
 		$fields->addFieldToTab("Root.DonorInfo", TextField::create('DonorByline', 'Donor Byline')->setDescription('Shows up above the lecture/lecture title, example "Cassandra S. Foens M.D. FACR 2021 Lecture"'));
 		$fields->addFieldToTab("Root.DonorInfo", UploadField::create('Poster', 'Poster for this event')->setDescription('This only shows up on special donor pages, and is not meant to show on the main page.'));

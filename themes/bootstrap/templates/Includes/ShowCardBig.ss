@@ -53,18 +53,11 @@
 
             </p>
             <!-- Ticket buttons -->
-            <% if $SoldOut %>
-                <div class="alert alert-warning mb-0" role="alert">
-                    This show is sold out!
-                </div>
-            <% else_if $isFuture %>
-                <% if $BuyTicketsOnlineLink %>
-                    <a href="$BuyTicketsOnlineLink" class="btn btn-outline-primary mb-3" target="_blank" rel="noopener noreferrer">Buy Tickets Online</a>
-                <% end_if %>
-                <% if $BuyTicketsInPersonLink %>
-                    <a href="$BuyTicketsInPersonLink" class="btn btn-outline-primary mb-3" target="_blank" rel="noopener noreferrer">Buy Tickets In Person</a>
-                <% end_if %>
+
+            <% if $TicketingInfo && $isFuture %>
+                $TicketingInfo
             <% end_if %>
+
                 <% if $Cost %>
                     <div class="lecture-details__item">
                         <strong>Cost:</strong> $Cost
