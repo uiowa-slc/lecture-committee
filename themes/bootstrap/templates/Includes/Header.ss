@@ -69,3 +69,21 @@
     </div>
 </div>
 <% end_if %>
+<% with $Page("home") %>
+    <% if $Announcement %>
+        <div class="event-alert-container bg-dark">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12">
+                      
+                            <div class=" my-3">
+                                $Announcement
+
+                            </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% end_if %>
+<% end_with %>
