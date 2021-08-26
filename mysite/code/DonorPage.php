@@ -4,6 +4,7 @@ use SilverStripe\Assets\Image;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
 use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
+use SilverStripe\ORM\ArrayList;
 
 class DonorPage extends Page {
 
