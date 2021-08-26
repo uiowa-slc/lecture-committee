@@ -56,4 +56,31 @@ class DonorPage extends Page {
 	public function SortedImages() {
 		return $this->Images()->sort('SortOrder');
 	}
+
+	public function LecturesFirstHalf(){
+		$lectures = new ArrayList();
+		$lectures = $this->Lectures()->Sort("EventDate ASC");
+		$count = $lectures->Count();
+		$countFirstHalf = floor($count / 2);
+		$countSecondHalf = ceil($count /2);
+
+		$lecturesFiltered = $lectures->Limit($countFirstHalf);
+
+		return $lecturesFiltered;
+
+	}
+	public function LecturesSecondHalf(){
+
+		$lectures = new ArrayList();
+
+		$lectures = $this->Lectures()->Sort("EventDate ASC");
+		$count = $lectures->Count();
+		$countFirstHalf = floor($count / 2);
+		$countSecondHalf = ceil($count /2);
+
+		$lecturesFiltered = $lectures->Limit(999, $countSecondHalf);
+
+		return $lecturesFiltered;
+
+	}
 }

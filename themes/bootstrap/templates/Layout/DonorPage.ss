@@ -11,7 +11,7 @@
 
 		<div class="row justify-content-center">
 			<div class="d-none d-lg-block col-lg-2 order-2 order-lg-1 py-5">
-					<% loop $Lectures.Sort("EventDate ASC").Limit(5) %>
+					<% loop $LecturesFirstHalf %>
 						<div class="donor-gallery">
 							<% include PosterGallery %>
 						</div>
@@ -78,7 +78,7 @@
 
 			</div>
 			<div class="d-none d-lg-block col-lg-2 order-3 order-lg-3 offset-lg-1 py-5">
-					<% loop $Lectures.Sort("EventDate ASC").Limit(999,5) %>
+					<% loop $LecturesSecondHalf %>
 						<div class="donor-gallery">
 							<% include PosterGallery %>
 						</div>
