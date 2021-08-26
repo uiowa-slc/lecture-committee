@@ -1,9 +1,14 @@
 <% include Header %>
 <main class="container-xl mb-5" id="content">
+    <div class="row pt-4">
+        <div class="col-lg-12">
+            $Breadcrumbs
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-7 col-lg-6 order-12 order-md-1">
-            <div class="pt-4">
-                $Breadcrumbs
+        
+                
                 <% if $DonorByline %>
                     <p class="h4">$DonorByline</p>
                 <% end_if %>
@@ -17,7 +22,7 @@
                     <p class="featuring-header">$Featuring</p>
                 <% end_if %>
                 <hr>
-            </div>
+      
 
             <ul class="lecture-details">
                 <% if $HostedBy %>
