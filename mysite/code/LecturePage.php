@@ -28,6 +28,7 @@ class LecturePage extends Page {
 		'HostedBy' => 'Text',
 		'Featuring' => 'Text',
 		'SponsoredBy' => 'HTMLText',
+		'AccessibilityStatementOverride' => 'HTMLText'
 	);
 
 	private static $many_many = array(
@@ -93,6 +94,8 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.DonorInfo", $donorField);
 		$fields->addFieldToTab("Root.DonorInfo", TextField::create('DonorByline', 'Donor Byline')->setDescription('Shows up above the lecture/lecture title, example "Cassandra S. Foens M.D. FACR 2021 Lecture"'));
 		$fields->addFieldToTab("Root.DonorInfo", UploadField::create('Poster', 'Poster for this event')->setDescription('This only shows up on special donor pages, and is not meant to show on the main page.'));
+
+		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('AccessibilityStatementOverride', 'Custom Accessibility Statement')->addExtraClass('stacked'));
 		return $fields;
 	}
 
