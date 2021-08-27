@@ -74,7 +74,7 @@
                 <% end_if %>
        
         </div>
-        <div class="col-md-5 col-lg-6 pt-5 order-1 order-md-12">
+        <div class="col-md-5 col-lg-6 order-1 order-md-12">
                 <div class="sticky-side">
                 <% if $Picture %>
                
