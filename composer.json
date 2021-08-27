@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.2.0",
         "md/bootstrap-project": "dev-main",
-        "silverstripe/staticpublishqueue": "*",
+        "silverstripe/staticpublishqueue": "dev-master",
         "silverstripe/userforms": "^5.7",
         "undefinedoffset/silverstripe-nocaptcha": "^2.0"
     },
@@ -51,6 +51,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-staticpublishqueue"
         },
         {
             "type": "vcs",
