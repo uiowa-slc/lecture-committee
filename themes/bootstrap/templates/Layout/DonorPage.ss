@@ -12,9 +12,11 @@
 		<div class="row justify-content-center">
 			<div class="d-none d-lg-block col-lg-2 order-2 order-lg-1 py-5">
 					<% loop $LecturesFirstHalf %>
+						<% if $isPast %>
 						<div class="donor-gallery">
 							<% include PosterGallery %>
 						</div>
+						<% end_if %>
 					<% end_loop %>
 
 			</div>
@@ -79,9 +81,11 @@
 			</div>
 			<div class="d-none d-lg-block col-lg-2 order-3 order-lg-3 offset-lg-1 py-5">
 					<% loop $LecturesSecondHalf %>
+						<% if $isPast %>
 						<div class="donor-gallery">
 							<% include PosterGallery %>
 						</div>
+						<% end_if %>
 					<% end_loop %>
 
 			</div>
