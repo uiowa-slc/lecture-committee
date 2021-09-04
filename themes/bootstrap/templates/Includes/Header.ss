@@ -69,8 +69,10 @@
     </div>
 </div>
 <% end_if %>
+<% if $ClassName != "LecturePage" %>
 <% with $Page("home") %>
     <% if $Announcement %>
+        
         <div class="event-alert-container bg-dark">
             <div class="container-xl">
                 <div class="row">
@@ -85,5 +87,7 @@
                 </div>
             </div>
         </div>
-    <% end_if %>
+        <% end_if %>
+
 <% end_with %>
+<% end_if %>
