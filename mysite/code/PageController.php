@@ -42,7 +42,7 @@ class PageController extends ContentController {
 
 	public function StreamingLectureToday() {
 		$today = date('Y-m-d');
-		$lectureTest = LecturePage::get()->filter(array('EventDate' => $today))->First();
+		$lectureTest = LecturePage::get()->filter(array('EventDate' => $today, 'StreamingLink:not' => ''))->First();
 
 		if ($lectureTest) {
 			return $lectureTest;
