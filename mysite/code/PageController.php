@@ -1,7 +1,7 @@
 <?php
 
 use SilverStripe\CMS\Controllers\ContentController;
-
+use SilverStripe\Blog\Model\Blog;
 class PageController extends ContentController {
 
 	private static $allowed_actions = array(
@@ -10,7 +10,10 @@ class PageController extends ContentController {
 		parent::init();
 
 	}
-
+		public function BlogPosts() {
+			$blog = Blog::get()->First();
+			return $blog->getBlogPosts();
+		}
 	public function UpcomingLectures() {
 		$curDate = date("Y-m-d", time() - 86400);
 		$lectures = LecturePage::get()->filter(array('EventDate:GreaterThan' => $curDate))->sort('EventDate ASC, Time ASC');

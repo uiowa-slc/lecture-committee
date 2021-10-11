@@ -41,7 +41,44 @@
     <% end_if %>
 </main>
 </div>
+<section class="py-3 py-sm-6 bg-dark">
+    <div class="container-xl">
+        <div class="row">
+            <div class="text-divider">
+                            <span class="text-light">Recent Posts</span>
+                        </div>
 
+        </div>
+        <div class="row d-flex align-items-center">
+            <% loop $BlogPosts.Limit(3) %>
+
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                    <a href="$Link" class="text-light d-block">
+                           <img src="$FeaturedImage.URL" class="d-block w-100 mb-2" alt="" role="presentation" />
+                           <h2>$Title</h2>
+                           <% if $PublishDate %>
+                            <p class="text-light">
+                                <small>
+                                <%t SilverStripe\\Blog\\Model\\Blog.Posted "Posted" %>
+                                $PublishDate.format("MMMM d, y")
+                                </small>
+                            </p>
+                            <% else %>
+                            <p class="text-light">
+                                <small>Not published yet.</small>
+                            </p>
+                            <% end_if %>
+                    </a>
+                </div>
+            <% end_loop %>
+        </div>
+        <div class="row mt-3 d-flex align-items-center">
+            <div class="col">
+                <p class="text-center"><a href="news/" class="btn btn-outline-light">More Posts</a></p>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="bg-primary text-white py-5">
     <div class="container-xl">
         <div class="row d-flex align-items-center">
