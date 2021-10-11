@@ -41,7 +41,7 @@
     <% end_if %>
 </main>
 </div>
-<section class="py-3 py-sm-6 bg-dark">
+<section class="py-3 py-sm-6 bg-dark recent-posts">
     <div class="container-xl">
         <div class="row">
             <div class="text-divider">
