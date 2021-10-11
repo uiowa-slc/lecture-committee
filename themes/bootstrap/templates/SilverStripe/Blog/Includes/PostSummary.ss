@@ -2,7 +2,7 @@
     <% if $FeaturedImage %>
         <div class="post-summary__media ml-md-5 mb-3 mb-lg-0 ml-sm-3 ">
             <a href="$Link">
-                <img src="$FeaturedImage.Fill(400,300).URL" class="post-summary__img img-fluid img-thumbnail" alt="$Title" loading="lazy" />
+                <img src="$FeaturedImage.Fill(400,300).URL" class="post-summary__img img-fluid img-thumbnail" alt="$FeaturedImage.Title" loading="lazy" />
             </a>
         </div>
     <% end_if %>

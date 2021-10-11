@@ -10,7 +10,7 @@
                     <hr>
                 </div>
 				<% if $FeaturedImage %>
-					<img src="$FeaturedImage.ScaleMaxWidth(800).URL" class="img-thumbnail float-right mb-3 ml-3 mr-lg-n8 mr-xl-n9" alt="$Title" />
+					<img src="$FeaturedImage.ScaleMaxWidth(800).URL" class="img-thumbnail float-right mb-3 ml-3 mr-lg-n8 mr-xl-n9" alt="$FeaturedImage.Title" />
 				<% end_if %>
 
 				<% if $Summary %>
