@@ -26,7 +26,7 @@
 
             <div class="col-md-9">
                 
-                <% loop PreviousLectures.Limit(3) %>
+                <% loop PreviousLectures.Limit(1) %>
                     <% include ShowCard %>
                 <% end_loop %>
             </div>
