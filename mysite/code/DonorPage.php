@@ -60,7 +60,7 @@ class DonorPage extends Page {
 
 	public function LecturesFirstHalf(){
 		$lectures = new ArrayList();
-		$lectures = $this->Lectures()->filter('Cancelled' => 0)->Sort("EventDate ASC");
+		$lectures = $this->Lectures()->filter(array('Cancelled' => 0))->Sort("EventDate ASC");
 		$count = $lectures->Count();
 		$countFirstHalf = floor($count / 2);
 		$countSecondHalf = ceil($count /2);
@@ -74,7 +74,7 @@ class DonorPage extends Page {
 
 		$lectures = new ArrayList();
 
-		$lectures = $this->Lectures()->filter('Cancelled' => 0)->Sort("EventDate ASC");
+		$lectures = $this->Lectures()->filter(array('Cancelled' => 0))->Sort("EventDate ASC");
 		$count = $lectures->Count();
 		$countFirstHalf = floor($count / 2);
 		$countSecondHalf = ceil($count /2);
