@@ -49,7 +49,7 @@
                         </div>
 
         </div>
-        <div class="row d-flex align-items-center">
+        <div class="row">
             <% loop $BlogPosts.Limit(3) %>
 
                 <div class="col-lg-4 mb-3 mb-lg-0">
