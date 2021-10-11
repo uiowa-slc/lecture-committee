@@ -1,6 +1,6 @@
 <% include Header %>
 
-<main id="main-content" class="container-xl">
+<main id="main-content" class="container-fluid">
 	<div class="row">
 		<div class="col-lg-8 offset-lg-2">
 			<div class="blog__content">
@@ -10,7 +10,7 @@
                     <hr>
                 </div>
 				<% if $FeaturedImage %>
-					<img src="$FeaturedImage.ScaleMaxWidth(400).URL" class="img-thumbnail float-right mb-3 ml-3 mr-lg-n8 mr-xl-n9" alt="Title" />
+					<img src="$FeaturedImage.ScaleMaxWidth(800).URL" class="img-thumbnail float-right mb-3 ml-3 mr-lg-n8 mr-xl-n9" alt="Title" />
 				<% end_if %>
 
 				<% if $Summary %>
