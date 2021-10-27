@@ -18,7 +18,7 @@
 		<div class="container-fluid">
 			<div class="row justify-content-center pb-3">
 				<div class="col-12 text-center">
-					 <p class="small m-0">Please help us understand who is attending our educational programs by <a href="$CheckinLink" target="_blank" rel="noopener">checking in.</a> Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
+					 <p class="small m-0"><% if $CheckinLink %>Please help us understand who is attending our educational programs by <a href="$CheckinLink" target="_blank" rel="noopener">checking in.</a><% end_if %> Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu">lecture-committee@uiowa.edu</a>.</p>
 
 				</div>
 			</div>
@@ -84,6 +84,7 @@
 <% include TwitterFeature %>
 
 <% if $StreamingLectureToday %>
+	<% if $CheckinLink %>
 	<div id="check-in-modal" class="check-in-modal mfp-hide text-center">
 		<div class="check-in-modal__content">
 			<p class="h6 check-in-modal__today">Today:</p>
@@ -99,4 +100,5 @@
   		<hr />
   		<p><small>Questions for the guest(s) may be sent to <a href="mailto:lecture-committee@uiowa.edu" style="color: #222;"><br />lecture-committee@uiowa.edu</a>.</small></p>
 	</div>
+	<% end_if %>
 <% end_if %>
