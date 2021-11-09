@@ -98,7 +98,7 @@ class LecturePage extends Page {
 
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('AccessibilityStatementOverride', 'Custom Accessibility Statement')->addExtraClass('stacked'));
 
-		$fields->addFieldToTab('Root.Main', CheckboxField::create('ShowFullContentInCard', 'Show full bio or content in card')->setDescription('Shows the entire body of content on the homepage/other places where the card is used. Used for shorter bios, content.'));
+		$fields->addFieldToTab('Root.Main', CheckboxField::create('ShowFullContentInCard', 'Show full bio or content in big show card')->setDescription('Shows the entire body of content on the homepage/other places where the big card is used. Used for shorter bios, content.'));
 		return $fields;
 	}
 

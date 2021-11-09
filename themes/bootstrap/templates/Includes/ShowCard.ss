@@ -36,11 +36,7 @@
 		<% if $isFuture && $StreamingLink %>
         	<p><% include StreamButton %></p>
         <% end_if %>
-		    <% if $ShowFullContentInCard %>
-                <p>$Content</p>
-            <% else %>
-                <p>$Content.LimitCharacters(180)</p>
-            <% end_if %>
+		<p>$Content.LimitCharacters(150)</p>
         <!-- Ticket Links -->
 
         <% if $TicketingInfo && $isFuture %>
