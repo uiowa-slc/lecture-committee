@@ -28,7 +28,8 @@ class LecturePage extends Page {
 		'HostedBy' => 'Text',
 		'Featuring' => 'Text',
 		'SponsoredBy' => 'HTMLText',
-		'AccessibilityStatementOverride' => 'HTMLText'
+		'AccessibilityStatementOverride' => 'HTMLText',
+		'ShowFullContentInCard' => 'Boolean'
 	);
 
 	private static $many_many = array(
@@ -96,6 +97,8 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.DonorInfo", UploadField::create('Poster', 'Poster for this event')->setDescription('This only shows up on special donor pages, and is not meant to show on the main page.'));
 
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('AccessibilityStatementOverride', 'Custom Accessibility Statement')->addExtraClass('stacked'));
+
+		$fields->addFieldToTab('Root.Main', CheckboxField::create('ShowFullContentInCard', 'Show full bio or content in card')->setDescription('Shows the entire body of content on the homepage/other places where the card is used. Used for shorter bios, content.'));
 		return $fields;
 	}
 

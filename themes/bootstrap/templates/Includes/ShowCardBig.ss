@@ -42,7 +42,11 @@
                 <% if $Location %><li class="lecture-details__item"><strong>Location:</strong> $Location</li><% end_if %>
             </ul>
             <!-- Content -->
-            <p>$Content.FirstParagraph.LimitCharacters(180)</p>
+            <% if $ShowFullContentInCard %>
+                <p>$Content</p>
+            <% else %>
+                <p>$Content.FirstParagraph.LimitCharacters(180)</p>
+            <% end_if %>
 
             <p>
 
