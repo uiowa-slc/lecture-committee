@@ -89,7 +89,7 @@
         <div class="col-md-5 col-lg-6 order-1 order-md-12">
             <% if $Picture %>
                 <a href="$Link" class="d-block">
-                    <img data-ratio="1" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(800,800,333).URL" class="show-image lazyload d-block w-100" alt="Poster for {$Title}" />
+                    <img data-ratio="1" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(800,800,111).URL" class="show-image lazyload d-block w-100" alt="Poster for {$Title}" />
                 </a>
             <% end_if %>
         </div>
