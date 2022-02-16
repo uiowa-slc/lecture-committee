@@ -78,7 +78,7 @@
                 <div class="sticky-side">
                 <% if $Picture %>
                
-                    <img src="$Picture.Pad(800,800,111).URL" class="d-block show-image w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
+                    <img src="$Picture.Pad(800,800,fff).URL" class="d-block show-image w-100" alt="Poster for {$Title}, please continue reading for specific event information." />
               
                 <% end_if %>
 

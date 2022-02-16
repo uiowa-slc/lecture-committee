@@ -3,7 +3,7 @@
 		<div class="col-md-8 order-12 order-md-1">
 			<% if $Picture %>
 			<a href="$Link" class="d-block">
-				<img data-ratio="1" class="lazyload show-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,000).URL" class="card-img" alt="$Title" loading="lazy">
+				<img data-ratio="1" class="lazyload show-image d-block w-100" src="$resourceURL('themes/bootstrap/dist/images/lecture-placeholder.png')" data-src="$Picture.Pad(400,400,fff).URL" class="card-img" alt="$Title" loading="lazy">
 			</a>
 			<% end_if %>
 			<% if $DonorByline %>

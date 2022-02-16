@@ -11,6 +11,7 @@ use SilverStripe\Security\Authenticator;
 use SilverStripe\Security\PasswordValidator;
 use SilverStripe\Security\Member;
 use SilverStripe\Admin\LeftAndMain;
+
 // remove PasswordValidator for SilverStripe 5.0
 $validator = new PasswordValidator();
 
