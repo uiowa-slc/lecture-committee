@@ -31,7 +31,7 @@
                     </li>
                 <% end_if %>
                 <li class="lecture-details__item">
-                    <strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time
+                <strong><% if $Cancelled %>Originally scheduled for:<% else %> Date:<% end_if %></strong> $EventDate.Format("MMMM d, Y"), $Time
                 </li>
                 <% if $Location %>
                     <li class="lecture-details__item">
