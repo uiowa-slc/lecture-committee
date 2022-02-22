@@ -3,7 +3,7 @@
 
 		<div class="col-md-8 order-12 order-md-1">
 			
-				<div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMMM d, Y") $Time</div>
+				<% if not $Cancelled %><div class="text-uppercase mt-2 mt-md-0"> $EventDate.Format("MMMM d, Y") $Time</div><% end_if %>
 				<% if $DonorByline %>
                     <p class="h4">$DonorByline</p>
                 <% end_if %>

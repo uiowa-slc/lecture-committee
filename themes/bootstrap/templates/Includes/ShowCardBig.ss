@@ -2,10 +2,12 @@
     <div class="row d-flex">
         <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <!-- Date -->
-            <% if $isFuture %>
-            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">$EventDate.Format("MMMM d, Y")</div>
-            <% else %>
-            <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">Presented on $EventDate.Format("MMMM d, Y")</div>
+            <% if not $Cancelled %>
+                <% if $isFuture %>
+                <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">$EventDate.Format("MMMM d, Y")</div>
+                <% else %>
+                <div class="text-uppercase mt-2 mt-md-0 show-card__time-label">Presented on $EventDate.Format("MMMM d, Y")</div>
+                <% end_if %>
             <% end_if %>
             <% if $DonorByline %>
                 <p class="h4">$DonorByline</p>
@@ -38,7 +40,7 @@
                         <strong>Hosted by:</strong> $HostedBy
                     </li>
                 <% end_if %>
-                <li class="lecture-details_item"><strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time</li>
+                <% if not $Cancelled %><li class="lecture-details_item"><strong>Date:</strong> $EventDate.Format("MMMM d, Y"), $Time</li><% end_if %>
                 <% if $Location %><li class="lecture-details__item"><strong>Location:</strong> $Location</li><% end_if %>
             </ul>
             <!-- Content -->

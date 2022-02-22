@@ -22,7 +22,7 @@ class PageController extends ContentController {
 	}
 
 	public function UpcomingStreamingLectures() {
-		$lectures = $this->UpcomingLectures()->filter(array('StreamingLink:PartialMatch' => 'https://'));
+		$lectures = $this->UpcomingLectures()->filter(array('StreamingLink:PartialMatch' => 'https://', 'Cancelled' => 0));
 		return $lectures;
 	}
 
@@ -45,7 +45,7 @@ class PageController extends ContentController {
 
 	public function StreamingLectureToday() {
 		$today = date('Y-m-d');
-		$lectureTest = LecturePage::get()->filter(array('EventDate' => $today))->First();
+		$lectureTest = LecturePage::get()->filter(array('EventDate' => $today, 'Cancelled' => 0))->First();
 
 		if ($lectureTest) {
 			if($lectureTest->StreamingLink){
