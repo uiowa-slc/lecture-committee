@@ -63,10 +63,11 @@
                                 $PublishDate.format("MMMM d, y")
                                 </small>
                             </p>
+                            <% end_if %>
+                            <% if $Summary %>
+                                $Summary
                             <% else %>
-                            <p class="text-light">
-                                <small>Not published yet.</small>
-                            </p>
+                                <p>$Excerpt</p>
                             <% end_if %>
                     </a>
                 </div>
