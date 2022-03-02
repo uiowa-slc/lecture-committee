@@ -1,6 +1,11 @@
 .show-card {
     // background: #222;
     // padding: 25px;
+
+    &--big:first-child{
+    background: #222;
+    padding: 25px;        
+    }
 }
 
 .show-card h3 a,
