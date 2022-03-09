@@ -1,4 +1,4 @@
-<section class="bg-light text-dark  py-5 mb-5">
+<section class="bg-light text-dark py-5">
     <div class="container-xl">
         <div class="row">
             <div class="col-sm-12">

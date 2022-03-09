@@ -1,14 +1,7 @@
-<%-- <% include Header %> --%>
+<% include Header %>
 
 <div class="donor-container bg-light text-dark">
-	<main class="container-fluid py-5">
-		<div class="row justify-content-center">
-			<div class="col-lg-7">
-
-	            <a href="{$BaseHref}"><img src="{$ThemeDir}/dist/images/logo-light-bg.png" alt="University of Iowa Lecture Committee" class="donor-ulc-logo d-block w-100" /></a>
-	        </div>
-	    </div>
-
+	<main class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="d-none d-lg-block col-lg-2 order-2 order-lg-1 py-5">
 					<% loop $LecturesFirstHalf %>
