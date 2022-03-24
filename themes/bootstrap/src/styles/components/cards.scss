@@ -1,10 +1,10 @@
 .show-card {
     // background: #222;
     // padding: 25px;
-
-    &--big:first-child{
-    background: #222;
-    padding: 25px;        
+    padding: 25px;  
+    &:nth-child(even){
+    background: #111;
+          
     }
 }
 

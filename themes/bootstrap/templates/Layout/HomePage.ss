@@ -1,11 +1,10 @@
 <% include Header %>
 
 
-
-
 <div class="container-xl">
 <main id="content" class="mt-2 mb-5 mb-lg-6">
     <% if $UpcomingLectures %>
+        <h1 class="text-center">Upcoming:</h1>
         <% loop $UpcomingLectures %>  
             <% include ShowCardBig %>
         <% end_loop %>

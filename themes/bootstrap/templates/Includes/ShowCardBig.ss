@@ -1,4 +1,4 @@
-<div class="mt-3 mb-6 show-card show-card--big" id="content">
+<div class="mt-3 mb-4 show-card show-card--big" id="content">
     <div class="row d-flex">
         <div class="col-md-7 col-lg-6 order-12 order-md-1">
             <!-- Date -->
