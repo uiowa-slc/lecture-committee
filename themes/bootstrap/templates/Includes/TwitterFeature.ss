@@ -1,6 +1,6 @@
 	<section class="bg-gray text-white py-3 py-sm-6">
     <div class="container-xl">
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center text-center">
             <div class="col-sm-8 col-md-7">
                 <h2 class="h1">University Lecture Committee on Social Media</h2>
 
