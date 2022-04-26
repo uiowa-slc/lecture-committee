@@ -2,10 +2,11 @@
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Control\Director;
 use SilverStripe\StaticPublishQueue\Contract\StaticallyPublishable;
-
+use SilverStripe\Forms\TextareaField;
 class Page extends SiteTree implements StaticallyPublishable {
 
 	private static $db = array(
+		'EmbedCode' => 'Text'
 	);
 
 	private static $has_one = array(
@@ -13,6 +14,8 @@ class Page extends SiteTree implements StaticallyPublishable {
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Main', new TextareaField('EmbedCode', 'Embed code above content area'));
 
 		return $fields;
 	}

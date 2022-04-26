@@ -6,6 +6,9 @@
             <%-- $Breadcrumbs --%>
 			<article id="content">
 				<h1>$Title</h1>
+				<% if $EmbedCode %>
+					$EmbedCode.RAW
+				<% end_if %>
                 $Content
 			</article>
 			$Form
