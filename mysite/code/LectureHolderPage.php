@@ -72,6 +72,7 @@ class LectureHolderPage extends Page {
 					'Year' => $showYear,
 					'Link' => Controller::join_links($this->Link('year'), $showYear),
 					'Active' => $active,
+					'Lectures' => $this->PreviousLectures()->filter(array('EventDate:PartialMatch' => $showYear))->sort('EventDate DESC')
 				));
 				$years->push($year);
 			}
@@ -80,5 +81,10 @@ class LectureHolderPage extends Page {
 
 		return $years;
 
+	}
+	public function PreviousLectures() {
+		$curDate = date("Y-m-d");
+		$lectures = LecturePage::get()->filter(array('EventDate:LessThan' => $curDate, 'Cancelled' => 0))->sort('EventDate DESC');
+		return $lectures;
 	}
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5aaf3d558db33e8d5376a3c78f0c6b3",
+    "content-hash": "9868e743855024a04bec24c4b07d7b2c",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1643,6 +1643,34 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-maintenance-mode/tree/master"
             },
             "time": "2020-03-30T21:44:08+00:00"
+        },
+        {
+            "name": "md/silverstripe-migration-tools",
+            "version": "dev-lecture-committee",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools.git",
+                "reference": "f1d76af0995df609851ac198a68cd426089b9774"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-migration-tools/zipball/f1d76af0995df609851ac198a68cd426089b9774",
+                "reference": "f1d76af0995df609851ac198a68cd426089b9774",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "4.*",
+                "silverstripe/framework": "4.*",
+                "thunderer/shortcode": "^0.7"
+            },
+            "type": "silverstripe-vendormodule",
+            "description": "Exports SilverStripe content to WordPress eXtended RSS",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools/tree/lecture-committee",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-migration-tools/issues"
+            },
+            "time": "2022-08-12T13:10:22+00:00"
         },
         {
             "name": "md/uiowa-bar",
@@ -4029,16 +4057,16 @@
         },
         {
             "name": "silverstripe/versioned",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-versioned.git",
-                "reference": "3796337ef20e1fbf8c9c3fb482f85813be6dcd6b"
+                "reference": "8658256a402c62e73d748d5a9dec9f134df03255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/3796337ef20e1fbf8c9c3fb482f85813be6dcd6b",
-                "reference": "3796337ef20e1fbf8c9c3fb482f85813be6dcd6b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/8658256a402c62e73d748d5a9dec9f134df03255",
+                "reference": "8658256a402c62e73d748d5a9dec9f134df03255",
                 "shasum": ""
             },
             "require": {
@@ -4084,9 +4112,9 @@
             ],
             "support": {
                 "issues": "https://github.com/silverstripe/silverstripe-versioned/issues",
-                "source": "https://github.com/silverstripe/silverstripe-versioned/tree/1.10.1"
+                "source": "https://github.com/silverstripe/silverstripe-versioned/tree/1.10.2"
             },
-            "time": "2022-03-16T20:58:43+00:00"
+            "time": "2022-07-22T23:19:49+00:00"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -4421,16 +4449,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v4.4.43",
+            "version": "v4.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "3b3c6019f3df2fa73d15dfed133e432a9801d7eb"
+                "reference": "db611fb1b86e2223d406c5bf3d813536c95de7ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/3b3c6019f3df2fa73d15dfed133e432a9801d7eb",
-                "reference": "3b3c6019f3df2fa73d15dfed133e432a9801d7eb",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/db611fb1b86e2223d406c5bf3d813536c95de7ce",
+                "reference": "db611fb1b86e2223d406c5bf3d813536c95de7ce",
                 "shasum": ""
             },
             "require": {
@@ -4496,7 +4524,7 @@
                 "psr6"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache/tree/v4.4.43"
+                "source": "https://github.com/symfony/cache/tree/v4.4.44"
             },
             "funding": [
                 {
@@ -4512,7 +4540,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-19T11:27:12+00:00"
+            "time": "2022-07-20T09:59:04+00:00"
         },
         {
             "name": "symfony/cache-contracts",
@@ -4595,16 +4623,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.4.42",
+            "version": "v4.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "83cdafd1bd3370de23e3dc2ed01026908863be81"
+                "reference": "ed42f8f9da528d2c6cae36fe1f380b0c1d8f0658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/83cdafd1bd3370de23e3dc2ed01026908863be81",
-                "reference": "83cdafd1bd3370de23e3dc2ed01026908863be81",
+                "url": "https://api.github.com/repos/symfony/config/zipball/ed42f8f9da528d2c6cae36fe1f380b0c1d8f0658",
+                "reference": "ed42f8f9da528d2c6cae36fe1f380b0c1d8f0658",
                 "shasum": ""
             },
             "require": {
@@ -4653,7 +4681,7 @@
             "description": "Helps you find, load, combine, autofill and validate configuration values of any kind",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/config/tree/v4.4.42"
+                "source": "https://github.com/symfony/config/tree/v4.4.44"
             },
             "funding": [
                 {
@@ -4669,7 +4697,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-17T07:10:14+00:00"
+            "time": "2022-07-20T09:59:04+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4740,16 +4768,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.4.9",
+            "version": "v5.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "36a017fa4cce1eff1b8e8129ff53513abcef05ba"
+                "reference": "6699fb0228d1bc35b12aed6dd5e7455457609ddd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/36a017fa4cce1eff1b8e8129ff53513abcef05ba",
-                "reference": "36a017fa4cce1eff1b8e8129ff53513abcef05ba",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/6699fb0228d1bc35b12aed6dd5e7455457609ddd",
+                "reference": "6699fb0228d1bc35b12aed6dd5e7455457609ddd",
                 "shasum": ""
             },
             "require": {
@@ -4784,7 +4812,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v5.4.9"
+                "source": "https://github.com/symfony/filesystem/tree/v5.4.11"
             },
             "funding": [
                 {
@@ -4800,20 +4828,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-20T13:55:35+00:00"
+            "time": "2022-07-20T13:00:38+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.41",
+            "version": "v4.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "40790bdf293b462798882ef6da72bb49a4a6633a"
+                "reference": "66bd787edb5e42ff59d3523f623895af05043e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/40790bdf293b462798882ef6da72bb49a4a6633a",
-                "reference": "40790bdf293b462798882ef6da72bb49a4a6633a",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/66bd787edb5e42ff59d3523f623895af05043e4f",
+                "reference": "66bd787edb5e42ff59d3523f623895af05043e4f",
                 "shasum": ""
             },
             "require": {
@@ -4846,7 +4874,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v4.4.41"
+                "source": "https://github.com/symfony/finder/tree/v4.4.44"
             },
             "funding": [
                 {
@@ -4862,7 +4890,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-14T15:36:10+00:00"
+            "time": "2022-07-29T07:35:46+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5685,16 +5713,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v4.4.41",
+            "version": "v4.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "dcb67eae126e74507e0b4f0b9ac6ef35b37c3331"
+                "reference": "af947fefc306cec6ea5a1f6160c7e305a71f2493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/dcb67eae126e74507e0b4f0b9ac6ef35b37c3331",
-                "reference": "dcb67eae126e74507e0b4f0b9ac6ef35b37c3331",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/af947fefc306cec6ea5a1f6160c7e305a71f2493",
+                "reference": "af947fefc306cec6ea5a1f6160c7e305a71f2493",
                 "shasum": ""
             },
             "require": {
@@ -5754,7 +5782,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v4.4.41"
+                "source": "https://github.com/symfony/translation/tree/v4.4.44"
             },
             "funding": [
                 {
@@ -5770,7 +5798,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-21T07:22:34+00:00"
+            "time": "2022-07-20T09:59:04+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -5925,16 +5953,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.4.43",
+            "version": "v4.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "07e392f0ef78376d080d5353c081a5e5704835bd"
+                "reference": "c2b28c10fb3b7ac67bafa7b8f952cd83f35acde2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/07e392f0ef78376d080d5353c081a5e5704835bd",
-                "reference": "07e392f0ef78376d080d5353c081a5e5704835bd",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c2b28c10fb3b7ac67bafa7b8f952cd83f35acde2",
+                "reference": "c2b28c10fb3b7ac67bafa7b8f952cd83f35acde2",
                 "shasum": ""
             },
             "require": {
@@ -5976,7 +6004,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v4.4.43"
+                "source": "https://github.com/symfony/yaml/tree/v4.4.44"
             },
             "funding": [
                 {
@@ -5992,7 +6020,63 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-20T08:31:17+00:00"
+            "time": "2022-06-27T13:16:42+00:00"
+        },
+        {
+            "name": "thunderer/shortcode",
+            "version": "v0.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thunderer/Shortcode.git",
+                "reference": "a4fee30613bd46efb421f8305aff0466a3268a99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thunderer/Shortcode/zipball/a4fee30613bd46efb421f8305aff0466a3268a99",
+                "reference": "a4fee30613bd46efb421f8305aff0466a3268a99",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.1",
+                "symfony/yaml": ">=2.0"
+            },
+            "suggest": {
+                "ext-dom": "if you want to use XML serializer",
+                "ext-json": "if you want to use JSON serializer",
+                "symfony/yaml": "if you want to use YAML serializer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thunder\\Shortcode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomasz Kowalczyk",
+                    "email": "tomasz@kowalczyk.cc"
+                }
+            ],
+            "description": "Advanced shortcode (BBCode) parser and engine for PHP",
+            "keywords": [
+                "bbcode",
+                "engine",
+                "library",
+                "parser",
+                "shortcode"
+            ],
+            "support": {
+                "issues": "https://github.com/thunderer/Shortcode/issues",
+                "source": "https://github.com/thunderer/Shortcode/tree/v0.7.5"
+            },
+            "time": "2022-01-13T18:53:33+00:00"
         },
         {
             "name": "ua-parser/uap-php",
@@ -7888,7 +7972,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "md/bootstrap-project": 20,
-        "silverstripe/staticpublishqueue": 20
+        "silverstripe/staticpublishqueue": 20,
+        "md/silverstripe-migration-tools": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
