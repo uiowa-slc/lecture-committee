@@ -3,11 +3,30 @@
 
 
 	<% if $StreamingLectureToday %>
+	<% if $StreamingLectureToday.StreamingLink != "https://lectures.uiowa.edu/live" && $StreamingLectureToday.StreamingLink != "https://lectures.uiowa.edu/live/" %>
+
+		<div class="stream-wrap stream-wrap--empty">
+			<div class="container-fluid">
+				<div class="row mb-3 justify-content-center" style="height: 40vh;">
+					<div class="col-lg-8 text-center align-self-center">
+
+						<p><svg style="color: #666" aria-hidden="true" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-broadcast" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 0 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707z"/>
+  <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/> </svg> Today's event is streaming on another website:</p>
+  						<p>
+
+  							<p class="h3"><a href="$StreamingLectureToday.StreamingLink">$StreamingLectureToday.StreamingLink</a></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<% else %> 
 	<div class="stream-wrap">
 		<div class="row no-gutters mb-3 justify-content-center">
 			<div class="col-xl-8">
 				<div class="embed-responsive embed-responsive-16by9">
-
 
 				<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/rnc4y91g-7EaCFiXK.html" allowfullscreen></iframe>
 					<%-- example video that seems to work when ULC isnt streaming --%>
@@ -25,6 +44,7 @@
 
 		</div>
 	</div>
+	<% end_if %>
 	<div class="container-fluid">
 		<% with $StreamingLectureToday %>
 			<% if $Donors %>
