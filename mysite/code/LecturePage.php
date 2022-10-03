@@ -50,6 +50,8 @@ class LecturePage extends Page {
 
 	private static $default_sort = 'EventDate DESC';
 
+	private static $default_parent = 'LectureHolderPage';
+
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		// $titleField = $fields->FieldByName('Title');
