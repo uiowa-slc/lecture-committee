@@ -27,8 +27,11 @@
 		<div class="row no-gutters mb-3 justify-content-center">
 			<div class="col-xl-8">
 				<div class="embed-responsive embed-responsive-16by9">
-
-				<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/rnc4y91g-7EaCFiXK.html" allowfullscreen></iframe>
+				<% if $StreamingLectureToday.CustomStreamEmbed %>
+					$StreamingLectureToday.CustomStreamEmbed.RAW
+				<% else %>
+					<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/rnc4y91g-7EaCFiXK.html" allowfullscreen></iframe>
+				<% end_if %>
 					<%-- example video that seems to work when ULC isnt streaming --%>
 	<%-- 						<iframe class="embed-responsive-item"src="https://cdn.jwplayer.com/players/LxNvlC58-7EaCFiXK.html" allowfullscreen></iframe> --%>
 				</div>

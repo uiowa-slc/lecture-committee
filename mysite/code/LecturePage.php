@@ -29,7 +29,8 @@ class LecturePage extends Page {
 		'Featuring' => 'Text',
 		'SponsoredBy' => 'HTMLText',
 		'AccessibilityStatementOverride' => 'HTMLText',
-		'ShowFullContentInCard' => 'Boolean'
+		'ShowFullContentInCard' => 'Boolean',
+		'CustomStreamEmbed' => 'Text'
 	);
 
 	private static $many_many = array(
@@ -81,6 +82,8 @@ class LecturePage extends Page {
 
 		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
 
+		$fields->addFieldToTab("Root.Main", TextField::create('WebsiteLink', 'Lecturer website or more info link')->setDescription('Please include https:// in this link'));
+
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('Content', 'Description')->addExtraClass('stacked'));
 	
 		$fields->addFieldToTab('Root.Main', CheckboxField::create('Cancelled', 'This lecture is cancelled or postponed')->setDescription('Prevents lectures from showing on the "Past Lectures" page'), 'Content');
@@ -101,6 +104,8 @@ class LecturePage extends Page {
 		$fields->addFieldToTab("Root.Main", HTMLEditorField::create('AccessibilityStatementOverride', 'Custom Accessibility Statement')->addExtraClass('stacked'));
 
 		$fields->addFieldToTab('Root.Main', CheckboxField::create('ShowFullContentInCard', 'Show full bio or content in big show card')->setDescription('Shows the entire body of content on the homepage/other places where the big card is used. Used for shorter bios, content.'));
+
+		$fields->addFieldToTab("Root.Main", TextField::create('CustomStreamEmbed', 'Custom or unique stream embed code for this event'));
 		return $fields;
 	}
 
