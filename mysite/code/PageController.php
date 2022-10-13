@@ -45,14 +45,18 @@ class PageController extends ContentController {
 
 	public function StreamingLectureToday() {
 		$today = date('Y-m-d');
-		$lectureTest = LecturePage::get()->filter(array('EventDate' => $today, 'Cancelled' => 0))->First();
+		$lectureList = LecturePage::get()->filter(array('EventDate' => $today, 'Cancelled' => 0));
 
-		if ($lectureTest) {
+		// Only works if we have one streaming event at a time... need to adjust
+		// if we have more than one streaming event on the same day.
+
+		foreach($lectureList as $lectureTest){
 			if($lectureTest->StreamingLink){
 				return $lectureTest;
 			}
 			
 		}
+		
 		return false;
 	}
 
