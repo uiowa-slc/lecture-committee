@@ -1698,12 +1698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/uiowa-slc/silverstripe-migration-tools.git",
-                "reference": "c9ba0320a2504b25bc9c263c2949387e8bcd4436"
+                "reference": "8597b1bfe1a01872c5317e02f356833cbd04cb6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uiowa-slc/silverstripe-migration-tools/zipball/c9ba0320a2504b25bc9c263c2949387e8bcd4436",
-                "reference": "c9ba0320a2504b25bc9c263c2949387e8bcd4436",
+                "url": "https://api.github.com/repos/uiowa-slc/silverstripe-migration-tools/zipball/8597b1bfe1a01872c5317e02f356833cbd04cb6e",
+                "reference": "8597b1bfe1a01872c5317e02f356833cbd04cb6e",
                 "shasum": ""
             },
             "require": {
@@ -1718,7 +1718,7 @@
                 "source": "https://github.com/uiowa-slc/silverstripe-migration-tools/tree/lecture-committee",
                 "issues": "https://github.com/uiowa-slc/silverstripe-migration-tools/issues"
             },
-            "time": "2023-01-05T21:35:29+00:00"
+            "time": "2023-01-05T22:22:49+00:00"
         },
         {
             "name": "md/uiowa-bar",
